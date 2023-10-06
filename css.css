@@ -1,0 +1,204 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sofia&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Courier New', Courier, monospace;
+    text-decoration: none;
+    outline: none;
+}
+
+.video-container {
+  position: absolute;
+  width: 100%;
+  height: 100vh; 
+  overflow: hidden; 
+}
+
+#background-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -999;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    height: auto;
+}
+
+.menubar{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    text-align: right;
+    transition: top 0.3s;
+    display: block;
+    background-color: rgba(255, 255, 255, 0.3);
+    z-index: 999;
+}
+
+.menubar li, .menubar a{
+    display:inline;
+    color: white;
+    padding: 15px;
+}
+
+.frontcontainer, .aboutcontainer , .skillscontainer, .workcontainer, .contactcontainer{
+  padding: 50px;
+  height: 100vh;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+  display: block;
+  z-index: 10;
+}
+
+.header{
+  position: absolute;
+  margin-left:47%;
+  margin-top: 40px;
+  color: white;
+  font-size: larger;
+  font-weight:900;
+  text-align: center;
+}
+
+/*-----------------------------------------------------------------------front----------------------------------------------------------*/
+
+.text1 span {
+  font-size: 32px;
+  font-weight: 700;
+}
+
+.text1{
+  position: absolute;
+  margin-top: 10%;
+  margin-left: 50%;
+}
+
+.typing-2{
+  background-color: white;
+  color: black;
+  padding-left: 10px;
+  padding-right: 10px;
+  border-radius: 30px;
+}
+
+.cv{
+  position: absolute;
+  border: 0px;
+  bottom: 50px;
+  left: 50px;
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 30px;
+}
+
+
+/*-----------------------------------------------------------------------work----------------------------------------------------------*/
+  
+
+
+
+/*-----------------------------------------------------------------------contact----------------------------------------------------------*/
+
+.contactiteams{
+  margin-top:50px;
+}
+
+.nkphoto{
+  position: absolute;
+  left: 10%;
+  height: 550px;
+  width:auto;
+  
+}
+
+.contact-form{
+  position: absolute;
+  margin-top: 200px;
+  right: 10%;
+}
+
+.form-group-title{
+  
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding-bottom: 30px;
+  position: absolute;
+  color: white;
+  font-size: larger;
+  font-weight: 900;
+  margin-top: 7px;
+  right: 75%;
+
+}
+
+input,textarea{
+  border-radius: 30px;
+  border: 0px;
+  padding-left:20px ;
+  height: 40px;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.form-group{
+  display: flex;
+  flex-direction: column;
+  width: 450px;
+  padding-bottom: 30px;
+  
+}
+
+.btn-md{
+  width: 150px;
+  height: 30px;
+  border-radius: 30px;
+  font-size: larger;
+  font-weight: 900;
+}
+
+.logos{
+  position: absolute;
+  margin-left:35%;
+  margin-top: 37.7%;
+}
+
+.github,.linkedin, .insta{
+  position: absolute;
+  border-radius: 100%;
+  width:30px;
+  transition: 1s ease;
+  display: inline-block;
+  vertical-align: middle
+}
+
+.github:hover,.linkedin:hover, .insta:hover{
+  border-radius: 100%;
+  width:50px;
+}
+
+.contactiteams li{
+  display: inline;
+  padding: 50px;
+}
+
+/*---------------------------------------------------------------------------------------------------------------------------------*/
+
+
