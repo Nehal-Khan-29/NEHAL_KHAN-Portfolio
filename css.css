@@ -73,6 +73,9 @@ body{
   font-size: larger;
   font-weight:900;
   text-align: center;
+  width: 160px;
+  border-radius: 30px;
+  border:3px solid white;
 }
 
 /*-----------------------------------------------------------------------front----------------------------------------------------------*/
@@ -131,23 +134,24 @@ body{
 
 .contact-form{
   position: absolute;
-  margin-top: 200px;
+  margin-top: 130px;
   right: 10%;
 }
 
-.form-group-title{
-  
+.form-group-title{ 
   display: flex;
+  border-radius: 30px;
+  border:3px solid white;
   flex-direction: column;
-  width: 450px;
-  padding-bottom: 30px;
+  width: 150px;
+  padding-top: 5px;
+  padding-bottom: 5px;
   position: absolute;
   color: white;
   font-size: larger;
   font-weight: 900;
-  margin-top: 7px;
-  right: 75%;
-
+  margin-top: 3px;
+  right: 110%;
 }
 
 input,textarea{
@@ -157,6 +161,10 @@ input,textarea{
   height: 40px;
   font-size: larger;
   font-weight: 900;
+}
+
+textarea{
+  height:150px;
 }
 
 .form-group{
@@ -173,12 +181,19 @@ input,textarea{
   border-radius: 30px;
   font-size: larger;
   font-weight: 900;
+  margin-left: 300px;
 }
+
+
 
 .logos{
   position: absolute;
-  margin-left:35%;
-  margin-top: 37.7%;
+  left: 0;
+  padding-top: 20px;
+  margin-top: 37.8%;
+  background-color: rgba(255, 255, 255, 0.3);
+  width : 100%;
+  height: 65px;
 }
 
 .github,.linkedin, .insta{
@@ -197,7 +212,8 @@ input,textarea{
 
 .contactiteams li{
   display: inline;
-  padding: 50px;
+  padding-right: 50px;
+  padding-left: 50px;
 }
 
 /*---------------------------------------------------------------------------------------------------------------------------------*/
