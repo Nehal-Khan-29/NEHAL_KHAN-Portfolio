@@ -91,13 +91,23 @@ body{
   margin-left: 50%;
 }
 
-.typing-2{
+.typing-3 {
   background-color: white;
   color: black;
   padding-left: 10px;
   padding-right: 10px;
   border-radius: 30px;
+  visibility: hidden; 
+  animation: fadeIn 1s linear 4s forwards; 
 }
+
+@keyframes fadeIn {
+  to {
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
 
 .cv{
   position: absolute;
@@ -138,9 +148,8 @@ body{
 }
 
 .emaill{
-
   border-radius: 30px;
-  background-color: white;
+  background-color:rgb(255, 255, 255, 0.1);
   color: black;
 
 }
