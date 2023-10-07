@@ -132,6 +132,19 @@ body{
   
 }
 
+.letsconnect{
+  color: white;
+  font-size: x-large;
+}
+
+.emaill{
+
+  border-radius: 30px;
+  background-color: white;
+  color: black;
+
+}
+
 .contact-form{
   position: absolute;
   margin-top: 130px;
@@ -189,11 +202,20 @@ textarea{
 .logos{
   position: absolute;
   left: 0;
-  padding-top: 10px;
-  margin-top: 37.8%;
+  padding-top: 50px;
+  margin-top: 37%;
   background-color: rgba(255, 255, 255, 0.3);
   width: 100%;
-  height: 48px;
+  height: 200px;
+}
+
+.copyright{
+  position: absolute;
+  font-weight: bolder;
+  left: 50px;
+  padding-top: 50px;
+  margin-top: 37%;
+  z-index: 1;
 }
 
 .github,.linkedin, .insta{
@@ -245,6 +267,7 @@ textarea{
   opacity: 1;
   visibility: visible;
 }
+
 .logos li:hover .lin::before {
   content: "Linkedin"; 
   border: 3px solid white;
