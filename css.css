@@ -55,6 +55,16 @@ body{
     padding: 15px;
 }
 
+.menubar li a:hover{
+  background-color: white;
+  color: rgba(0, 68, 255, 0.578);
+  transition:0.3s ease;
+  width:100px;
+  border-radius: 20px;
+  font-weight: bolder;
+  padding-bottom: 10px;
+}
+
 .frontcontainer, .aboutcontainer , .skillscontainer, .workcontainer, .contactcontainer{
   padding: 50px;
   height: 100vh;
@@ -108,6 +118,16 @@ body{
   }
 }
 
+.upp{
+  position: fixed;
+  background-color:rgba(255, 255, 255, 0.3);
+  border-radius: 10px;
+  bottom: 50px;
+  right: 50px;
+  height: 50px;
+  width: 50px;
+
+}
 
 .cv{
   position: absolute;
