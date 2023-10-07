@@ -27,6 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
           "<span style='color:black'>a Program Dev </span>",
           "<span style='color:black'>a Competitive Solver</span>",
           "<span style='color:black'>a Passionate Artist</span>",
+          "<span style='color:black'>an Enthu Gamer</span>",
           "<span style='color:black'>an Inspiring Leader</span>",
         ],
         typeSpeed: 100,
