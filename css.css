@@ -122,6 +122,7 @@ body{
 
 .nkphoto{
   position: absolute;
+  border-radius: 30px;
   left: 10%;
   height: 550px;
   width:auto;
