@@ -57,7 +57,7 @@ body{
 
 .menubar li a:hover{
   background-color: white;
-  color: rgba(0, 68, 255, 0.578);
+  color: black;
   transition:0.3s ease;
   width:100px;
   border-radius: 20px;
@@ -126,6 +126,7 @@ body{
   right: 50px;
   height: 50px;
   width: 50px;
+  z-index: 11;
 
 }
 
@@ -142,8 +143,38 @@ body{
 }
 
 
-/*-----------------------------------------------------------------------work----------------------------------------------------------*/
+/*-----------------------------------------------------------------------about----------------------------------------------------------*/
+
+
+
+/*-----------------------------------------------------------------------skill----------------------------------------------------------*/
+
   
+.skillscontainer {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  grid-auto-rows: 150px;
+  gap: 50px;
+}
+
+#i {
+  margin-top:200px;
+  border: 2px solid white;
+  padding: 10px;
+  border-radius: 10px;
+  width: 150px; 
+  height: 150px; 
+  object-fit:contain;
+}
+
+#i:hover {
+  background-color:white;
+}
+
+
+
+/*-----------------------------------------------------------------------work----------------------------------------------------------*/
+
 
 
 
