@@ -45,8 +45,17 @@ body{
     text-align: right;
     transition: top 0.3s;
     display: block;
-    background-color: rgba(255, 255, 255, 0.3);
+    background-color: rgb(133, 53, 252);
+    /*background-color: rgb(35, 35, 35);*/
     z-index: 999;
+}
+
+.nklogo{
+  position: absolute;
+  height:27px;
+  left: 20px;
+  padding-bottom: 5px;
+
 }
 
 .menubar li, .menubar a{
@@ -127,7 +136,11 @@ body{
   height: 50px;
   width: 50px;
   z-index: 11;
+}
 
+.upp:hover{
+  height: 52px;
+  width: 52px;
 }
 
 .cv{
@@ -145,20 +158,54 @@ body{
 
 /*-----------------------------------------------------------------------about----------------------------------------------------------*/
 
+.abtme{
+  position: absolute;
+  right:15%;
+  border-radius: 10px;
+  background-color:rgba(133, 53, 252, 0.3);
+  color: white;
+  font-size: large;
+  text-align: left;
+  margin-top:150px ;
+  padding: 10px;
+  height: 350px;
+  width: 700px;
+}
 
+
+.nkphoto{
+  margin-top: 100px;
+  position: absolute;
+  border-radius: 30px;
+  left: 15%;
+  height: 550px;
+  width:auto;
+  
+}
+
+.logos2{
+  position: absolute;
+  margin-top: 20px;
+  right: 100px;
+}
+
+.logos2 ul{
+  display: inline;
+  list-style: none;
+}
+
+.logos2 ul li{
+  display: inline;
+  padding-left: 50px;
+}
 
 /*-----------------------------------------------------------------------skill----------------------------------------------------------*/
 
   
-.skillscontainer {
-  display: grid;
-  grid-template-columns: repeat(6, 150px);
-  grid-auto-rows: 150px;
-  gap: 50px;
-}
 
-#i {
-  margin-top:200px;
+
+#logobox {
+  margin-top:100px;
   border: 2px solid white;
   padding: 10px;
   border-radius: 10px;
@@ -167,9 +214,18 @@ body{
   object-fit:contain;
 }
 
-#i:hover {
-  background-color:white;
+
+.logoskill {
+  display: grid;
+  grid-template-columns: repeat(6, 150px);
+  justify-content: center;
+  gap: 50px;
+  grid-auto-rows: 150px; 
 }
+
+
+
+
 
 
 
@@ -184,14 +240,16 @@ body{
   margin-top:50px;
 }
 
-.nkphoto{
+
+
+.nk2{
   position: absolute;
-  border-radius: 30px;
-  left: 10%;
-  height: 550px;
-  width:auto;
-  
+  left:10%;
+  height: 650px;
+  width: auto;
+  border-radius: 10px;
 }
+
 
 .letsconnect{
   color: white;
@@ -263,7 +321,7 @@ textarea{
   background-color: rgb(0, 72, 255);
   border: 2px solid white;
   color: white;
-  transition: 1s ease;
+  transition: 0.5s ease;
 }
 
 
