@@ -8,7 +8,7 @@
     <title>NEHAL KHAN Portfolio</title>
 </head>  
 
-<body>
+<body style="background-color: black;">
 
         <div class="video-container">
             <video autoplay muted loop id="background-video">
@@ -24,7 +24,7 @@
         <div class="navbar">
             <nav class="menubar">
                 <ul>
-                    
+                    <li><img class="nklogo" src="nksymbol2.png" alt="NK"></li>
                     <li><a href="#front"><b>Home</b></a></li>
                     <li><a href="#about"><b>About</b></a></li>
                     <li> <a href="#skills"><b>Skills</b></a></li>
@@ -68,7 +68,25 @@
             </div>
         
             <div class="aboutcontainer">
-                <img src="" alt="">
+
+                <img class="nkphoto" src="nk.jpg" alt="Nehal">
+
+                <div class="abtme">Hello!, I'm Nehal, a passionate code enthusiast with a keen interest in <strong style="color: rgb(0, 144, 254);">Open-source development</strong> and a strong commitment to <strong style="color: rgb(0, 144, 254);">full-stack programming</strong>.<br><br>
+                Currently serving as a mentor at Amrita Cognizance Club, I'm always excited to explore new technologies and collaborate on projects that make a positive impact.<br><br>
+                <strong style="color: black;">Age</strong>: <strong style="color: rgb(0, 144, 254);">19</strong><br><br>
+                <strong style="color: black;">From</strong>: <strong style="color: rgb(0, 144, 254);">Tamil Nadu, India</strong><br><br>
+                <strong style="color: black;">Email</strong>: <strong style="color: rgb(0, 144, 254);">nehalmicro29@gmail.com</strong>
+                
+                <div class="logos2">
+                    <ul>
+                    <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><img class="github" src="logo-github.png" alt="Github"></a></li>
+                    <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><img class="linkedin" src="logo-linkedin.png" alt="Linkedin"></a></li>
+                    <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><img class="insta" src="logo-insta.png" alt="Insta"></a></li> 
+                    </ul>
+                </div>
+                
+
+
             </div>
                
         </div>
@@ -82,16 +100,17 @@
             </div>  
 
             <div class="skillscontainer">
-
-                <img id='i' class="py" src="logo-python.png" alt="Python">
-                <img id='i' class="c++" src="logo-c++.png" alt="C++">
-                <img id='i' class="c" src="logo-c.png" alt="C">
-                <img id='i' class="ht" src="logo-html.png" alt="HTML">
-                <img id='i' class="cs" src="logo-css.png" alt="CSS">
-                <img id='i' class="js" src="logo-js.png" alt="JS">
-                <img id='i' class="j" src="logo-java.png" alt="Java">
-                <img id='i' class="s" src="logo-sql.png" alt="SQL">
-
+                
+                <div class="logoskill">
+                <div id="i" class="py"><img id= "logobox" src="logo-python.png" alt="Python"></div>
+                <div id="i" class="c++"><img id= "logobox" src="logo-c++.png" alt="C++"></div>
+                <div id="i" class="c"><img id= "logobox" src="logo-c.png" alt="C"></div>
+                <div id="i" class="ht"><img id= "logobox" src="logo-html.png" alt="HTML"></div>
+                <div id="i" class="cs"><img id= "logobox" src="logo-css.png" alt="CSS"></div>
+                <div id="i" class="js"><img id= "logobox" src="logo-js.png" alt="JS"></div>
+                <div id="i" class="j"><img id= "logobox" src="logo-java.png" alt="Java"></div>
+                <div id="i" class="s"><img id= "logobox" src="logo-sql.png" alt="SQL"></div>
+                </div>
             </div>
 
         </div>
@@ -128,12 +147,13 @@
 
             <div class="contactiteams">
 
-                <img class="nkphoto" src="nk.jpg" alt="Nehal Khan">
+                <img class="nk2" src="nk2.jpg" alt="Nehal Khan">
 
                 <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="color: white;">Email:<strong style="color: rgb(6, 97, 255);">nehalmicro29@gmail.com</strong></div>
                 </p></div>
 
                 <div class="contact-form">
+                    <form action="process_form.php" method="post">
                     <div class="form-group">
                         <p class="form-group-title"> Name </p>
                         <input type="text" name="name" id="name" placeholder="Your Name">
@@ -151,6 +171,7 @@
                         <textarea name="message" id="message" placeholder="Your Message"></textarea>
                     </div>
                     <button type="submit" class="btn-md">Send</button>
+                    </form>
                 </div>
                 
                 <p class="copyright">© Made by Nehal 😎. All rights reserved</p>
