@@ -45,8 +45,8 @@ body{
     text-align: right;
     transition: top 0.3s;
     display: block;
-    background-color: rgb(133, 53, 252);
-    /*background-color: rgb(35, 35, 35);*/
+    background-color: rgb(133, 53, 252,0.8);
+    /*background-color: rgb(35, 35, 35,0.8);*/
     z-index: 999;
 }
 
@@ -153,6 +153,14 @@ body{
   font-weight: bold;
   padding: 10px;
   border-radius: 30px;
+  transition: 0.5s ease-in-out;
+}
+
+.cv:hover{
+  color: white;
+  border: 2px solid white;
+  transition: 0.5s ease-in-out;
+  background-color: rgb(133, 53, 252);
 }
 
 
@@ -162,7 +170,7 @@ body{
   position: absolute;
   right:15%;
   border-radius: 10px;
-  background-color:rgba(133, 53, 252, 0.3);
+  background-color:rgba(133, 53, 252, 0.5);
   color: white;
   font-size: large;
   text-align: left;
@@ -176,7 +184,7 @@ body{
 .nkphoto{
   margin-top: 100px;
   position: absolute;
-  border-radius: 30px;
+  border-radius: 10px;
   left: 15%;
   height: 550px;
   width:auto;
@@ -199,6 +207,46 @@ body{
   padding-left: 50px;
 }
 
+.logos2 a::before {
+  content: "";
+  position: absolute;
+  background-color: white;
+  color: black;
+  padding: 5px 10px;
+  border-radius: 5px;
+  transform: translateY(100%);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.logos2 li:hover .git::before {
+  content: "Github";
+  border: 3px solid white;
+  background-color: black;
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
+
+.logos2 li:hover .ins::before {
+  content: "Instagram"; 
+  border: 3px solid white;
+  background-color: rgb(179, 0, 255);
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
+
+.logos2 li:hover .lin::before {
+  content: "Linkedin"; 
+  border: 3px solid white;
+  background-color:rgb(0, 114, 177) ;
+  color: white;
+  opacity: 1;
+  visibility: visible;
+}
+
 /*-----------------------------------------------------------------------skill----------------------------------------------------------*/
 
   
@@ -207,6 +255,7 @@ body{
 #logobox {
   margin-top:100px;
   border: 2px solid white;
+  background-color: rgb(255, 255, 255,0.2);
   padding: 10px;
   border-radius: 10px;
   width: 150px; 
@@ -231,6 +280,28 @@ body{
 
 /*-----------------------------------------------------------------------work----------------------------------------------------------*/
 
+.worktext{
+  font-size: x-large;
+  margin-top: 50px;
+  color: rgb(0, 255, 34);
+  border-radius: 10px;
+  background-color: rgba(55, 55, 55, 0.3);
+}
+
+#workbox {
+  margin-top:100px;
+  border-radius: 10px;
+  width: auto; 
+  height: 250px; 
+  object-fit:contain;
+}
+
+.allworks li{
+  display: inline;
+  list-style: none;
+  padding: 20px;
+}
+
 
 
 
@@ -252,13 +323,14 @@ body{
 
 
 .letsconnect{
-  color: white;
+  color: black;
+  font-weight: bold;
   font-size: x-large;
 }
 
 .emaill{
   border-radius: 30px;
-  background-color:rgb(255, 255, 255, 0.1);
+  background-color: rgba(55, 55, 55, 0.3);
   color: black;
 
 }
@@ -318,7 +390,7 @@ textarea{
 }
 
 .btn-md:hover{
-  background-color: rgb(0, 72, 255);
+  background-color: rgb(133, 53, 252);
   border: 2px solid white;
   color: white;
   transition: 0.5s ease;
