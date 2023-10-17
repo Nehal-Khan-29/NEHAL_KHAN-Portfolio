@@ -76,7 +76,7 @@ body{
 
 .frontcontainer, .aboutcontainer , .skillscontainer, .workcontainer, .contactcontainer{
   padding: 50px;
-  height: 100vh;
+  min-height: 100vh;
   justify-content:center;
   align-items: center;
   text-align: center;
@@ -105,7 +105,6 @@ body{
 }
 
 .text1{
-  position: absolute;
   margin-top: 10%;
   margin-left: 50%;
 }
@@ -166,9 +165,16 @@ body{
 
 /*-----------------------------------------------------------------------about----------------------------------------------------------*/
 
+.abouttext{
+  font-size: x-large;
+  margin-top: 50px;
+  color:red;
+  background-color: rgba(55, 55, 55, 0.3);
+  border-radius: 30px;
+}
+
 .abtme{
-  position: absolute;
-  right:15%;
+  position: relative;
   border-radius: 10px;
   background-color:rgba(133, 53, 252, 0.5);
   color: white;
@@ -176,35 +182,34 @@ body{
   text-align: left;
   margin-top:150px ;
   padding: 10px;
-  height: 350px;
-  width: 700px;
+  max-width: 700px;
+  height:fit-content;
 }
 
 
 .nkphoto{
+  position: relative;
   margin-top: 100px;
-  position: absolute;
   border-radius: 10px;
-  left: 15%;
   height: 550px;
   width:auto;
-  
+}
+
+.aboutcontainer2{
+  display: flex;
+  position: relative;
+  justify-content: space-evenly;
 }
 
 .logos2{
-  position: absolute;
   margin-top: 20px;
-  right: 100px;
+  padding-bottom: 10px;
 }
 
-.logos2 ul{
-  display: inline;
-  list-style: none;
-}
 
 .logos2 ul li{
   display: inline;
-  padding-left: 50px;
+  padding-right: 50px;
 }
 
 .logos2 a::before {
@@ -253,6 +258,7 @@ body{
 
 
 #logobox {
+  position: relative;
   margin-top:100px;
   border: 2px solid white;
   background-color: rgb(255, 255, 255,0.2);
@@ -265,15 +271,12 @@ body{
 
 
 .logoskill {
-  display: grid;
-  grid-template-columns: repeat(6, 150px);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
   justify-content: center;
-  gap: 50px;
-  grid-auto-rows: 150px; 
+  align-items: flex-start;
 }
-
-
-
 
 
 
@@ -283,8 +286,8 @@ body{
 .worktext{
   font-size: x-large;
   margin-top: 50px;
-  color: rgb(0, 255, 34);
-  border-radius: 10px;
+  color: black;
+  border-radius: 30px;
   background-color: rgba(55, 55, 55, 0.3);
 }
 
@@ -307,22 +310,8 @@ body{
 
 /*-----------------------------------------------------------------------contact----------------------------------------------------------*/
 
-.contactiteams{
-  margin-top:50px;
-}
-
-
-
-.nk2{
-  position: absolute;
-  left:10%;
-  height: 650px;
-  width: auto;
-  border-radius: 10px;
-}
-
-
 .letsconnect{
+  margin-top:50px;
   color: black;
   font-weight: bold;
   font-size: x-large;
@@ -335,10 +324,24 @@ body{
 
 }
 
-.contact-form{
-  position: absolute;
+.contactcontainer2{
+  display: flex;
+  flex-direction:unset;
+  position: relative;
+  justify-content: space-around;
+}
+
+.nk2{
+  margin-top: 10px;
+  height: 600px;
+  width: auto;
+  border-radius: 10px;
+}
+
+.contact-form {
   margin-top: 130px;
-  right: 10%;
+  border-collapse: separate;
+  border-spacing: 50px 20px; 
 }
 
 .form-group-title{ 
@@ -349,13 +352,12 @@ body{
   width: 150px;
   padding-top: 5px;
   padding-bottom: 5px;
-  position: absolute;
   color: white;
   font-size: larger;
   font-weight: 900;
   margin-top: 3px;
-  right: 110%;
 }
+
 
 input,textarea{
   border-radius: 30px;
@@ -364,6 +366,7 @@ input,textarea{
   height: 40px;
   font-size: larger;
   font-weight: 900;
+  width: 500px;
 }
 
 textarea{
@@ -371,13 +374,6 @@ textarea{
   padding-top: 10px;
 }
 
-.form-group{
-  display: flex;
-  flex-direction: column;
-  width: 450px;
-  padding-bottom: 30px;
-  
-}
 
 .btn-md{
   width: 150px;
@@ -396,44 +392,43 @@ textarea{
   transition: 0.5s ease;
 }
 
+/*----------------------------------------------------------------*/
 
-.logos{
-  position: absolute;
-  left: 0;
-  padding-top: 50px;
-  margin-top: 37%;
+.contactcontainer3{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   background-color: rgba(255, 255, 255, 0.3);
+  margin-bottom: 0;
   width: 100%;
   height: 200px;
+  font-weight: bolder;
 }
 
 .copyright{
-  position: absolute;
-  font-weight: bolder;
-  left: 50px;
-  padding-top: 50px;
-  margin-top: 37%;
-  z-index: 1;
+  text-align: center;
+}
+
+/*----------------------------------------------------------------*/
+
+.logos{
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  padding-top: 30px;
+}
+
+.logos li{
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .github,.linkedin, .insta{
-  position: absolute;
   border-radius: 100%;
   width:30px;
   transition: 1s ease;
-  display: inline-block;
-  vertical-align: middle
 }
 
-.github:hover,.linkedin:hover, .insta:hover{
-  border-radius: 100%;
-}
-
-.contactiteams li{
-  display: inline;
-  padding-right: 50px;
-  padding-left: 50px;
-}
 
 .logos a::before {
   content: "";
@@ -442,7 +437,7 @@ textarea{
   color: black;
   padding: 5px 10px;
   border-radius: 5px;
-  transform: translateY(-100%);
+  transform: translateY(100%);
   opacity: 0;
   visibility: hidden;
   transition: opacity 0.3s ease, visibility 0.3s ease;
