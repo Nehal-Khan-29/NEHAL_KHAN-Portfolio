@@ -259,7 +259,7 @@ body{
 
 #logobox {
   position: relative;
-  margin-top:100px;
+  margin-top:50px;
   border: 2px solid white;
   background-color: rgb(255, 255, 255,0.3);
   padding: 10px;
@@ -278,7 +278,13 @@ body{
   align-items: flex-start;
 }
 
-
+.skilltext{
+  font-size: x-large;
+  color: orange;
+  margin-top: 50px;
+  border-radius: 30px;
+  background-color: rgba(55, 55, 55, 0.5);
+}
 
 
 /*-----------------------------------------------------------------------work----------------------------------------------------------*/
