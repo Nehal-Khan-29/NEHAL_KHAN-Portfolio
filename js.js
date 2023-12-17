@@ -124,6 +124,7 @@ function toggleTheme() {
   const skilltextSection = document.querySelector('.skilltext');
   const worktextSection = document.querySelector('.worktext');
   const abouttextSection = document.querySelector('.abouttext');
+  const educationtextSection = document.querySelector('.educationtext');
   const emailltextSection = document.querySelector('.emaill strong');
   const headerSections = document.querySelectorAll('.header');
   const container3Sections = document.querySelector('.contactcontainer3');
@@ -142,6 +143,7 @@ function toggleTheme() {
     worktextSection.style.color= 'greenyellow';
     abouttextSection.style.color= 'greenyellow';
     emailltextSection.style.color= 'orange';
+    educationtextSection.style.color= 'orange';
     headerSections.forEach(headerSection => {
       headerSection.style.color= 'white';
       headerSection.style.border= '3px solid white';
@@ -162,6 +164,7 @@ function toggleTheme() {
     worktextSection.style.color= 'blue';
     abouttextSection.style.color= 'blue';
     emailltextSection.style.color= 'blue';
+    educationtextSection.style.color= 'blue';
     headerSections.forEach(headerSection => {
       headerSection.style.color= 'black';
       headerSection.style.border= '3px solid black';
@@ -186,7 +189,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.copyright,.contact-form tr,.logos');
+  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.copyright,.contact-form tr,.logos');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
@@ -200,7 +203,6 @@ function handleScroll() {
     }
   });
 }
-
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
