@@ -5,17 +5,11 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <title>NEHAL KHAN Portfolio</title>
 </head>  
 
-<body style="background-color: black;">
-
-        <div class="video-container">
-            <video autoplay muted loop id="background-video">
-                <source src="rain-vid.mp4" type="video/mp4">
-            </video>
-        </div>
-
+<body style="background:linear-gradient(135deg, rgb(133, 53, 252), rgb(19, 8, 36));background-repeat: no-repeat;background-attachment: fixed;">
 
         <main>
 
@@ -30,12 +24,13 @@
                     <li> <a href="#skills"><b>Skills</b></a></li>
                     <li> <a href="#work"><b>Work</b></a></li>
                     <li><a href="#contact"><b>Contact</b></a></li>
-                </ul>
+                    <li class="theme-switch" onclick="toggleTheme()"><span class="theme-icon sun-icon"><i class="fas fa-sun"></i></span><span class="theme-icon moon-icon"><i class="fas fa-moon"></i></span></li>
+                
             </nav>
         </div>
 
         <!-- ----------------------------------------------------Front---------------------------------------------------- -->
-            
+        
         
         <div id="front" class="front">
 
@@ -70,7 +65,8 @@
             <div class="aboutcontainer">
 
                 <div class="abouttext">
-                    <strong>Hey there, Look at me 😁</strong>
+                    <div style="display: flex; flex-direction: row; align-items: center;justify-content:center">
+                        <hr><strong>Hey there, Look at me 😁</strong><hr></div>
                 </div>
 
                 <div class="aboutcontainer2">
@@ -85,9 +81,9 @@
                 
                         <div class="logos2">
                         <ul>
-                        <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><img class="github" src="logo-github.png" alt="Github"></a></li>
-                        <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><img class="linkedin" src="logo-linkedin.png" alt="Linkedin"></a></li>
-                        <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><img class="insta" src="logo-insta.png" alt="Insta"></a></li> 
+                        <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                        <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                        <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
                         </ul>
                         </div>
                 
@@ -109,7 +105,11 @@
             <div class="skillscontainer">
 
                 <div class="skilltext">
-                    <strong>Thats all I know 🤓</strong>
+                    <div style="display: flex; flex-direction: row; align-items: center;justify-content:center">
+                        <hr>
+                        <strong>Thats all I know 🤓</strong>
+                        <hr>
+                      </div>
                 </div>
 
                 <div class="skillscontainer2">
@@ -127,6 +127,7 @@
                     </div>
                 </div>
 
+
             </div>
 
         </div>
@@ -143,16 +144,55 @@
             <div class="workcontainer">   
 
                 <div class="worktext">
-                    <strong>All my recent projects are is available in Github</strong>
+                    <div style="display: flex; flex-direction: row; align-items: center;justify-content:center">
+                    <hr><strong>All my recent projects are is available in Github 😎</strong><hr></div>
                 </div>
 
-                <ul class="allworks">
-                    
-                    <li id="w" class="ad"><a href="https://devpost.com/software/afterdot" target="_blank"><img id= "workbox" src="work-ad.png" alt="AfterDot"></a></li>
-                    <li id="w" class="cz"><a href="https://github.com/Nehal-Khan-29/Codez" target="_blank"><img id= "workbox" src="work-cz.png" alt="Codez"></a></li>
-                    <li id="w" class="coming"><a href="#contact"><img id= "workbox" src="work-com.png" alt="Coming"></a></li>
-                
-                </ul>
+                <div class="wrapper">
+                    <i id="left" class="fa-solid fa-angle-left"></i>
+                    <ul class="carousel">
+                      <li class="card">
+                        <div class="img"><img src="work-ad.png" alt="img" draggable="false"></div>
+                        <h2>AfterDot</h2>
+                        <span>A File Converter</span>
+                        <div class="video-container">
+                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/Sjh69Y4JF5M" frameborder="0" allowfullscreen></iframe>
+                            <div class="about_the_work">Convert, extract, merge: DOCX to PDF, PDF to DOCX, PDF to text, PDF to JPG, JPG to PDF or PNG, interchange JPG and PNG, merge PDFs and DOCX files.</div>
+                            <div class="try_button"><a href="https://nehal-khan-29.github.io/.AfterDot/" class="button"> Try It </a></div>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="work-vc.png" alt="img" draggable="false"></a></div>
+                        <h2>Voice Cam</h2>
+                        <span>Laptop Camera Operator</span>
+                        <div class="video-container">
+                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/Sjh69Y4JF5M" frameborder="0" allowfullscreen></iframe>
+                            <div class="about_the_work">VoiceCam is a laptop camera program that can take commands through voice and do functions like "take photo", "flip camera" and "close" program</div>
+                            <div class="try_button"><a href="https://github.com/Nehal-Khan-29/VoicCam" class="button"> Try It </a></div>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="work-cz.png" alt="img" draggable="false"></a></div>
+                        <h2>Codez</h2>
+                        <span>Team Project Collaborator</span>
+                        <div class="video-container">
+                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/Sjh69Y4JF5M" frameborder="0" allowfullscreen></iframe>
+                            <div class="about_the_work">Real time team project collaborator without switching between various softwares. This eliminates distractions and fosters productivity</div>
+                            <div class="try_button"><a href="https://nehal-khan-29.github.io/Codez/" class="button"> Try It </a></div>
+                        </div>
+                      </li>
+                      <li class="card">
+                        <div class="img"><img src="work-com.png" alt="img" draggable="false"></div>
+                        <h2>Coming Soon</h2>
+                        <span>I am working on it</span>
+                        <div class="video-container">
+                            <div class="about_the_work">Comming Soon</div>
+                        </div>
+                      </li>
+                      
+                    </ul>
+                    <i id="right" class="fa-solid fa-angle-right"></i>
+                </div>
 
             </div> 
 
@@ -172,8 +212,8 @@
         </div>  
 
         <div class="contactcontainer">
-
-            <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="color: white;">Email:<strong style="color: rgb(255, 162, 0);">nehalmicro29@gmail.com</strong></div></p></div>
+           
+            <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="color: white;display: flex; flex-direction: row; align-items: center;justify-content:center"><hr>👉🏻 Email:<strong style="color: orange">nehalmicro29@gmail.com 👈🏻</strong><hr></div></p></div>
 
             <div class="contactcontainer2">
 
@@ -181,7 +221,7 @@
 
                 <div class="contact-form-div">
                     <table class="contact-form">
-                        <form action="process_form.php" method="post">
+                        <form action="https://formsubmit.co/nehalmicro29@gmail.com" method="post">
                             <tr>
                                 <td class="form-group-title">Name</td>
                                 <td><input type="text" name="name" id="name" placeholder="Your Name"></td>
@@ -192,7 +232,7 @@
                             </tr>
                             <tr>
                                 <td class="form-group-title">Subject</td>
-                                <td><input type="text" name="subject" id="subject" placeholder="Your Subject"></td>
+                                <td><input type="text" name="subject" id="subject" placeholder="Your Subject" value="Contact by Portfolio"></td>
                             </tr>
                             <tr>
                                 <td class="form-group-title">Message</td>
@@ -218,9 +258,9 @@
 
         <div>
             <ul class="logos">
-            <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><img class="github" src="logo-github.png" alt="Github"></a></li>
-            <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><img class="linkedin" src="logo-linkedin.png" alt="Linkedin"></a></li>
-            <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><img class="insta" src="logo-insta.png" alt="Insta"></a></li> 
+                <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
             </ul>
         </div>
 
