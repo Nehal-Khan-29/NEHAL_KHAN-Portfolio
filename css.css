@@ -9,29 +9,31 @@
     outline: none;
 }
 
-.video-container {
-  position: absolute;
-  width: 100%;
-  height: 100vh; 
-  overflow: hidden; 
-}
-
-#background-video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: -999;
-}
-
 html{
     scroll-behavior: smooth;
 }
 
 body{
     height: auto;
+}
+
+body::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url("body_design.png");
+  background-size: cover;
+  opacity: 0.7;
+  z-index: -1;}
+
+hr {
+  border: 0; 
+  height: 1px;
+  width: 10%;
+  background: linear-gradient(to right, transparent, #ffffff, transparent);
 }
 
 .menubar{
@@ -46,7 +48,6 @@ body{
     transition: top 0.3s;
     display: block;
     background-color: rgb(133, 53, 252,0.8);
-    /*background-color: rgb(35, 35, 35,0.8);*/
     z-index: 999;
 }
 
@@ -95,6 +96,7 @@ body{
   width: 160px;
   border-radius: 30px;
   border:3px solid white;
+  ;
 }
 
 /*-----------------------------------------------------------------------front----------------------------------------------------------*/
@@ -169,14 +171,13 @@ body{
   font-size: x-large;
   margin-top: 50px;
   color:greenyellow;
-  background-color: rgba(55, 55, 55, 0.5);
   border-radius: 30px;
 }
 
 .abtme{
   position: relative;
   border-radius: 10px;
-  background-color:rgba(55, 55, 55, 0.5);
+  background-color:rgba(133, 53, 252,0.7);
   color: white;
   font-size: large;
   text-align: left;
@@ -189,7 +190,7 @@ body{
 
 .nkphoto{
   position: relative;
-  margin-top: 100px;
+  margin-top: 50px;
   border-radius: 10px;
   height: 550px;
   width:auto;
@@ -204,16 +205,27 @@ body{
 .logos2{
   margin-top: 20px;
   padding-bottom: 10px;
+  
 }
-
 
 .logos2 ul li{
   display: inline;
   padding-right: 20px;
 }
 
+.logos2 .git i,.logos2 .lin i,.logos2 .ins i{
+  width:15px;
+  transition: ease;
+  color: black;
+}
+
+.logos2 .git i:hover,.logos2 .lin i:hover,.logos2 .ins i:hover{
+  width:15px;
+  transition: ease;
+  color: white;
+}
+
 .logos2 a::before {
-  content: "";
   position: absolute;
   background-color: white;
   color: black;
@@ -283,7 +295,6 @@ body{
   color: orange;
   margin-top: 50px;
   border-radius: 30px;
-  background-color: rgba(55, 55, 55, 0.5);
 }
 
 
@@ -292,29 +303,174 @@ body{
 .worktext{
   font-size: x-large;
   margin-top: 50px;
-  color: black;
+  color: greenyellow;
   border-radius: 30px;
-  background-color: rgba(55, 55, 55, 0.5);
 }
 
-#workbox {
-  margin-top:100px;
-  border-radius: 10px;
-  width: auto; 
-  height: 250px; 
-  object-fit:contain;
+.wrapper {
+  width: 100%;
+  position: relative;
+  margin-top: 100px;  
 }
-
-.allworks li{
-  display: inline;
+.wrapper i {
+  top: 50%;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+  font-size: 1.25rem;
+  position: absolute;
+  text-align: center;
+  line-height: 50px;
+  background: #fff;
+  border-radius: 50%;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.23);
+  transform: translateY(-50%);
+  transition: transform 0.1s linear;
+}
+.wrapper i:active{
+  transform: translateY(-50%) scale(0.85);
+}
+.wrapper i:first-child{
+  left: -22px;
+}
+.wrapper i:last-child{
+  right: -22px;
+}
+.wrapper .carousel{
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: calc((100% / 4) - 12px);
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 16px;
+  border-radius: 8px;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+}
+.carousel::-webkit-scrollbar {
+  display: none;
+}
+.carousel.no-transition {
+  scroll-behavior: auto;
+}
+.carousel.dragging {
+  scroll-snap-type: none;
+  scroll-behavior: auto;
+}
+.carousel.dragging .card {
+  cursor: grab;
+  user-select: none;
+}
+.carousel :where(.card, .img) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.carousel .card {
+  scroll-snap-align: start;
+  height: 342px;
   list-style: none;
-  padding: 20px;
+  cursor: pointer;
+  padding-bottom: 15px;
+  flex-direction: column;
+  border-radius: 8px;
 }
 
-.coming{
-  opacity: 50%;
+.card{
+  background:linear-gradient(135deg, rgb(173, 118, 255),rgb(133, 53, 252));
 }
 
+.card .img img {
+  width: 200px;
+  height: 200px;
+  border-radius: 8px;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+}
+.carousel .card h2 {
+  font-weight: 900;
+  color: #ffffff;
+  font-size: 1.56rem;
+  margin: 30px 0 5px;
+}
+.carousel .card span {
+  color: black;
+  font-size: 1.31rem;
+}
+@media screen and (max-width: 900px) {
+  .wrapper .carousel {
+    grid-auto-columns: calc((100% / 2) - 9px);
+  }
+}
+@media screen and (max-width: 600px) {
+  .wrapper .carousel {
+    grid-auto-columns: 100%;
+  }
+}
+
+
+
+/*-----------------------------------------------card inside-------------------*/
+
+.card .video-container {
+  display: none;
+}
+
+.card .img,.card h2,.card span{
+  animation: slideInFromTop 1s ease;
+}
+
+.card:hover .video-container {
+  display:inline-block;
+  animation: slideInFromTop 1s ease;
+}
+
+@keyframes slideInFromTop {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+  @keyframes slideInFromBottom {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(0);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(-20px);
+    }
+
+}
+
+
+.card:hover .img, .card:hover h2, .card:hover span {
+  display: none;
+}
+
+.card .video-container .about_the_work{
+  text-align: justify;
+  max-height: 150px;
+  max-width: 300px;
+}
+
+.card .video-container .try_button{
+  color:black;
+  background-color: white;
+  margin-top: 10px;
+  width: fit-content;
+  padding: 5px;
+  border-radius: 10px;
+}
 
 
 
@@ -329,9 +485,6 @@ body{
 
 .emaill{
   border-radius: 30px;
-  background-color: rgba(55, 55, 55, 0.5);
-  color: black;
-
 }
 
 .contactcontainer2{
@@ -349,7 +502,7 @@ body{
 }
 
 .contact-form {
-  margin-top: 130px;
+  margin-top: 100px;
   border-collapse: separate;
   border-spacing: 50px 20px; 
 }
@@ -408,7 +561,7 @@ textarea{
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: black; /*rgb(133, 53, 252,0.2)*/
   margin-bottom: 0;
   width: 100%;
   height: 200px;
@@ -417,6 +570,7 @@ textarea{
 
 .copyright{
   text-align: center;
+  color: white;
 }
 
 /*----------------------------------------------------------------*/
@@ -433,15 +587,19 @@ textarea{
   padding-right: 20px;
 }
 
-.github,.linkedin, .insta{
-  border-radius: 100%;
-  width:30px;
-  transition: 1s ease;
+.logos .git i,.logos .lin i,.logos .ins i{
+  width:15px;
+  transition: ease;
+  color: white;
 }
 
+.logos .git i:hover,.logos .lin i:hover,.logos .ins i:hover{
+  width:15px;
+  transition: ease;
+  color: rgb(133, 53, 252);
+}
 
 .logos a::before {
-  content: "";
   position: absolute;
   background-color: white;
   color: black;
@@ -482,4 +640,56 @@ textarea{
 
 
 
-/*---------------------------------------------------------------------------------------------------------------------------------*/
+/*----------------------------------------------------------Sun moon-----------------------------------------------------------------------*/
+
+.theme-switch {
+  cursor: pointer;
+}
+
+.theme-icon {
+  font-size: 17px;
+  vertical-align: middle;
+  position: absolute;
+}
+
+.moon-icon {
+  display: none;
+}
+
+.dark-mode .moon-icon {
+  display: inline;
+}
+
+.dark-mode .sun-icon {
+  display: none;
+  
+}
+
+.sun-icon:hover {
+  color: yellow;
+}
+
+.moon-icon:hover {
+  color: black;
+}
+
+
+/*-----------------------------------------------------------all transition ----------------------------------------*/
+
+@keyframes BodyslideInFromTop {
+  from {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    visibility: visible;
+    transform: translateY(0);
+  }
+}
+
+.slide-in {
+  animation: BodyslideInFromTop 0.8s ease-in-out;
+}
+
