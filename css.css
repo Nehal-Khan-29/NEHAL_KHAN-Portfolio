@@ -346,6 +346,25 @@ hr {
 	transform: translate(-50%, -50%);
 	left: -30px;
 }
+
+.lastcircle {
+	width: 20px;
+	height: 20px;
+	border-radius: 50%;
+	background-color: white;
+	display: grid;
+	place-items: center;
+}
+
+.lastcircle::after{
+  transform: translate(-50%,-50%);
+	content: ' ';
+	width: 12px;
+	height: 12px;
+	border-radius: 50%;
+}
+
+
 .timecontainer ul li .date {
 	position: absolute;
 	width: 130px;
