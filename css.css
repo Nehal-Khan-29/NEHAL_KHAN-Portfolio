@@ -36,6 +36,8 @@ hr {
   background: linear-gradient(to right, transparent, #ffffff, transparent);
 }
 
+
+
 .menubar{
     position: fixed;
     top: 0;
@@ -50,8 +52,6 @@ hr {
     background-color: rgb(133, 53, 252,0.8);
     z-index: 999;
 }
-
-
 
 .nklogo{
   position: absolute;
@@ -613,6 +613,7 @@ hr {
 
 .card .video-container .try_button{
   color:black;
+  font-weight: bold;
   background-color: white;
   margin-top: 10px;
   width: fit-content;
@@ -620,6 +621,16 @@ hr {
   border-radius: 10px;
 }
 
+.card .video-container .try_button:hover{
+  color:white;
+  background-color: black;
+  transition: 0.5s ease-in-out;
+}
+
+.card .video-container .try_button:hover .button{
+  color:white;
+  border: 1px white;
+}
 
 
 /*-----------------------------------------------------------------------contact----------------------------------------------------------*/
@@ -786,7 +797,19 @@ textarea{
   visibility: visible;
 }
 
+/*-------------------------------------------------------------music------------------------------------------------------------------------*/
 
+#myAudio {
+  display: none;
+}
+
+.fa-volume-high:hover{
+color: greenyellow;
+}
+
+.fa-volume-xmark:hover{
+color: red;
+}
 
 /*----------------------------------------------------------Sun moon-----------------------------------------------------------------------*/
 
