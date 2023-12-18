@@ -174,6 +174,26 @@ function toggleTheme() {
   }
 }
 
+/*------------------------------------------------------------------------------music-------------------------------------------------*/
+
+function toggleMute() {
+  var audio = document.getElementById('myAudio');
+  var icon = document.querySelector('#playButton span i');
+  
+  if (audio.muted) {
+    audio.play();
+    audio.muted = false;
+    icon.classList.remove('fa-volume-xmark');
+    icon.classList.add('fa-volume-high');
+  } else {
+    
+    audio.muted = true;
+    icon.classList.remove('fa-volume-high');
+    icon.classList.add('fa-volume-xmark');
+  }
+}
+
+toggleMute();
 
 /*-----------------------------------------------------------all transition ----------------------------------------*/
 
