@@ -1,4 +1,4 @@
-+<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
@@ -9,24 +9,24 @@
     <title>NEHAL KHAN Portfolio</title>
 </head>  
 
-<body style="background:linear-gradient(135deg, rgb(133, 53, 252), rgb(19, 8, 36));background-repeat: no-repeat;background-attachment: fixed;">
+<body style="background:linear-gradient(135deg, rgb(133, 53, 252), rgb(30, 13, 56));background-repeat: no-repeat;background-attachment: fixed;">
 
-        <main>
 
-        <!-- ----------------------------------------------------Navigation Bar---------------------------------------------------- -->
+        <!-- ----------------------------------------------------Navigation Bar-------------------------------------------------- -->
 
         <div class="navbar">
             <nav class="menubar">
                 <ul>
-                    <li><img class="nklogo" src="nksymbol2.png" alt="NK"></li>
+                    <li><img class="nklogo" src="assets\img\nksymbol2.png" alt="NK"></li>
                     <li><a href="#front"><b>Home</b></a></li>
                     <li><a href="#about"><b>About</b></a></li>
                     <li><a href="#education"><b>Education</b></a></li>
                     <li> <a href="#skills"><b>Skills</b></a></li>
                     <li> <a href="#work"><b>Work</b></a></li>
+                    <li> <a href="#achivement"><b>Achivement</b></a></li>
                     <li><a href="#contact"><b>Contact</b></a></li>
                     <audio id="myAudio" controls>
-                        <source src="audio.mp3" type="audio/mpeg">
+                        <source src="assets\audio\audio.mp3" type="audio/mpeg">
                     </audio>
                       
                     <li id="playButton" onclick="toggleMute()"><span><i class="fas fa-volume-high"></i></span></li> 
@@ -35,7 +35,8 @@
             </nav>
         </div>
 
-        <!-- ----------------------------------------------------Front---------------------------------------------------- -->
+
+        <!-- -------------------------------------------------------Front-------------------------------------------------------- -->
         
         
         <div id="front" class="front">
@@ -50,8 +51,8 @@
                         <span class="typing-3"></span>
                     </div>
 
-                    <a href="Profile.pdf" class="cv"><b>Download CV</b></a>
-                    <a href="#front" class="upp"><img src="up.png" alt="UP"></a>
+                    <a href="assets\Profile.pdf" class="cv"><b>Download CV</b></a>
+                    <a href="#front" class="upp"><img src="assets\img\up.png" alt="UP"></a>
 
                 </div>
 
@@ -60,7 +61,7 @@
         </div>
         
 
-        <!-- ----------------------------------------------------About Section---------------------------------------------------- -->
+        <!-- -------------------------------------------------------About ------------------------------------------------------- -->
 
         <div id="about" class="about">
 
@@ -77,7 +78,7 @@
 
                 <div class="aboutcontainer2">
 
-                    <div><img class="nkphoto" src="nk.jpg" alt="Nehal"></div>
+                    <div><img class="nkphoto" src="assets\img\nk.jpg" alt="Nehal"></div>
 
                     <div class="abtme">Hello!, I'm Nehal, a passionate code enthusiast with a keen interest in <strong style="color: black;">Open-source development</strong> and a strong commitment to <strong style="color: black;">full-stack programming</strong>.<br><br>
                     Currently serving as a mentor at Amrita Cognizance Club, I'm always excited to explore new technologies and collaborate on projects that make a positive impact.<br><br>
@@ -100,7 +101,8 @@
                
         </div>
 
-        <!-- ----------------------------------------------------Education---------------------------------------------------- -->
+
+        <!-- ----------------------------------------------------Education------------------------------------------------------- -->
 
         <div id="education" class="education">
 
@@ -153,8 +155,7 @@
         </div>
 
 
-        
-        <!-- ----------------------------------------------------Skills---------------------------------------------------- -->
+        <!-- ----------------------------------------------------Skills--------------------------------------------------------- -->
 
         <div id="skills" class="skills">
 
@@ -164,7 +165,7 @@
 
             <div class="skillscontainer">
 
-                <div class="skilltext">
+                <div class="skilltext1">
                     <div style="display: flex; flex-direction: row; align-items: center;justify-content:center">
                         <hr>
                         <strong>Thats all I know 🤓</strong>
@@ -174,18 +175,19 @@
 
                 <div class="skillscontainer2">
                     <div class="logoskill">
-                    <div id="i" class="py"><img id= "logobox" src="logo-python.png" alt="Python"></div>
-                    <div id="i" class="c++"><img id= "logobox" src="logo-c++.png" alt="C++"></div>
-                    <div id="i" class="c"><img id= "logobox" src="logo-c.png" alt="C"></div>
-                    <div id="i" class="ht"><img id= "logobox" src="logo-html.png" alt="HTML"></div>
-                    <div id="i" class="cs"><img id= "logobox" src="logo-css.png" alt="CSS"></div>
-                    <div id="i" class="js"><img id= "logobox" src="logo-js.png" alt="JS"></div>
-                    <div id="i" class="j"><img id= "logobox" src="logo-java.png" alt="Java"></div>
-                    <div id="i" class="s"><img id= "logobox" src="logo-sql.png" alt="SQL"></div>
-                    <div id="i" class="flu"><img id= "logobox" src="logo-flutter.png" alt="Flutter"></div>
-                    <div id="i" class="and"><img id= "logobox" src="logo-android.png" alt="Android"></div>
+                        <div class="py skill"><img class="logobox" src="assets\img\logo-python.png" alt="Python"><span class="skilltext">Python 90%</span></div>
+                        <div class="c++ skill"><img class="logobox" src="assets\img\logo-c++.png" alt="C++"><span class="skilltext">C++ 90%</span></div>
+                        <div class="c skill"><img class="logobox" src="assets\img\logo-c.png" alt="C"><span class="skilltext">C 85%</span></div>
+                        <div class="ht skill"><img class="logobox" src="assets\img\logo-html.png" alt="HTML"><span class="skilltext">HTML 90%</span></div>
+                        <div class="cs skill"><img class="logobox" src="assets\img\logo-css.png" alt="CSS"><span class="skilltext">CSS 90%</span></div>
+                        <div class="js skill"><img class="logobox" src="assets\img\logo-js.png" alt="JS"><span class="skilltext">JavaScript 75%</span></div>
+                        <div class="j skill"><img class="logobox" src="assets\img\logo-java.png" alt="Java"><span class="skilltext">Java 70%</span></div>
+                        <div class="s skill"><img class="logobox" src="assets\img\logo-sql.png" alt="SQL"><span class="skilltext">SQL 90%</span></div>
+                        <div class="flu skill"><img class="logobox" src="assets\img\logo-flutter.png" alt="Flutter"><span class="skilltext">Flutter 10%</span></div>
+                        <div class="and skill"><img class="logobox" src="assets\img\logo-android.png" alt="Android"><span class="skilltext">Android 70%</span></div>
                     </div>
                 </div>
+                
 
 
             </div>
@@ -193,7 +195,7 @@
         </div>
 
 
-        <!-- ----------------------------------------------------Work---------------------------------------------------- -->
+        <!-- ------------------------------------------------------Work--------------------------------------------------------- -->
         
         <div id="work" class="work">
 
@@ -212,7 +214,7 @@
                     <i id="left" class="fa-solid fa-angle-left"></i>
                     <ul class="carousel">
                       <li class="card">
-                        <div class="img"><img src="work-ad.png" alt="img" draggable="false"></div>
+                        <div class="img"><img src="assets\img\work-ad.png" alt="img" draggable="false"></div>
                         <h2>AfterDot</h2>
                         <span>A File Converter</span>
                         <div class="video-container">
@@ -222,7 +224,7 @@
                         </div>
                       </li>
                       <li class="card">
-                        <div class="img"><img src="work-vc.jpeg" alt="img" draggable="false"></div>
+                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="assets\img\work-vc.jpeg" alt="img" draggable="false"></a></div>
                         <h2>Voice Cam</h2>
                         <span>Laptop Camera Operator</span>
                         <div class="video-container">
@@ -232,17 +234,17 @@
                         </div>
                       </li>
                       <li class="card">
-                        <div class="img"><img src="work-cz.png" alt="img" draggable="false"></div>
+                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="assets\img\work-cz.png" alt="img" draggable="false"></a></div>
                         <h2>Codez</h2>
                         <span>Team Project Collaborator</span>
                         <div class="video-container">
-                            <img width="300" height="150" src="work-cz2.png" alt="img" draggable="false">
+                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/Sjh69Y4JF5M" frameborder="0" allowfullscreen></iframe>
                             <div class="about_the_work">Real time team project collaborator without switching between various softwares. This eliminates distractions and fosters productivity</div>
                             <div class="try_button"><a href="https://nehal-khan-29.github.io/Codez/" class="button"> Try It </a></div>
                         </div>
                       </li>
                       <li class="card">
-                        <div class="img"><img src="work-eyed.png" alt="img" draggable="false"></div>
+                        <div class="img"><img src="assets\img\work-eyed.png" alt="img" draggable="false"></div>
                         <h2>EyeD</h2>
                         <span>Facial & Object recognizer</span>
                         <div class="video-container">
@@ -257,74 +259,94 @@
             </div> 
 
         </div>
-    
 
+        <!-- ------------------------------------------------------achivement--------------------------------------------------------- -->
+        
+        <div id="achivement" class="achivement">
 
-    
-    </main>
+            <div class="header">
+                <h2>🏆</h2>
+            </div> 
 
-        <!-- ----------------------------------------------------Contact---------------------------------------------------- -->
+            <div class="achivementcontainer">   
 
-    <footer id="contact" class="contact">
-
-        <div class="header">
-            <h2>Contact</h2>
-        </div>  
-
-        <div class="contactcontainer">
-           
-            <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="color: white;display: flex; flex-direction: row; align-items: center;justify-content:center"><hr>👉🏻 Email:<strong style="color: orange">nehalmicro29@gmail.com 👈🏻</strong><hr></div></p></div>
-
-            <div class="contactcontainer2">
-
-                <div><img class="nk2" src="nk2.jpg" alt="Nehal Khan"></div>
-
-                <div class="contact-form-div">
-                    <table class="contact-form">
-                        <form action="https://formsubmit.co/nehalmicro29@gmail.com" method="post">
-                            <tr>
-                                <td class="form-group-title">Name</td>
-                                <td><input type="text" name="name" id="name" placeholder="Your Name"></td>
-                            </tr>
-                            <tr>
-                                <td class="form-group-title">Email</td>
-                                <td><input type="email" name="email" id="email" placeholder="Your Email"></td>
-                            </tr>
-                            <tr>
-                                <td class="form-group-title">Subject</td>
-                                <td><input type="text" name="subject" id="subject" placeholder="Your Subject" value="Contact by Portfolio"></td>
-                            </tr>
-                            <tr>
-                                <td class="form-group-title">Message</td>
-                                <td><textarea name="message" id="message" placeholder="Your Message"></textarea></td>
-                            </tr>
-                            <tr>
-                                <td></td>
-                                <td><button type="submit" class="btn-md">Send</button></td>
-                            </tr>
-                        </form>
-                    </table>
+                <div class="achivementtext">
+                    <div style="display: flex; flex-direction: row; align-items: center;justify-content:center">
+                    <hr><strong>All my recent Achivements 😎</strong><hr></div>
                 </div>
+
                 
+
+            </div> 
+
+        </div>
+
+
+        <!-- ----------------------------------------------------Contact-------------------------------------------------------- -->
+
+        <footer id="contact" class="contact">
+
+            <div class="header">
+                <h2>Contact</h2>
+            </div>  
+
+            <div class="contactcontainer">
+            
+                <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="color: white;display: flex; flex-direction: row; align-items: center;justify-content:center"><hr>👉🏻 Email:<strong style="color: orange">nehalmicro29@gmail.com 👈🏻</strong><hr></div></p></div>
+
+                <div class="contactcontainer2">
+
+                    <!--<div><img class="nk2" src="nk2.jpg" alt="Nehal Khan"></div>-->
+
+                    <div class="contact-form-div">
+                        <table class="contact-form">
+                            <form action="https://formsubmit.co/nehalmicro29@gmail.com" method="post">
+                                <tr>
+                                    <td class="form-group-title">Name</td>
+                                    <td><input type="text" name="name" id="name" placeholder="Your Name"></td>
+                                </tr>
+                                <tr>
+                                    <td class="form-group-title">Email</td>
+                                    <td><input type="email" name="email" id="email" placeholder="Your Email"></td>
+                                </tr>
+                                <tr>
+                                    <td class="form-group-title">Subject</td>
+                                    <td><input type="text" name="subject" id="subject" placeholder="Your Subject" value="Contact by Portfolio"></td>
+                                </tr>
+                                <tr>
+                                    <td class="form-group-title">Message</td>
+                                    <td><textarea name="message" id="message" placeholder="Your Message"></textarea></td>
+                                </tr>
+                                <tr>
+                                    <td></td>
+                                    <td><button type="submit" class="btn-md">Send</button></td>
+                                </tr>
+                            </form>
+                        </table>
+                    </div>
+                    
+                </div>
+
+            </div>
+
+        </footer>
+
+        <div class="contactcontainer3">
+
+            <div class="copyright">© Made by Nehal 😎. All rights reserved</div>
+
+            <div>
+                <ul class="logos">
+                    <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                    <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+                </ul>
             </div>
 
         </div>
 
-    </footer>
+       <!-- --------------------------------------------------------JS---------------------------------------------------------- -->
 
-    <div class="contactcontainer3">
-
-        <div class="copyright">© Made by Nehal 😎. All rights reserved</div>
-
-        <div>
-            <ul class="logos">
-                <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
-            </ul>
-        </div>
-
-    </div>
 
 <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11/lib/typed.min.js"></script>
 <script src="js.js"></script>       
