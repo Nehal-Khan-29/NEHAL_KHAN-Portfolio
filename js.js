@@ -128,6 +128,7 @@ function toggleTheme() {
   const emailltextSection = document.querySelector('.emaill strong');
   const headerSections = document.querySelectorAll('.header');
   const container3Sections = document.querySelector('.contactcontainer3');
+  const menubar = document.querySelector('.menubar');
 
   if (body.classList.contains('dark-mode')) {
     body.classList.remove('dark-mode');
@@ -149,6 +150,7 @@ function toggleTheme() {
       headerSection.style.border= '3px solid white';
     });
     container3Sections.style.background = 'black';
+    menubar.style.background= 'black';
 
       
   } else {
@@ -170,6 +172,7 @@ function toggleTheme() {
       headerSection.style.border= '3px solid black';
     });
     container3Sections.style.background = 'rgb(133, 53, 252,0.6)';
+    menubar.style.background= 'rgb(133, 53, 252,0.8)';
       
   }
 }
