@@ -24,7 +24,7 @@ body::before {
   left: 0;
   width: 100%;
   height: 100%;
-  background-image: url("body_design.png");
+  background-image: url("assets\\img\\body_design.png");
   background-size: cover;
   opacity: 0.7;
   z-index: -1;}
@@ -49,7 +49,7 @@ hr {
     text-align: right;
     transition: top 0.3s;
     display: block;
-    background-color: rgb(133, 53, 252,0.8);
+    background-color: black;
     z-index: 999;
 }
 
@@ -77,7 +77,8 @@ hr {
   padding-bottom: 10px;
 }
 
-.frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer, .contactcontainer{
+.frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+  background-color: rgba(0, 0, 0, 0.1);
   padding: 50px;
   min-height: 100vh;
   justify-content:center;
@@ -85,6 +86,8 @@ hr {
   text-align: center;
   display: block;
   z-index: 10;
+  max-width: 70%;
+  margin:  0 auto;
 }
 
 .header{
@@ -100,6 +103,7 @@ hr {
   border:3px solid white;
   ;
 }
+
 
 /*-----------------------------------------------------------------------front----------------------------------------------------------*/
 
@@ -150,7 +154,7 @@ hr {
   position: absolute;
   border: 0px;
   bottom: 50px;
-  left: 50px;
+  left: 20%;
   background-color: white;
   color: black;
   font-weight: bold;
@@ -177,16 +181,20 @@ hr {
 }
 
 .abtme{
+
   position: relative;
   border-radius: 10px;
   background-color:rgba(133, 53, 252,0.7);
   color: white;
   font-size: large;
   text-align: left;
-  margin-top:150px ;
+  /*margin-top:50px ;*/
+  margin-top: 150px;
   padding: 10px;
-  max-width: 700px;
+  /*max-width: 700px;*/
   height:fit-content;
+  /*height:550px;*/
+  max-width: 600px;
 }
 
 
@@ -416,19 +424,17 @@ hr {
 
   
 
-
-#logobox {
+.logobox {
   position: relative;
-  margin-top:50px;
+  margin-top: 50px;
   border: 2px solid white;
-  background-color: rgb(255, 255, 255,0.3);
+  background-image: linear-gradient(135deg, rgb(173, 118, 255), rgb(133, 53, 252));
   padding: 10px;
   border-radius: 10px;
-  width: 150px; 
-  height: 150px; 
-  object-fit:contain;
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
 }
-
 
 .logoskill {
   display: flex;
@@ -438,11 +444,40 @@ hr {
   align-items: flex-start;
 }
 
-.skilltext{
+.skilltext1{
   font-size: x-large;
   color: orange;
   margin-top: 50px;
   border-radius: 30px;
+}
+
+.skilltext {
+  font-size: x-large;
+  color: rgb(173, 118, 255);
+  margin-top: 50px;
+  font-weight: bold;
+  border-radius: 10px;
+  display: none; 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.8);
+  text-align: center;
+  padding: 10px;
+  padding-left: 100%;
+  padding-right: 100%;
+  box-sizing: border-box;
+  
+}
+
+.logoskill .skill {
+  position: relative;
+  overflow: hidden;
+}
+
+.logoskill .skill:hover .skilltext {
+  display: block; 
 }
 
 
@@ -487,7 +522,7 @@ hr {
 .wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
-  grid-auto-columns: calc((100% / 4) - 12px);
+  grid-auto-columns: calc((100% / 3) - 12px);
   overflow-x: auto;
   scroll-snap-type: x mandatory;
   gap: 16px;
@@ -543,6 +578,7 @@ hr {
 }
 .carousel .card span {
   color: black;
+  font-weight: bold;
   font-size: 1.31rem;
 }
 @media screen and (max-width: 900px) {
@@ -608,6 +644,7 @@ hr {
 .card .video-container .about_the_work{
   text-align: justify;
   max-height: 150px;
+  font-weight: bold;
   max-width: 300px;
 }
 
@@ -630,6 +667,15 @@ hr {
 .card .video-container .try_button:hover .button{
   color:white;
   border: 1px white;
+}
+
+/*-----------------------------------------------------------------------achivement----------------------------------------------------------*/
+
+.achivementtext{
+  font-size: x-large;
+  margin-top: 50px;
+  color: greenyellow;
+  border-radius: 30px;
 }
 
 
@@ -863,4 +909,3 @@ color: red;
 .slide-in {
   animation: BodyslideInFromTop 0.8s ease-in-out;
 }
-
