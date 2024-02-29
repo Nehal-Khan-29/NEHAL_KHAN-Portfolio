@@ -113,6 +113,79 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 
+// --------------------------------------------------------achivement --------------------------------------------------------------
+
+let currentIndex = 0;
+const slides = document.querySelectorAll('.card2');
+const totalSlides = slides.length;
+let autoplayInterval; 
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+    if (i === index) {
+      slide.style.display = 'block';
+    } else {
+      slide.style.display = 'none';
+    }
+  });
+}
+
+function nextSlide() {
+  currentIndex = (currentIndex + 1) % totalSlides;
+  showSlide(currentIndex);
+}
+
+function prevSlide() {
+  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
+  showSlide(currentIndex);
+}
+
+function startAutoplay() {
+  autoplayInterval = setInterval(nextSlide, 4000); 
+}
+
+function stopAutoplay() {
+  clearInterval(autoplayInterval);
+}
+
+document.getElementById('left2').addEventListener('click', () => {
+  stopAutoplay(); 
+  prevSlide();
+});
+
+document.getElementById('right2').addEventListener('click', () => {
+  stopAutoplay(); 
+  nextSlide();
+});
+
+showSlide(currentIndex); 
+startAutoplay(); 
+
+function updateCircles() {
+  const circlesContainer = document.querySelector('.circles-indexx');
+  circlesContainer.innerHTML = ''; 
+
+  for (let i = 0; i < totalSlides; i++) {
+      const circle = document.createElement('div');
+      circle.classList.add('circle-indexx');
+      if (i === currentIndex) {
+          circle.classList.add('active');
+      }
+      circlesContainer.appendChild(circle);
+  }
+}
+
+function showSlide(index) {
+  slides.forEach((slide, i) => {
+      if (i === index) {
+          slide.style.display = 'block';
+      } else {
+          slide.style.display = 'none';
+      }
+  });
+  updateCircles(); 
+}
+updateCircles();
 
 
 // --------------------------------------------------------SUN MOON --------------------------------------------------------------
@@ -150,7 +223,7 @@ function toggleTheme() {
       headerSection.style.border= '3px solid white';
     });
     container3Sections.style.background = 'black';
-    menubar.style.background= 'black';
+    menubar.style.background= 'rgb(30, 13, 56)';
 
       
   } else {
@@ -212,7 +285,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos');
+  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos,.wrapper2');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
