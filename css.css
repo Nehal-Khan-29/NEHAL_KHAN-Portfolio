@@ -730,6 +730,11 @@ hr {
   width: fit-content;
 }
 
+.abtcerti span{
+  color : white;
+  font-weight: 500;
+}
+
 .try_button2{
   margin-top: 10px;
 }
