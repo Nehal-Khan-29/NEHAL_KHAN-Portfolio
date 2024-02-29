@@ -1,3 +1,7 @@
+
+
+//============================================================================ Front ======================================================================
+
 document.addEventListener('DOMContentLoaded', () => {
 
   // typing 1
@@ -39,7 +43,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// --------------------------------------------------------Work --------------------------------------------------------------
+//============================================================================ work ======================================================================
 
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
@@ -113,7 +117,7 @@ wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
 
-// --------------------------------------------------------achivement --------------------------------------------------------------
+//============================================================================ Achivement ======================================================================
 
 let currentIndex = 0;
 const slides = document.querySelectorAll('.card2');
@@ -188,13 +192,14 @@ function showSlide(index) {
 updateCircles();
 
 
-// --------------------------------------------------------SUN MOON --------------------------------------------------------------
+//============================================================================ SUN MOON ======================================================================
+
 function toggleTheme() {
   const body = document.body;
   const sunIcon = document.querySelector('.sun-icon');
   const copyrightSection = document.querySelector('.copyright');
   const cardSections = document.querySelectorAll('.card');
-  const skilltextSection = document.querySelector('.skilltext');
+  const skilltextSection = document.querySelector('.skilltext1');
   const worktextSection = document.querySelector('.worktext');
   const abouttextSection = document.querySelector('.abouttext');
   const educationtextSection = document.querySelector('.educationtext');
@@ -202,10 +207,14 @@ function toggleTheme() {
   const headerSections = document.querySelectorAll('.header');
   const container3Sections = document.querySelector('.contactcontainer3');
   const menubar = document.querySelector('.menubar');
+  const tabletitles = document.querySelectorAll('.form-group-title');
 
+
+  
   if (body.classList.contains('dark-mode')) {
     body.classList.remove('dark-mode');
     
+    document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design.png")');
     body.style.background = 'linear-gradient(135deg, rgb(133, 53, 252), rgb(19, 8, 36))';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
@@ -224,9 +233,25 @@ function toggleTheme() {
     });
     container3Sections.style.background = 'black';
     menubar.style.background= 'rgb(30, 13, 56)';
+    tabletitles.forEach(tabletitle => {
+      tabletitle.style.border='3px solid white';
+      tabletitle.style.color='white';
+    });
+    document.querySelectorAll('input').forEach(inputElement => {
+      inputElement.style.border = '3px solid white';
+      inputElement.style.background = 'white';
+      inputElement.style.color = 'black';
+    });
+    document.querySelectorAll('textarea').forEach(textareaElement => {
+      textareaElement.style.border = '3px solid white';
+      textareaElement.style.background = 'white';
+      textareaElement.style.color = 'black';
+    });
+    
 
       
   } else {
+    document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design_2.png")');
     body.classList.add('dark-mode');
     body.style.background = 'linear-gradient(135deg, white,rgb(133, 53, 252))'; 
     body.style.backgroundRepeat = 'no-repeat';
@@ -246,11 +271,24 @@ function toggleTheme() {
     });
     container3Sections.style.background = 'rgb(133, 53, 252,0.6)';
     menubar.style.background= 'rgb(133, 53, 252,0.8)';
-      
+    tabletitles.forEach(tabletitle => {
+      tabletitle.style.border='3px solid rgb(30, 13, 56)';
+      tabletitle.style.color='rgb(30, 13, 56)';
+    });
+    document.querySelectorAll('input').forEach(inputElement => {
+      inputElement.style.border = '3px solid rgb(30, 13, 56)';
+      inputElement.style.background = 'rgb(30, 13, 56)';
+      inputElement.style.color = 'white';
+    });
+    document.querySelectorAll('textarea').forEach(textareaElement => {
+      textareaElement.style.border = '3px solid rgb(30, 13, 56)';
+      textareaElement.style.background = 'rgb(30, 13, 56)';
+      textareaElement.style.color = 'white';
+    });
   }
 }
 
-/*------------------------------------------------------------------------------music-------------------------------------------------*/
+//============================================================================ Music ======================================================================
 
 function toggleMute() {
   var audio = document.getElementById('myAudio');
@@ -271,7 +309,7 @@ function toggleMute() {
 
 toggleMute();
 
-/*-----------------------------------------------------------all transition ----------------------------------------*/
+//============================================================================ All transitions ======================================================================
 
 
 function isInViewport(element) {
@@ -302,3 +340,5 @@ function handleScroll() {
 
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
+
+//============================================================================ ==== ======================================================================
