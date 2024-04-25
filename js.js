@@ -69,11 +69,11 @@ document.addEventListener('DOMContentLoaded', () => {
       setTimeout(() => {
       const typed3 = new Typed(".typing-3", {
         strings: [
-          "<span style='color:black'>a Program Dev </span>",
-          "<span style='color:black'>a Competitive Solver</span>",
-          "<span style='color:black'>a Passionate Artist</span>",
-          "<span style='color:black'>an Enthu Gamer</span>",
-          "<span style='color:black'>an Inspiring Leader</span>",
+          "<span>a Program Dev </span>",
+          "<span>a Competitive Solver</span>",
+          "<span>a Passionate Artist</span>",
+          "<span>an Enthu Gamer</span>",
+          "<span>an Inspiring Leader</span>",
         ],
         typeSpeed: 100,
         backSpeed: 60,
