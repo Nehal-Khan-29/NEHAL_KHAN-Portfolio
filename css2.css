@@ -49,6 +49,20 @@
     }
 }
 
+/*-----------------------------------------------------------------------body----------------------------------------------------------*/
+
+    @media only screen and (max-width: 1430px){
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+            max-width: 80%;
+        }
+    }
+
+    @media only screen and (max-width: 1420px){
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+            max-width: 90%;
+        }
+    }
+
 /*-----------------------------------------------------------------------Front----------------------------------------------------------*/
 
 @media only screen and (max-width: 930px){
@@ -71,5 +85,119 @@
     .text1{
         margin-left: 10%;
         margin-top: 30%;
+    }
+}
+
+/*-----------------------------------------------------------------------Front----------------------------------------------------------*/
+
+@media only screen and (max-width: 1420px){
+    .aboutcontainer2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+    }
+
+    .abtme{
+        margin-top: 50px;
+    }
+    
+}
+
+/*-----------------------------------------------------------------------achivement----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 880px){
+    .img2 img{
+        width: 525px;
+        height: 350px;
+    }
+
+    .abtcerti{
+        width: 525px;
+    }
+
+    .abtcerti h2{
+        font-size: large;
+    }
+    .abtcerti span{
+        font-size: small;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .img2 img{
+        width: 450px;
+        height: 300px;
+    }
+    .abtcerti{
+        width: 450px;
+    }
+}
+
+@media only screen and (max-width: 690px){
+    .img2 img{
+        width: 375px;
+        height: 250px;
+    }
+    .abtcerti{
+        width: 375px;
+    }
+}
+
+/*-----------------------------------------------------------------------contact----------------------------------------------------------*/
+
+@media only screen and (max-width: 1020px){
+    .form-group-title{
+        width: 100px;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 400px;
+    }
+    .contact-form {
+        border-spacing: 30px 20px; 
+      }
+}
+
+@media only screen and (max-width: 900px){
+    .letsconnect{
+        font-size: larger;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 350px;
+    }
+    .contact-form {
+        border-spacing: 20px 20px; 
+      }
+}
+
+@media only screen and (max-width: 770px){
+    .letsconnect{
+        font-size: medium;
+    }
+    .contact-form input, .contact-form textarea{
+        width: 300px;
+    }
+    .contact-form {
+        border-spacing: 0px 20px; 
+      }
+}
+
+@media only screen and (max-width: 690px){
+    .contact-form-div {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .contact-form tr{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 10px;
+    }
+
+    .contact-form input, .contact-form textarea{
+        margin-top: 10px;
     }
 }
