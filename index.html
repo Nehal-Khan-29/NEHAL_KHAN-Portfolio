@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
+    <link rel="stylesheet" href="css2.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="icon" href="assets\img\nksymbol2.png" type="image/x-icon">
     <title>NEHAL KHAN Portfolio</title>
@@ -18,7 +19,7 @@
         <div class="navbar">
             <nav class="menubar">
                 <ul>
-                    <li><img class="nklogo" src="assets\img\nksymbol2.png" alt="NK"></li>
+                    <li id="nklogo"><img class="nklogo" src="assets\img\nksymbol2.png" alt="NK"></li>
                     <li><a href="#front"><b>Home</b></a></li>
                     <li><a href="#about"><b>About</b></a></li>
                     <li><a href="#education"><b>Education</b></a></li>
@@ -26,12 +27,20 @@
                     <li><a href="#work"><b>Work</b></a></li>
                     <li><a href="#achivement"><b>Achivement</b></a></li>
                     <li><a href="#contact"><b>Contact</b></a></li>
-                    <audio id="myAudio" controls>
-                        <source src="assets\audio\audio.mp3" type="audio/mpeg">
-                    </audio>
-                      
+                    <audio id="myAudio" controls><source src="assets\audio\audio.mp3" type="audio/mpeg"></audio>
                     <li id="playButton" onclick="toggleMute()"><span><i class="fas fa-volume-high"></i></span></li> 
                     <li class="theme-switch" onclick="toggleTheme()"><span class="theme-icon sun-icon"><i class="fas fa-sun"></i></span><span class="theme-icon moon-icon"><i class="fas fa-moon"></i></span></li>
+                    <li id="menuToggle"><span class="dots-btn" onclick="toggleMenu()"><i class="fas fa-ellipsis-v"></i></span></li>
+                    <li id="menulist" class="menu-open"><ul>
+                        <li><a href="#front"><b>Home</b></a></li>
+                        <li><a href="#about"><b>About</b></a></li>
+                        <li><a href="#education"><b>Education</b></a></li>
+                        <li><a href="#skills"><b>Skills</b></a></li>
+                        <li><a href="#work"><b>Work</b></a></li>
+                        <li><a href="#achivement"><b>Achivement</b></a></li>
+                        <li><a href="#contact"><b>Contact</b></a></li>
+                    </li>
+                </ul>
                 
             </nav>
         </div>
@@ -186,6 +195,7 @@
                         <div class="s skill"><img class="logobox" src="assets\img\logo-sql.png" alt="SQL"><span class="skilltext">SQL 90%</span></div>
                         <div class="flu skill"><img class="logobox" src="assets\img\logo-flutter.png" alt="Flutter"><span class="skilltext">Flutter 10%</span></div>
                         <div class="and skill"><img class="logobox" src="assets\img\logo-android.png" alt="Android"><span class="skilltext">Android 70%</span></div>
+                        <div class="leet skill"><a href="https://leetcode.com/Nehal-Khan-29/" target="_blank"><img class="logobox" src="assets\img\logo-leetcode.png" alt="Android"><span class="skilltext">Leetcode</span></a></div>
                     </div>
                 </div>
                 
