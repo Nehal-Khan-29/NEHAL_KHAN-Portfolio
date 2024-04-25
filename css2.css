@@ -50,3 +50,15 @@
 }
 
 /*-----------------------------------------------------------------------Front----------------------------------------------------------*/
+
+@media only screen and (max-width: 930px){
+    .text1 span{
+        font-size: 25px;
+    }
+}
+
+@media only screen and (max-width: 760px){
+    .text1{
+        margin-left: 10%;
+    }
+}
