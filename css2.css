@@ -1,0 +1,52 @@
+
+/*-----------------------------------------------------------------------Nav bar----------------------------------------------------------*/
+
+
+#menuToggle {
+    display: none;
+}
+
+#menuToggle:hover{
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    transition: 0.2s ease-in-out;
+    
+}
+
+#menulist{
+    display: none;
+    position: absolute;
+    top: 35px;
+    right: 50px;
+    border-radius: 5px;
+    background-color: rgb(30, 13, 56);
+    color: white;
+    width: 200px; 
+    height:fit-content;
+    text-align: center;
+    list-style-type: none;
+}
+
+#menulist li {
+    padding-bottom: 5px; 
+}
+
+@media only screen and (max-width: 1150px) {
+    #menuToggle, #nklogo{
+        display: inline;
+    }
+
+    .menubar li {
+        display: none;
+    }
+
+}
+
+@media only screen and (min-width: 1151px) {
+    #menulist li , #menulist{
+        display: none;
+    }
+}
+
+/*-----------------------------------------------------------------------Front----------------------------------------------------------*/
