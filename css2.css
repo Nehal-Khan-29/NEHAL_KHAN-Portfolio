@@ -63,6 +63,12 @@
         }
     }
 
+    @media only screen and (max-width: 410px){
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+            max-width: 95%;
+        }
+    }
+
 /*-----------------------------------------------------------------------Front----------------------------------------------------------*/
 
 @media only screen and (max-width: 930px){
@@ -88,7 +94,7 @@
     }
 }
 
-/*-----------------------------------------------------------------------Front----------------------------------------------------------*/
+/*-----------------------------------------------------------------------about----------------------------------------------------------*/
 
 @media only screen and (max-width: 1420px){
     .aboutcontainer2 {
@@ -101,6 +107,81 @@
         margin-top: 50px;
     }
     
+}
+
+@media only screen and (max-width: 410px){
+
+    .nkphoto{
+        height: 450px;
+        width: auto;
+    }
+
+    .abtme{
+        height: auto;
+        width: 307px;
+    }
+
+    .abouttext{
+        font-size: large;
+    }
+    
+}
+
+/*-----------------------------------------------------------------------skills----------------------------------------------------------*/
+
+@media only screen and (max-width: 410px){
+
+    .skilltext1{
+        margin-bottom: 50px;
+        font-size: large;
+    }
+
+    .skilltext{
+        margin-top: 5px;
+        font-size: medium;
+    }
+
+    .logobox{
+        width: 100px;
+        height: 100px;
+        margin-top: 10px;
+    }
+
+    .logoskill {
+        gap: 20px;
+      }
+    
+}
+
+/*-----------------------------------------------------------------------work----------------------------------------------------------*/
+
+
+@media only screen and (max-width: 410px){
+
+    .worktext{
+        font-size: medium;
+    }
+    .wrapper i:first-child{
+        left: -50px;
+    }
+    .wrapper i:last-child{
+        right: -50px;
+    }
+
+    .video-container iframe{
+        width:130;
+        height:80;
+    }
+
+    .about_the_work{
+        margin-top: 10px;
+        padding:0 30px 0 30px;
+        font-size: small;
+    }
+
+    .try_button{
+        margin-left: 30px;
+    }
 }
 
 /*-----------------------------------------------------------------------achivement----------------------------------------------------------*/
@@ -141,6 +222,28 @@
     }
     .abtcerti{
         width: 375px;
+    }
+}
+
+@media only screen and (max-width: 410px){
+    .img2 img{
+        width: 275px;
+        height: 183px;
+    }
+    .abtcerti{
+        width: 275px;
+    }
+
+    .wrapper2 i:first-child{
+        left: -50px;
+      }
+    .wrapper2 i:last-child{
+        right: -50px;
+      }
+
+    .circles-indexx {
+        margin-top: 120px;
+
     }
 }
 
@@ -201,3 +304,10 @@
         margin-top: 10px;
     }
 }
+
+@media only screen and (max-width: 410px){
+    .btn-md{
+        margin-left: 0px;
+      }
+}
+
