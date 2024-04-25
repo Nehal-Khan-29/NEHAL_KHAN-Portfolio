@@ -131,18 +131,14 @@
 
 @media only screen and (max-width: 620px){
     
-    .educationcontainer {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start; /* Align items to the start (left) */
-      }
+
       
       .educationtext {
         font-size: x-large;
         color: orange;
         margin-top: 50px;
         border-radius: 30px;
-        text-align: left; /* Align text to the left */
+
       }
       
       .main {
@@ -151,12 +147,12 @@
       }
       
       .timecontainer {
-        width: 100%; /* Adjust width */
+        width: 100%; 
       }
       
       .timecontainer ul {
         list-style: none;
-        padding: 0; /* Remove default padding */
+        padding: 0; 
       }
       
       .timecontainer ul li {
