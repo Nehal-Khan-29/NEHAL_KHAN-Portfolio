@@ -127,6 +127,84 @@
     
 }
 
+/*-----------------------------------------------------------------------education----------------------------------------------------------*/
+
+@media only screen and (max-width: 620px){
+    
+    .educationcontainer {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start; /* Align items to the start (left) */
+      }
+      
+      .educationtext {
+        font-size: x-large;
+        color: orange;
+        margin-top: 50px;
+        border-radius: 30px;
+        text-align: left; /* Align text to the left */
+      }
+      
+      .main {
+        width: 100%;
+        margin-top: 30px;
+      }
+      
+      .timecontainer {
+        width: 100%; /* Adjust width */
+      }
+      
+      .timecontainer ul {
+        list-style: none;
+        padding: 0; /* Remove default padding */
+      }
+      
+      .timecontainer ul li {
+        width: 100%;
+        margin-bottom: 50px;
+      }
+      
+      .timecontainer ul li .heading {
+        font-size: large;
+        color: greenyellow;
+      }
+      
+      .timecontainer ul li p, .timecontainer ul li a, .timecontainer ul li .date {
+        font-size: medium;
+        color: white;
+        line-height: 18px;
+        margin: 6px 0 4px 0;
+        font-weight: bold;
+        text-decoration: none;
+      }
+      
+      .timecontainer ul li a {
+        color: black;
+        transition: all 0.3s ease;
+      }
+
+      .timecontainer ul li:nth-child(odd) {
+        float: right;
+        clear: left;
+        text-align: right;
+        transform: translateX(0px);
+    }
+
+    .timecontainer ul li:nth-child(even) {
+        float: right;
+        clear: left;
+        text-align: left;
+        transform: translateX(0px);
+    }
+
+      .circle::after{
+        display: none;
+      }
+      .timecontainer ul li .circle{
+        display: none;
+      }
+      
+}
 /*-----------------------------------------------------------------------skills----------------------------------------------------------*/
 
 @media only screen and (max-width: 410px){
@@ -321,7 +399,7 @@
     .contact-form{
         margin-top: 50px;
     }
-    
+
     .btn-md{
         margin-left: 0px;
       }
