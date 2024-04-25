@@ -161,6 +161,11 @@
     .worktext{
         font-size: medium;
     }
+
+    .wrapper{
+        margin-top: 50px;
+    }
+
     .wrapper i:first-child{
         left: -50px;
     }
@@ -245,6 +250,9 @@
         margin-top: 120px;
 
     }
+    .achivementtext{
+        font-size: medium;
+    }
 }
 
 /*-----------------------------------------------------------------------contact----------------------------------------------------------*/
@@ -290,7 +298,6 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
     
     .contact-form tr{
@@ -309,5 +316,13 @@
     .btn-md{
         margin-left: 0px;
       }
+
+    .letsconnect{
+        font-size: small;
+    }
+
+    .copyright{
+        font-size: small;
+    }
 }
 
