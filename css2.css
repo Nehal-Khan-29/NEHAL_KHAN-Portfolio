@@ -94,7 +94,7 @@
     }
 }
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 500px){
     .text1{
         margin-left: 0%;
         margin-top: 30%;
@@ -127,7 +127,7 @@
     
 }
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 500px){
 
     .nkphoto{
         height: 450px;
@@ -221,7 +221,7 @@
 }
 /*-----------------------------------------------------------------------skills----------------------------------------------------------*/
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 500px){
 
     .skilltext1{
         margin-bottom: 50px;
@@ -248,7 +248,7 @@
 /*-----------------------------------------------------------------------work----------------------------------------------------------*/
 
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 500px){
 
     .worktext{
         font-size: medium;
@@ -322,7 +322,7 @@
     }
 }
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 500px){
     .img2 img{
         width: 275px;
         height: 183px;
@@ -409,7 +409,7 @@
     }
 }
 
-@media only screen and (max-width: 410px){
+@media only screen and (max-width: 500px){
     .contact-form{
         margin-top: 50px;
     }
