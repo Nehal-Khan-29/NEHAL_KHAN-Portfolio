@@ -15,6 +15,7 @@ html{
 
 body{
     height: auto;
+    overflow-x: hidden;
 }
 
 body::before {
@@ -28,6 +29,7 @@ body::before {
   background-size: cover;
   opacity: 0.7;
   z-index: -1;}
+
 
 hr {
   border: 0; 
@@ -859,6 +861,25 @@ textarea{
   color: white;
   transition: 0.5s ease;
 }
+
+
+.walkgif{
+  z-index: 990;
+  margin-top: 50px;
+}
+
+.walkgif img{
+  position: absolute;
+  height: 100px;
+  width:auto;
+  animation: move 15s linear infinite; 
+}
+
+@keyframes move {
+  0% { left: -100px; } 
+  100% { left: calc(100%); }
+}
+
 
 /*----------------------------------------------------------------*/
 
