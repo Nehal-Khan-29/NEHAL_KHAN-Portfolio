@@ -862,25 +862,6 @@ textarea{
   transition: 0.5s ease;
 }
 
-
-.walkgif{
-  z-index: 990;
-  margin-top: 50px;
-}
-
-.walkgif img{
-  position: absolute;
-  height: 100px;
-  width:auto;
-  animation: move 15s linear infinite; 
-}
-
-@keyframes move {
-  0% { left: -100px; } 
-  100% { left: calc(100%); }
-}
-
-
 /*----------------------------------------------------------------*/
 
 .contactcontainer3{
