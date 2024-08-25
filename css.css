@@ -110,19 +110,11 @@ hr {
 
 /*-----------------------------------------------------------------------front----------------------------------------------------------*/
 
-.text1 span {
-  font-weight: 700;
-}
 
 .text1{
   margin-top: 10%;
 }
 
-.typing-1 {
-  font-size:90px;
-  font-family: "Bauhaus 93", sans-serif;
-  animation: fadeIn 1.5s linear ; 
-}
 
 @keyframes fadeIn {
   0% {
