@@ -278,19 +278,6 @@ function toggleTheme() {
       textareaElement.style.background = 'white';
       textareaElement.style.color = 'black';
     });
-
-    function handleMouseOver(event) {
-      event.target.style.backgroundColor = '#420084';
-    }
-    function handleMouseOut(event) {
-      event.target.style.backgroundColor = '#7f00ff'; 
-    }
-
-    skulhover.forEach(skulhoverr => {
-      skulhoverr.style.background= '#7f00ff';
-      skulhoverr.addEventListener('mouseover', handleMouseOver);
-      skulhoverr.addEventListener('mouseout', handleMouseOut);
-    });
     abtmesec.style.background="rgba(133, 53, 252,0.7)";
     
 
@@ -327,18 +314,9 @@ function toggleTheme() {
       textareaElement.style.background = 'rgb(30, 13, 56)';
       textareaElement.style.color = 'white';
     });
-
-    function handleMouseOver(event) {
-      event.target.style.backgroundColor = '#7f00ff';
-    }
-    function handleMouseOut(event) {
-      event.target.style.backgroundColor = '#420084'; 
-    }
-
+    
     skulhover.forEach(skulhoverr => {
       skulhoverr.style.background= '#420084';
-      skulhoverr.addEventListener('mouseover', handleMouseOver);
-      skulhoverr.addEventListener('mouseout', handleMouseOut);
     });
 
     abtmesec.style.background=("rgba(38, 16, 70,0.7)");
