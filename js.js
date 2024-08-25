@@ -278,7 +278,12 @@ function toggleTheme() {
       textareaElement.style.background = 'white';
       textareaElement.style.color = 'black';
     });
-    abtmesec.style.background="rgba(133, 53, 252,0.7)";
+
+    skulhover.forEach(skulhoverr => {
+      skulhoverr.style.backgroundImage = 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
+    });
+
+    abtmesec.style.backgroundImage= 'linear-gradient(135deg, rgb(152, 87, 251,0.7),rgb(120, 33, 250,0.7))';
     
 
       
