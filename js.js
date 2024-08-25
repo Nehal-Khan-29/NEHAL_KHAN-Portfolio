@@ -43,46 +43,41 @@ function toggleMenu() {
 
 //============================================================================ Front ======================================================================
 
-document.addEventListener('DOMContentLoaded', () => {
+/*document.addEventListener('DOMContentLoaded', () => {
 
   // typing 1
       const typed1 = new Typed(".typing-1", {
           strings: [
-              "<span style='color:white'>Hi, my name is <strong style='color:white'>Nehal Khan</strong></span>",
+              "<span style='color:white'>NEHAL KHAN</strong></span>",
             ],
-          typeSpeed: 70,
+          typeSpeed: 50,
           showCursor: false
       });
 
-  // typing 2
-      setTimeout(() => {
-      const typed2 = new Typed(".typing-2", {
-          strings: [
-              "<span style='color:white'>I'm</span>",
-            ],
-          typeSpeed: 70,
-          showCursor: false
-      });
-    }, 3000);
-      
-  // typing 3
-      setTimeout(() => {
-      const typed3 = new Typed(".typing-3", {
-        strings: [
-          "<span>a Program Dev </span>",
-          "<span>a Competitive Solver</span>",
-          "<span>a Passionate Artist</span>",
-          "<span>an Enthu Gamer</span>",
-          "<span>an Inspiring Leader</span>",
-        ],
-        typeSpeed: 100,
-        backSpeed: 60,
-        loop: true,
-        showCursor: false
-      });
-    }, 4000);
 
-});
+
+});*/
+
+//============================================================================ skill ======================================================================
+
+function toggleSkill(listId) {
+
+  var allLists = document.getElementsByClassName("skillscontainer2")[0].getElementsByTagName("ul");
+  for (var i = 0; i < allLists.length; i++) {
+    if (allLists[i].id === listId) {
+      if (allLists[i].style.display === "none" || allLists[i].style.display === "") {
+        allLists[i].style.display = "block";
+      } else {
+        allLists[i].style.display = "none";
+      }
+    } else {
+      allLists[i].style.display = "none";
+    }
+  }
+}
+
+
+
 
 //============================================================================ work ======================================================================
 
@@ -256,24 +251,19 @@ function toggleTheme() {
     body.classList.remove('dark-mode');
     
     document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design.png")');
-    body.style.background = 'linear-gradient(135deg, rgb(133, 53, 252), rgb(19, 8, 36))';
+    body.style.backgroundColor = 'rgb(38, 16, 70)';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
     copyrightSection.style.color= 'white';
     cardSections.forEach(cardSection => {
-      cardSection.style.background= 'linear-gradient(135deg,rgb(133, 53, 252),rgb(173, 118, 255))';
+      cardSection.style.background= 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
     });
-    skilltextSection.style.color= 'orange';
-    worktextSection.style.color= 'greenyellow';
-    abouttextSection.style.color= 'greenyellow';
-    emailltextSection.style.color= 'orange';
-    educationtextSection.style.color= 'orange';
     headerSections.forEach(headerSection => {
       headerSection.style.color= 'white';
       headerSection.style.border= '3px solid white';
     });
     container3Sections.style.background = 'black';
-    menubar.style.background= 'rgb(30, 13, 56)';
+    menubar.style.background= 'black';
     tabletitles.forEach(tabletitle => {
       tabletitle.style.border='3px solid white';
       tabletitle.style.color='white';
@@ -294,18 +284,13 @@ function toggleTheme() {
   } else {
     document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design_2.png")');
     body.classList.add('dark-mode');
-    body.style.background = 'linear-gradient(135deg, white,rgb(133, 53, 252))'; 
+    body.style.backgroundColor = 'rgb(133, 53, 252)'; 
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
     copyrightSection.style.color= 'black';
     cardSections.forEach(cardSection => {
       cardSection.style.background='linear-gradient(135deg, rgb(173, 118, 255),rgb(133, 53, 252))';
     });
-    skilltextSection.style.color= 'blue';
-    worktextSection.style.color= 'blue';
-    abouttextSection.style.color= 'blue';
-    emailltextSection.style.color= 'blue';
-    educationtextSection.style.color= 'blue';
     headerSections.forEach(headerSection => {
       headerSection.style.color= 'black';
       headerSection.style.border= '3px solid black';
@@ -364,7 +349,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos,.wrapper2');
+  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos,.wrapper2,.skillscontainer2');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
@@ -382,4 +367,9 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
 
-//============================================================================ ==== ======================================================================
+//===========================cursor================================================= ==== ======================================================================
+
+//var cursor = document.getElementById('curs');
+//window.onmousemove = function(e){
+//cursor.style.left = e.clientX + 'px';
+//cursor.style.top = e.clientY + 'px';}
