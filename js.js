@@ -232,16 +232,13 @@ updateCircles();
 
 function toggleTheme() {
   const body = document.body;
-  const sunIcon = document.querySelector('.sun-icon');
+  const abtmesec = document.querySelector('.abtme');
   const copyrightSection = document.querySelector('.copyright');
   const cardSections = document.querySelectorAll('.card');
-  const skilltextSection = document.querySelector('.skilltext1');
-  const worktextSection = document.querySelector('.worktext');
-  const abouttextSection = document.querySelector('.abouttext');
-  const educationtextSection = document.querySelector('.educationtext');
-  const emailltextSection = document.querySelector('.emaill strong');
+  const skulhover = document.querySelectorAll('.skul');
   const headerSections = document.querySelectorAll('.header');
   const container3Sections = document.querySelector('.contactcontainer3');
+  const container3Sectionscopyright= document.querySelector('.copyright');
   const menubar = document.querySelector('.menubar');
   const tabletitles = document.querySelectorAll('.form-group-title');
 
@@ -263,6 +260,7 @@ function toggleTheme() {
       headerSection.style.border= '3px solid white';
     });
     container3Sections.style.background = 'black';
+    container3Sectionscopyright.style.color = 'white';
     menubar.style.background= 'black';
     tabletitles.forEach(tabletitle => {
       tabletitle.style.border='3px solid white';
@@ -278,6 +276,20 @@ function toggleTheme() {
       textareaElement.style.background = 'white';
       textareaElement.style.color = 'black';
     });
+
+    function handleMouseOver(event) {
+      event.target.style.backgroundColor = '#420084';
+    }
+    function handleMouseOut(event) {
+      event.target.style.backgroundColor = '#7f00ff'; 
+    }
+
+    skulhover.forEach(skulhoverr => {
+      skulhoverr.style.background= '#7f00ff';
+      skulhoverr.addEventListener('mouseover', handleMouseOver);
+      skulhoverr.addEventListener('mouseout', handleMouseOut);
+    });
+    abtmesec.style.background="rgba(133, 53, 252,0.7)";
     
 
       
@@ -289,14 +301,15 @@ function toggleTheme() {
     body.style.backgroundAttachment = 'fixed';
     copyrightSection.style.color= 'black';
     cardSections.forEach(cardSection => {
-      cardSection.style.background='linear-gradient(135deg, rgb(173, 118, 255),rgb(133, 53, 252))';
+      cardSection.style.background='linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250)';
     });
     headerSections.forEach(headerSection => {
       headerSection.style.color= 'black';
       headerSection.style.border= '3px solid black';
     });
-    container3Sections.style.background = 'rgb(133, 53, 252,0.6)';
-    menubar.style.background= 'rgb(133, 53, 252,0.8)';
+    container3Sections.style.background = 'rgb(38, 16, 70)';
+    container3Sectionscopyright.style.color = 'white';
+    menubar.style.background= 'rgb(38, 16, 70)';
     tabletitles.forEach(tabletitle => {
       tabletitle.style.border='3px solid rgb(30, 13, 56)';
       tabletitle.style.color='rgb(30, 13, 56)';
@@ -311,6 +324,21 @@ function toggleTheme() {
       textareaElement.style.background = 'rgb(30, 13, 56)';
       textareaElement.style.color = 'white';
     });
+
+    function handleMouseOver(event) {
+      event.target.style.backgroundColor = '#7f00ff';
+    }
+    function handleMouseOut(event) {
+      event.target.style.backgroundColor = '#420084'; 
+    }
+
+    skulhover.forEach(skulhoverr => {
+      skulhoverr.style.background= '#420084';
+      skulhoverr.addEventListener('mouseover', handleMouseOver);
+      skulhoverr.addEventListener('mouseout', handleMouseOut);
+    });
+
+    abtmesec.style.background=("rgba(38, 16, 70,0.7)");
   }
 }
 
