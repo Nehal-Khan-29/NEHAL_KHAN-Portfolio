@@ -233,6 +233,7 @@ updateCircles();
 function toggleTheme() {
   const body = document.body;
   const abtmesec = document.querySelector('.abtme');
+  const nknamesec = document.querySelector('.nkname');
   const copyrightSection = document.querySelector('.copyright');
   const cardSections = document.querySelectorAll('.card');
   const skulhover = document.querySelectorAll('.skul');
@@ -251,6 +252,8 @@ function toggleTheme() {
     body.style.backgroundColor = 'rgb(38, 16, 70)';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
+    nknamesec.style.backgroundImage = 'none';
+    nknamesec.style.backgroundImage = 'url("assets/img/Nk_front_white.png")';
     copyrightSection.style.color= 'white';
     cardSections.forEach(cardSection => {
       cardSection.style.background= 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
@@ -299,6 +302,8 @@ function toggleTheme() {
     body.style.backgroundColor = 'rgb(133, 53, 252)'; 
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
+    nknamesec.style.backgroundImage = 'none';
+    nknamesec.style.backgroundImage = 'url("assets/img/Nk_front_black.png")';
     copyrightSection.style.color= 'black';
     cardSections.forEach(cardSection => {
       cardSection.style.background='linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250)';
