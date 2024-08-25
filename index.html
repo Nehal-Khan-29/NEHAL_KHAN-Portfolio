@@ -6,15 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css.css">
     <link rel="stylesheet" href="css2.css">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
     <link rel="icon" href="assets\img\nksymbol2.png" type="image/x-icon">
     <title>NEHAL KHAN Portfolio</title>
 </head>  
 
-<body style="background:linear-gradient(135deg, rgb(133, 53, 252), rgb(30, 13, 56));background-repeat: no-repeat;background-attachment: fixed;">
-
-        <div id="curs"></div>
-
+<body style="background-color:rgb(38, 16, 70);background-repeat: no-repeat;background-attachment: fixed;">
 
         <!-- ----------------------------------------------------Navigation Bar-------------------------------------------------- -->
 
@@ -58,9 +56,7 @@
                 <div class="front-text">
 
                     <div class="text1">
-                        <span class="typing-1"></span><br><br>
-                        <span class="typing-2"></span>
-                        <span class="typing-3"></span>
+                        <span class="typing-1" style='color:white'>Nehal Khan</strong></span>
                     </div>
 
                     <a href="assets\Profile.pdf" class="cv"><b>Download CV</b></a>
@@ -187,25 +183,56 @@
                 </div>
 
                 <div class="skillscontainer2">
-                    <div class="logoskill">
-                        <div class="py skill"><img class="logobox" src="assets\img\logo-python.png" alt="Python"><span class="skilltext">Python 90%</span></div>
-                        <div class="c++ skill"><img class="logobox" src="assets\img\logo-c++.png" alt="C++"><span class="skilltext">C++ 90%</span></div>
-                        <div class="c skill"><img class="logobox" src="assets\img\logo-c.png" alt="C"><span class="skilltext">C 85%</span></div>
-                        <div class="ht skill"><img class="logobox" src="assets\img\logo-html.png" alt="HTML"><span class="skilltext">HTML 90%</span></div>
-                        <div class="cs skill"><img class="logobox" src="assets\img\logo-css.png" alt="CSS"><span class="skilltext">CSS 90%</span></div>
-                        <div class="js skill"><img class="logobox" src="assets\img\logo-js.png" alt="JS"><span class="skilltext">JavaScript 75%</span></div>
-                        <div class="j skill"><img class="logobox" src="assets\img\logo-java.png" alt="Java"><span class="skilltext">Java 70%</span></div>
-                        <div class="s skill"><img class="logobox" src="assets\img\logo-sql.png" alt="SQL"><span class="skilltext">SQL 90%</span></div>
-                        <div class="flu skill"><img class="logobox" src="assets\img\logo-flutter.png" alt="Flutter"><span class="skilltext">Flutter 10%</span></div>
-                        <div class="and skill"><img class="logobox" src="assets\img\logo-android.png" alt="Android"><span class="skilltext">Android 70%</span></div>
-                        <div class="leet skill"><a href="https://leetcode.com/Nehal-Khan-29/" target="_blank"><img class="logobox" src="assets\img\logo-leetcode.png" alt="Android"><span class="skilltext">Leetcode</span></a></div>
+
+                    <div class="skul sk1" onclick="toggleSkill('sklist1')">Programming Language
+                      <ul id="sklist1" class="PRlang sklist">
+                        <li class="py skill"><img class="logobox" src="assets\img\logo-python.png" alt="Python"><span class="skilltext">Python</span></li>
+                        <li class="c++ skill"><img class="logobox" src="assets\img\logo-c++.png" alt="C++"><span class="skilltext">C++</span></li>
+                        <li class="c skill"><img class="logobox" src="assets\img\logo-c.png" alt="C"><span class="skilltext">C</span></li>
+                        <li class="j skill"><img class="logobox" src="assets\img\logo-java.png" alt="Java"><span class="skilltext">Java</span></li>
+                      </ul>
                     </div>
+                  
+                    <div class="skul sk2" onclick="toggleSkill('sklist2')">Front End
+                      <ul id="sklist2" class="FE sklist">
+                        <li class="ht skill"><img class="logobox" src="assets\img\logo-html.png" alt="HTML"><span class="skilltext">HTML</span></li>
+                        <li class="cs skill"><img class="logobox" src="assets\img\logo-css.png" alt="CSS"><span class="skilltext">CSS</span></li>
+                        <li class="js skill"><img class="logobox" src="assets\img\logo-js.png" alt="JS"><span class="skilltext">JavaScript</span></li>
+                      </ul>
+                    </div>
+                  
+                    <div class="skul sk3" onclick="toggleSkill('sklist3')">Data Science
+                      <ul id="sklist3" class="ds sklist">
+                        <li class="np skill"><img class="logobox" src="assets\img\logo-np.png" alt="Numpy"><span class="skilltext">Numpy</span></li>
+                        <li class="pd skill"><img class="logobox" src="assets\img\logo-pd.png" alt="Pandas"><span class="skilltext">Pandas</span></li>
+                      </ul>
+                    </div>
+                  
+                    <div class="skul sk4" onclick="toggleSkill('sklist4')">Databases
+                      <ul id="sklist4" class="db sklist">
+                        <li class="s skill"><img class="logobox" src="assets\img\logo-sql.png" alt="SQL"><span class="skilltext">SQL</span></li>
+                        <li class="mdb skill"><img class="logobox" src="assets\img\logo-mongodb.png" alt="MongoDB"><span class="skilltext">MongoDB</span></li>
+                      </ul>
+                    </div>
+                  
+                    <div class="skul sk5" onclick="toggleSkill('sklist5')">UI/UX Design
+                      <ul id="sklist5" class="UIUX sklist">
+                        <li class="fig skill"><img class="logobox" src="assets\img\logo-fig.png" alt="Figma"><span class="skilltext">Figma</span></li>
+                        <li class="flu skill"><img class="logobox" src="assets\img\logo-flutter.png" alt="Flutter"><span class="skilltext">Flutter</span></li>
+                        <li class="and skill"><img class="logobox" src="assets\img\logo-android.png" alt="Android"><span class="skilltext">Android</span></li>
+                      </ul>
+                    </div>
+                  
+                    <div class="skul sk6" onclick="toggleSkill('sklist6')">Coding Platform
+                      <ul id="sklist6" class="Ext sklist">
+                        <li class="leet skill"><img class="logobox" src="assets\img\logo-leetcode.png" alt="Leetcode"><a href="https://leetcode.com/Nehal-Khan-29/" target="_blank"><span class="skilltext">Leetcode</span></a></li>
+                      </ul>
+                    </div>
+                
                 </div>
                 
 
-
             </div>
-
         </div>
 
 
@@ -363,7 +390,7 @@
 
             <div class="contactcontainer">
             
-                <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="color: white;display: flex; flex-direction: row; align-items: center;justify-content:center"><hr><strong style="color: orange">nehalmicro29@gmail.com 👈🏻</strong><hr></div></p></div>
+                <div class="letsconnect"><p>Lets connect!<br><div class="emaill" style="display: flex; flex-direction: row; align-items: center;justify-content:center"><hr><strong>nehalmicro29@gmail.com 👈🏻</strong><hr></div></p></div>
 
                 <div class="contactcontainer2">
 
