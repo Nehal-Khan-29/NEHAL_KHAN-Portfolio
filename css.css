@@ -51,7 +51,7 @@ hr {
     text-align: right;
     transition: top 0.3s;
     display: block;
-    background-color: rgb(30, 13, 56);
+    background-color: black;
     z-index: 999;
 }
 
@@ -111,33 +111,34 @@ hr {
 /*-----------------------------------------------------------------------front----------------------------------------------------------*/
 
 .text1 span {
-  font-size: 32px;
   font-weight: 700;
 }
 
 .text1{
   margin-top: 10%;
-  margin-left: 50%;
 }
 
-.typing-3 {
-  color: rgb(97, 0, 241);
-  text-shadow:
-        -1px -1px 0 white,  
-         1px -1px 0 white,
-        -1px  1px 0 white,
-         1px  1px 0 white;
-  padding-left: 10px;
-  padding-right: 10px;
-  border-radius: 30px;
-  visibility: hidden; 
-  animation: fadeIn 1s linear 4s forwards; 
+.typing-1 {
+  font-size:90px;
+  font-family: "Bauhaus 93", sans-serif;
+  animation: fadeIn 1.5s linear ; 
 }
 
 @keyframes fadeIn {
-  to {
-    visibility: visible;
-    opacity: 1;
+  0% {
+    opacity: 0%;
+  }
+  25% {
+    opacity: 25%;
+  }
+  50% {
+    opacity: 50%;
+  }
+  75% {
+    opacity: 75%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
 
@@ -162,8 +163,8 @@ hr {
   border: 0px;
   bottom: 50px;
   left: 20%;
-  background-color: white;
-  color: black;
+  background-color: rgb(133, 53, 252);
+  color: white;
   font-weight: bold;
   padding: 10px;
   border-radius: 30px;
@@ -171,10 +172,10 @@ hr {
 }
 
 .cv:hover{
-  color: white;
   border: 2px solid white;
   transition: 0.5s ease-in-out;
-  background-color: rgb(133, 53, 252);
+  background-color: white;
+  color: black;
 }
 
 
@@ -216,7 +217,7 @@ hr {
 .aboutcontainer2{
   display: flex;
   position: relative;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
 .logos2{
@@ -288,7 +289,7 @@ hr {
 
 .educationtext{
   font-size: x-large;
-  color: orange;
+  color: greenyellow;
   margin-top: 50px;
   border-radius: 30px;
 }
@@ -326,7 +327,7 @@ hr {
 	width: 50%;
 	height: auto;
 	padding: 15px 20px;
-	background-image: linear-gradient(135deg, rgb(173, 118, 255),rgb(133, 53, 252));
+	background-image: linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250));
 	border-radius: 8px;
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
 	position: relative;
@@ -429,8 +430,15 @@ hr {
 
 /*-----------------------------------------------------------------------skill----------------------------------------------------------*/
 
+.skilltext1{
+  font-size: x-large;
+  color: greenyellow;
+  margin-top: 50px;
+  border-radius: 30px;
+  margin-bottom: 100px;
+}
   
-
+/*
 .logobox {
   position: relative;
   margin-top: 50px;
@@ -442,6 +450,7 @@ hr {
   height: 150px;
   object-fit: contain;
 }
+ 
 
 .logoskill {
   display: flex;
@@ -449,13 +458,6 @@ hr {
   gap: 20px;
   justify-content: center;
   align-items: flex-start;
-}
-
-.skilltext1{
-  font-size: x-large;
-  color: orange;
-  margin-top: 50px;
-  border-radius: 30px;
 }
 
 .skilltext {
@@ -488,7 +490,62 @@ hr {
   
 }
 
+ */
 
+
+
+.sklist{
+  margin-top: 20px;
+  list-style: none;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(211, 188, 246);
+}
+
+.skill img{
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  transform: translateY(25%);
+}
+
+.sklist li{
+  text-align:left;
+  margin-bottom: 5px;
+}
+
+.skilltext{
+  color: black;
+  font-weight: bold;
+  font-size: large;
+}
+
+.skul{
+  width: 300px;
+  color: white;
+  font-weight: bold;
+  background-color: #7f00ff;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 30px;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: large;
+}
+
+.skul:hover{
+  background-color: #420084;
+}
+
+.skul ul{
+  display: none;
+}
+
+.skillscontainer2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
 /*-----------------------------------------------------------------------work----------------------------------------------------------*/
 
@@ -569,7 +626,7 @@ hr {
 }
 
 .card{
-  background:linear-gradient(135deg, rgb(173, 118, 255),rgb(133, 53, 252));
+  background:linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250));
 }
 
 .card .img img {
@@ -792,6 +849,7 @@ hr {
 
 .emaill{
   border-radius: 30px;
+  color: greenyellow;
 }
 
 .contactcontainer2{
@@ -837,11 +895,13 @@ input,textarea{
   font-size: larger;
   font-weight: 900;
   width: 500px;
+  background-color: rgb(153, 87, 252);
 }
 
 textarea{
   height:150px;
   padding-top: 10px;
+  background-color: rgb(153, 87, 252);
 }
 
 
@@ -852,15 +912,36 @@ textarea{
   font-size: larger;
   font-weight: 900;
   margin-left: 300px;
-  border: white;
+  border: none;
+  color: white;
+  background-color: rgb(133, 53, 252);
 }
 
 .btn-md:hover{
-  background-color: rgb(133, 53, 252);
-  border: 2px solid white;
-  color: white;
+  background-color: white;
+  border: 2px solid black;
+  color: black;
   transition: 0.5s ease;
 }
+
+/*
+.walkgif{
+  z-index: 990;
+  margin-top: 50px;
+}
+
+.walkgif img{
+  position: absolute;
+  height: 100px;
+  width:auto;
+  animation: move 15s linear infinite; 
+}
+
+@keyframes move {
+  0% { left: -100px; } 
+  100% { left: calc(90%); }
+}
+*/
 
 /*----------------------------------------------------------------*/
 
