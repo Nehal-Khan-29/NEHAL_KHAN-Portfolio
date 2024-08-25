@@ -78,6 +78,9 @@
     .text1{
         margin-top: 20%;
     }
+    .nkname{
+        width: 400px;
+    }
 }
 
 @media only screen and (max-width: 760px){
@@ -94,6 +97,9 @@
 
     .text1{
         margin-top: 30%;
+    }
+    .nkname{
+        width: 300px;
     }
 }
 
@@ -112,6 +118,9 @@
     .upp img{
         height: 40px;
         width: 40px;
+    }
+    .nkname{
+        width: 200px;
     }
 }
 
