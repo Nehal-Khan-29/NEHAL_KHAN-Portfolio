@@ -293,7 +293,7 @@ function toggleTheme() {
     body.style.backgroundColor = 'rgb(133, 53, 252)'; 
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
-    nknamesec.src = "assets/img/Nk_front_black.png";
+    nknamesec.src = "assets/img/Nk_front_white.png";
     copyrightSection.style.color= 'black';
     cardSections.forEach(cardSection => {
       cardSection.style.background='linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250)';
