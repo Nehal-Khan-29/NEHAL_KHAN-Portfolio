@@ -373,7 +373,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.aboutcontainer2,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos,.wrapper2,.skillscontainer2');
+  const elements = document.querySelectorAll('.aboutcontainer2,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.contact-form tr,.wrapper2,.skillscontainer2');
 
   elements.forEach(element => {
     if (isInViewport(element)) {

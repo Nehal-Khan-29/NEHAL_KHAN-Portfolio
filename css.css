@@ -18,7 +18,7 @@ html{
 body{
     height: auto;
     overflow-x: hidden;
-    background-image:linear-gradient(135deg, rgb(1, 11, 105), rgb(2, 146, 208));
+    background:linear-gradient(135deg, rgb(1, 11, 105), rgb(2, 146, 208));
 }
 
 body::before {
@@ -47,10 +47,10 @@ body::before {
     margin:  0 auto;
 }
 
-.contactcontainer{
+.contact_container{
     background-color: rgba(0, 0, 0, 0.1);
     padding: 50px;
-    min-height: 70vh;
+    min-height: 80vh;
     justify-content:center;
     align-items: center;
     text-align: center;
@@ -742,41 +742,6 @@ hr{
 
 /*=============================================================== contact ==========================================================*/
 
-.letsconnect{
-  color: white;
-  font-weight: bold;
-  font-size: x-large;
-}
-
-.emaill{
-  border-radius: 30px;
-  font-size: medium;
-  color: greenyellow;
-}
-
-.contactcontainer2{
-  display: flex;
-  flex-direction:unset;
-  position: relative;
-  justify-content: space-around;
-}
-
-.contact-form {
-  margin-top: 30px;
-  border-collapse: separate;
-  border-spacing: 50px 20px; 
-}
-
-input,textarea{
-  border-radius: 30px;
-  border: 0px;
-  padding-left:20px ;
-  height: 40px;
-  font-size: larger;
-  font-weight: 900;
-  width: 400px;
-}
-
 #name{
     background-color: rgba(255, 255, 255, 0.8);
 }
@@ -790,81 +755,104 @@ input,textarea{
 }
 
 textarea{
-  height:150px;
-  padding-top: 10px;
   background-color: rgb(255, 255, 255, 0.35);
 }
 
-input::placeholder,textarea::placeholder{
-    color: rgb(77, 75, 75);
+.letsconnect{
+    color: greenyellow;
+    font-size: x-large;
+    font-style: italic;
+}
+
+.my_email{
+    padding: 10px;
+    font-size: small;
+    color: white;
+}
+
+.contact-form-div{
+    display: flex;
+    flex-direction:unset;
+    position: relative;
+    justify-content: space-around;
+  }
+
+.contact-form {
+    border-collapse: separate;
+    border-spacing: 20px; 
+}
+
+input,textarea{
+    border-radius: 30px;
+    border: 0px;
+    padding-left:20px ;
+    height: 40px;
+    font-size: larger;
+    font-weight: 900;
+    width: 400px;
+    color: rgb(0, 0, 0);
+}
+
+textarea{
+    height:150px;
+    padding-top: 10px;
+}
+
+input::placeholder, textarea::placeholder {
+    color: rgb(24, 38, 53, 0.4);
     font-style: italic;
 }
 
 .btn-md{
-  width: 150px;
-  height: 30px;
-  border-radius: 30px;
-  font-size: larger;
-  font-weight: 900;
-  border: none;
-  color: white;
-  background-color: rgb(34, 105, 212);
+    width: 150px;
+    height: 30px;
+    border-radius: 10px;
+    font-size: larger;
+    font-weight: 900;
+    border: none;
+    color: white;
+    background-color:rgb(76, 159, 247);
 }
 
 .btn-md:hover{
-  background-color: white;
-  border: 2px solid black;
-  color: black;
-  transition: 0.5s ease;
+    background-color: white;
+    border: 2px solid black;
+    color: black;
+    transition: 0.5s ease;
 }
-
-/*----------------------------------------------------------------*/
-
-.contactcontainer3{
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  background-color: black; /*rgb(133, 53, 252,0.2)*/
-  margin-bottom: 0;
-  width: 100%;
-  height: 100px;
-  font-weight: bolder;
-}
-
-/*----------------------------------------------------------------*/
 
 .logos{
-  padding-top: 20px;
-  display: flex;
-  justify-content: center;
-  list-style: none;
+    display: flex;
+    justify-content: left;
+    list-style: none;
+    padding: 30px;
+    background-color: rgb(0, 0, 0);
+    margin-bottom: 0;
+    width: 100%;
 }
 
 .logos li{
-  padding-left: 20px;
-  padding-right: 20px;
+    padding-left: 10px;
+    padding-right: 10px;
 }
 
-.logos .git i,.logos .lin i,.logos .ins i{
-  width:15px;
-  transition: ease;
-  color: white;
-}
-
-.logos .git i:hover,.logos .lin i:hover,.logos .ins i:hover{
-  width:15px;
-  transition: ease;
-  color: rgb(0, 177, 253);
-}
-
-.copyright{
-    text-align: center;
+.logos li a i{
+    width:30px;
+    transition: ease;
     color: white;
+    font-size: x-large;
 }
 
-.copyright span{
+.logos .lin i:hover,.logos .ins i:hover, .logos .git i:hover{
+    width:30px;
+    transition: ease;
+    color: rgb(76, 159, 247);
+  }
+
+.Nehal_Name_2{
+    font-size: large;
     color: white;
+    margin-top: 2px;
     animation: nametransition 3s ease-in-out infinite;
 }
 
@@ -900,7 +888,6 @@ input::placeholder,textarea::placeholder{
         transform: translateY(-10px);
     }
 }
-
 
 /*-------------------------------------------------------------music------------------------------------------------------------------------*/
 

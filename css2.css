@@ -154,10 +154,6 @@
         height: auto;
         width: 307px;
     }
-
-    .abouttext{
-        font-size: large;
-    }
     
 }
 
@@ -165,13 +161,6 @@
 
 @media only screen and (max-width: 620px){
        
-      .educationtext {
-        font-size: x-large;
-        color: greenyellow;
-        margin-top: 50px;
-        border-radius: 30px;
-
-      }
       
       .main {
         width: 100%;
@@ -254,10 +243,6 @@
 
 
 @media only screen and (max-width: 500px){
-
-    .worktext{
-        font-size: medium;
-    }
 
     .wrapper{
         margin-top: 50px;
@@ -347,9 +332,6 @@
         margin-top: 120px;
 
     }
-    .achivementtext{
-        font-size: medium;
-    }
 }
 
 /*-----------------------------------------------------------------------contact----------------------------------------------------------*/
@@ -367,9 +349,7 @@
 }
 
 @media only screen and (max-width: 900px){
-    .letsconnect{
-        font-size: larger;
-    }
+
     .contact-form input, .contact-form textarea{
         width: 350px;
     }
@@ -379,9 +359,7 @@
 }
 
 @media only screen and (max-width: 770px){
-    .letsconnect{
-        font-size: medium;
-    }
+
     .contact-form input, .contact-form textarea{
         width: 300px;
     }
@@ -395,40 +373,26 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        
     }
 
-    .form-group-title{
-        display: none;
-    }
-    
-    .contact-form tr{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        margin-bottom: 10px;
-    }
-
-    .contact-form input, .contact-form textarea{
-        margin-top: 10px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .contact-form{
-        margin-top: 50px;
-    }
-
-    .btn-md{
-        margin-left: 0px;
+    .contact-form {
+        border-spacing: 0px 20px; 
       }
 
-    .letsconnect{
-        font-size: medium;
+    .logos li a i{
+        font-size: large;
     }
 
-    .copyright{
-        font-size: small;
+    .logos li{
+        padding-left: 2px;
+        padding-right: 2px;
     }
+    
+    .Nehal_Name_2{
+        font-size: medium;
+        animation: nametransition 3s ease-in-out infinite;
+    }
+
 }
+
 
