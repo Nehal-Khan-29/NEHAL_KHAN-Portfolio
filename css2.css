@@ -1,6 +1,4 @@
-
-/*-----------------------------------------------------------------------Nav bar----------------------------------------------------------*/
-
+/*================================================================ Nav Bar ================================================================*/
 
 #menuToggle {
     display: none;
@@ -11,7 +9,6 @@
     color: black;
     border-radius: 10px;
     transition: 0.2s ease-in-out;
-    
 }
 
 #menulist{
@@ -36,11 +33,9 @@
     #menuToggle, #nklogo{
         display: inline;
     }
-
     .menubar li {
         display: none;
     }
-
 }
 
 @media only screen and (min-width: 1151px) {
@@ -49,192 +44,147 @@
     }
 }
 
-/*-----------------------------------------------------------------------body----------------------------------------------------------*/
+/*================================================================ Body ================================================================*/
 
-    @media only screen and (max-width: 1420px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contact_container{
-            max-width: 90%;
-        }
+@media only screen and (max-width: 1420px){
+    .Home_Container, .About_Container , .Education_Container,.skillscontainer, .Work_Container,.Achievement_Container, .contact_container{
+        max-width: 90%;
     }
+}
 
-    @media only screen and (max-width: 410px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contact_container{
-            max-width: 95%;
-        }
+@media only screen and (max-width: 410px){
+    .Home_Container, .About_Container , .Education_Container,.skillscontainer, .Work_Container,.Achievement_Container, .contact_container{
+        max-width: 95%;
     }
+}
 
-/*-----------------------------------------------------------------------Front----------------------------------------------------------*/
+/*================================================================ Home ================================================================*/
 
 @media only screen and (max-width: 930px){
-    .text1 span{
-        font-size: 60px;
-    }
-    .text1{
+    .Home_Text{
         margin-top: 20%;
     }
-    .nkname{
+    .Nehal_Name{
         width: 400px;
     }
 }
 
-@media only screen and (max-width: 760px){
-
-    .text1{
-        margin-top: 20%;
-    }
-}
 
 @media only screen and (max-width: 600px){
-    .text1 span{
-        font-size: 60px;
-    }
-
-    .text1{
+    .Home_Text{
         margin-top: 30%;
     }
-    .nkname{
+    .Nehal_Name{
         width: 300px;
     }
 }
 
 @media only screen and (max-width: 500px){
-    
-    .text1{
-        margin-top: 30%;
-    }
-
-    .upp{
+    .Home_Up{
         bottom: 30px;
         right: 30px;
         height: 40px;
         width: 40px;
     }
-    .upp img{
+    .Home_Up img{
         height: 40px;
         width: 40px;
     }
-    .nkname{
+    .Nehal_Name{
         width: 200px;
     }
 }
 
-/*-----------------------------------------------------------------------about----------------------------------------------------------*/
+/*================================================================ About ================================================================*/
 
 @media only screen and (max-width: 1420px){
-
     .profile_content{
         transform: scale(0.8);
     }
-
-    .aboutcontainer2 {
+    .About_Container_1 {
         display: flex;
         flex-direction: column;
         align-items: center; 
     }
-
-    .abtme{
+    .About_Me_Inside{
         margin-top: 50px;
     }
-    
 }
 
 @media only screen and (max-width: 500px){
-
     .profile_content{
         transform: scale(0.7);
     }
-
-    .abtme{
+    .About_Me_Insidet{
         height: auto;
         width: 307px;
     }
-    
 }
 
-/*-----------------------------------------------------------------------education----------------------------------------------------------*/
+/*============================================================== Education ==============================================================*/
 
 @media only screen and (max-width: 620px){
-       
-      
-      .main {
+    .main {
         width: 100%;
         margin-top: 30px;
-      }
-      
-      .timecontainer {
+    }
+    .timecontainer {
         width: 100%; 
-      }
-      
-      .timecontainer ul {
+    }
+    .timecontainer ul {
         list-style: none;
         padding: 0; 
-      }
-      
-      .timecontainer ul li {
+    }
+    .timecontainer ul li {
         width: 100%;
-        margin-bottom: 50px;
-      }
-      
-      .timecontainer ul li .heading {
+        margin-bottom: 80px;
+    }
+    .timecontainer ul li .heading {
         font-size: large;
         color: greenyellow;
-      }
-      
-      .timecontainer ul li p, .timecontainer ul li a, .timecontainer ul li .date {
+    }
+    .timecontainer ul li p, .timecontainer ul li a, .timecontainer ul li .date {
         font-size: medium;
         color: white;
         line-height: 18px;
         margin: 6px 0 4px 0;
         font-weight: bold;
         text-decoration: none;
-      }
-      
-      .timecontainer ul li a {
+    }
+    .timecontainer ul li a {
         color: black;
         transition: all 0.3s ease;
-      }
-
-      .timecontainer ul li:nth-child(odd) {
+    }
+    .timecontainer ul li:nth-child(odd) {
         float: right;
         clear: left;
         text-align: right;
         transform: translateX(0px);
     }
-
     .timecontainer ul li:nth-child(even) {
         float: right;
         clear: left;
         text-align: left;
         transform: translateX(0px);
     }
-
-      .circle::after{
+    .circle::after{
         display: none;
-      }
-      .timecontainer ul li .circle{
+    }
+    .timecontainer ul li .circle{
         display: none;
-      }
-      
+    }
 }
-/*-----------------------------------------------------------------------skills----------------------------------------------------------*/
+
+/*================================================================ Skill ================================================================*/
 
 @media only screen and (max-width: 500px){
-
-    .skilltextt{
-        margin-bottom: 50px;
-        font-size: large;
-    }
-
     .skilltext{
         margin-top: 5px;
         font-size: medium;
     }
-
-    
 }
 
-/*-----------------------------------------------------------------------work----------------------------------------------------------*/
-
+/*================================================================ Work ================================================================*/
 
 @media only screen and (max-width: 500px){
 
@@ -265,8 +215,7 @@
     }
 }
 
-/*-----------------------------------------------------------------------achivement----------------------------------------------------------*/
-
+/*============================================================== Achivement ==============================================================*/
 
 @media only screen and (max-width: 880px){
     .img2 img{
@@ -328,7 +277,7 @@
     }
 }
 
-/*-----------------------------------------------------------------------contact----------------------------------------------------------*/
+/*================================================================ Contact ================================================================*/
 
 @media only screen and (max-width: 1020px){
     .form-group-title{
@@ -349,7 +298,7 @@
     }
     .contact-form {
         border-spacing: 20px 20px; 
-      }
+    }
 }
 
 @media only screen and (max-width: 770px){
@@ -359,7 +308,7 @@
     }
     .contact-form {
         border-spacing: 0px 20px; 
-      }
+    }
 }
 
 @media only screen and (max-width: 690px){
@@ -371,7 +320,7 @@
 
     .contact-form {
         border-spacing: 0px 20px; 
-      }
+    }
 
     .logos li a i{
         font-size: large;
@@ -389,4 +338,4 @@
 
 }
 
-
+/*================================================================  ================================================================*/

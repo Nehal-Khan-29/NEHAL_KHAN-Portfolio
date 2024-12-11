@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed&family=Sofia&display=swap');
 
+/*================================================================ Html ================================================================*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,8 +15,10 @@ html{
     scroll-behavior: smooth;
 }
 
+/*================================================================ Scrool ===============================================================*/
+
 ::-webkit-scrollbar {
-    width: 12px; /* Width of the scrollbar */
+    width: 12px; 
   }
 
 ::-webkit-scrollbar-track {
@@ -23,12 +27,12 @@ html{
 }
 
 ::-webkit-scrollbar-thumb {
-    background: rgb(1, 11, 105); /* Thumb color */
-    border-radius: 6px; /* Rounded edges */
+    background: rgb(1, 42, 175); 
+    border-radius: 6px; 
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background: rgb(1, 11, 105); /* Thumb color on hover */
+    background: rgb(67, 0, 252); 
 }
 
 /*================================================================ Body ================================================================*/
@@ -38,6 +42,7 @@ body{
     overflow-x: hidden;
     background-color: rgb(2, 146, 208);
     background-image:linear-gradient(135deg, rgb(1, 11, 105), rgb(2, 146, 208));
+    font-style: italic;
 }
 
 body::before {
@@ -53,7 +58,7 @@ body::before {
     z-index: -1;
 }
 
-.frontcontainer, .aboutcontainer, .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer{
+.Home_Container, .About_Container, .Education_Container, .Skills_Container, .Work_Container, .Achievement_Container{
     background-color: rgba(0, 0, 0, 0.1);
     padding: 50px;
     min-height: 100vh;
@@ -78,14 +83,26 @@ body::before {
     max-width: 85%;
     margin:  0 auto;
 }
-  
+
+/*================================================================ Title ================================================================*/
+
+.Title_text{
+    font-size: x-large;
+    margin-top: 10px;
+    color:greenyellow;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center
+}
+
 hr{
     border: 0; 
     height: 1px;
     width: 10%;
     background: linear-gradient(to right, transparent, #ffffff, transparent);
 }
-  
 
 /*=============================================================== Nav Bar ===============================================================*/
 
@@ -127,9 +144,9 @@ hr{
     padding-bottom: 5px;
 }
 
-/*=============================================================== Front ===============================================================*/
+/*=============================================================== Home ===============================================================*/
 
-.text1{
+.Home_Text{
     margin-top: 10%;
     animation: fadeIn 1s;
 }
@@ -152,7 +169,7 @@ hr{
   }
 }
 
-.upp{
+.Home_Up{
     position: fixed;
     background-color:rgba(55, 55, 55, 0.3);
     border-radius: 10px;
@@ -163,7 +180,7 @@ hr{
     z-index: 11;
 }
 
-.upp:hover{
+.Home_Up:hover{
     height: 52px;
     width: 52px;
 }
@@ -190,7 +207,7 @@ hr{
 
 /*=============================================================== About ===============================================================*/
 
-.aboutcontainer2{
+.About_Container_1{
     display: flex;
     position: relative;
     justify-content: space-evenly;
@@ -198,14 +215,7 @@ hr{
     min-height: 80vh;
 }
 
-.abouttext{
-    font-size: x-large;
-    margin-top: 10px;
-    color:greenyellow;
-    border-radius: 30px;
-}
-
-.abtme{
+.About_Me_Inside{
     color: white;
     font-size: large;
     text-align: justify;
@@ -214,6 +224,7 @@ hr{
     max-width: 600px;
     background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
     border-radius: 10px;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4);
 }
 
 .profile_content{
@@ -242,14 +253,6 @@ hr{
 
 /*=============================================================== Education ===============================================================*/
 
-
-.educationtext{
-  font-size: x-large;
-  color: greenyellow;
-  margin-top: 10px;
-  border-radius: 30px;
-}
-
 .main {
 	width: 100%;
 	height: auto;
@@ -265,9 +268,11 @@ hr{
 	margin: auto 0;
 	position: relative;
 }
+
 .timecontainer ul {
 	list-style: none;
 }
+
 .timecontainer ul::after {
 	content: " ";
 	position: absolute;
@@ -290,9 +295,11 @@ hr{
 	margin-bottom: 30px;
 	z-index: 99;
 }
+
 .timecontainer ul li:nth-child(4) {
 	margin-bottom: 0;
 }
+
 .timecontainer ul li .circle {
 	position: absolute;
 	width: 20px;
@@ -303,6 +310,7 @@ hr{
 	display: grid;
 	place-items: center;
 }
+
 .circle::after{
 	content: ' ';
 	width: 12px;
@@ -310,10 +318,12 @@ hr{
 	background-color: #7f00ff;
 	border-radius: 50%;
 }
+
 .timecontainer ul li:nth-child(odd) .circle {
 	transform: translate(50%, -50%);
 	right: -30px;
 }
+
 .timecontainer ul li:nth-child(even) .circle {
 	transform: translate(-50%, -50%);
 	left: -30px;
@@ -329,13 +339,12 @@ hr{
 }
 
 .lastcircle::after{
-  transform: translate(-50%,-50%);
+    transform: translate(-50%,-50%);
 	content: ' ';
 	width: 12px;
 	height: 12px;
 	border-radius: 50%;
 }
-
 
 .timecontainer ul li .date {
 	position: absolute;
@@ -347,51 +356,50 @@ hr{
 	display: grid;
 	place-items: center;
 	color: white;
-  font-weight: bold;
+    font-weight: bold;
 	font-size: 13px;
 	box-shadow: 1px 2px 12px rgba(0, 0, 0, 0.318);
 }
+
 .timecontainer ul li:nth-child(odd) {
 	float: left;
 	clear: right;
 	text-align: right;
 	transform: translateX(-30px);
 }
+
 .timecontainer ul li:nth-child(odd) .date {
 	right: 20px;
 }
+
 .timecontainer ul li:nth-child(even) {
 	float: right;
 	clear: left;
-  text-align: left;
+    text-align: left;
 	transform: translateX(30px);
 }
+
 .timecontainer ul li .heading {
 	font-size:large;
 	color: greenyellow;
 }
+
 .timecontainer ul li p {
 	font-size:medium;
 	color: white;
 	line-height: 18px;
 	margin: 6px 0 4px 0;
 }
+
 .timecontainer ul li a {
 	font-size: medium;
 	text-decoration: none;
 	color: black;
-  font-weight: bold;
+    font-weight: bold;
 	transition: all 0.3s ease;
 }
 
 /*=============================================================== skill ===============================================================*/
-  
-.skilltexttitle{
-    font-size: x-large;
-    margin-top: 10px;
-    color: greenyellow;
-    border-radius: 30px;
-  }
 
 .sklist{
   list-style: none;
@@ -441,22 +449,14 @@ hr{
   display: none;
 }
 
-.skillscontainer2{
+.Skills_Container_1{
   margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
-
 }
 
 /*=============================================================== work ===============================================================*/
-
-.worktext{
-    font-size: x-large;
-    margin-top: 10px;
-    color: greenyellow;
-    border-radius: 30px;
-  }
 
 .wrapper {
   width: 100%;
@@ -539,7 +539,7 @@ hr{
 }
 
 .card{
-    background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
+  background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
 }
 
 .card .img img {
@@ -581,7 +581,7 @@ hr{
 }
 
 .card .video-container img, .card .video-container iframe{
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .card .img,.card h2,.card span{
@@ -607,7 +607,7 @@ hr{
   }
 }
 
-  @keyframes slideInFromBottom {
+@keyframes slideInFromBottom {
     from {
       opacity: 0;
       visibility: hidden;
@@ -618,7 +618,6 @@ hr{
       visibility: visible;
       transform: translateY(-20px);
     }
-
 }
 
 .card:hover .img, .card:hover h2, .card:hover span {
@@ -657,14 +656,7 @@ hr{
   border: 1px white;
 }
 
-/*=============================================================== achivement ============================================================*/
-
-.achivementtext{
-  font-size: x-large;
-  margin-top: 10px;
-  color: greenyellow;
-  border-radius: 30px;
-}
+/*=============================================================== Achievement ============================================================*/
 
 .img2 img{
   width: 600px;
@@ -701,11 +693,9 @@ hr{
 .wrapper2 i:last-child{
   right: -22px;
 }
-
 .card2{
   position: relative;
 }
-
 .abtcerti {
   position: absolute;
   left: 50%;
@@ -716,16 +706,13 @@ hr{
   padding: 10px;
   width: 600px;
 }
-
 .abtcerti span{
   color : white;
   font-weight: 500;
 }
-
 .try_button2{
   margin-top: 10px;
 }
-
 .try_button2 a{
   background-color: white;
   color: black;
@@ -735,48 +722,43 @@ hr{
   padding: 5px;
   border-radius: 5px;
 }
-
 .try_button2 a:hover{
   background-color: black;
   color: white;
   transition: 0.5s ease;
 }
-
 .circles-indexx {
   display: flex;
   justify-content: center;
   margin-top: 100px;
   gap: 5px;
 }
-
 .circle-indexx {
   width: 10px;
   height: 10px;
   border-radius: 50%;
   background-color: #ffff;
 }
-
 .circle-indexx.active {
   background-color: rgb(133, 53, 252);
 }
 
-
-/*=============================================================== contact ==========================================================*/
+/*=============================================================== Contact ==========================================================*/
 
 #name{
-    background-color: rgba(255, 255, 255, 0.8);
+    background-color: rgba(255, 255, 255, 1);
 }
 
 #email{
-    background-color: rgb(255, 255, 255, 0.65);
+    background-color: rgb(255, 255, 255, 0.8);
 }
 
 #subject{
-    background-color: rgb(255, 255, 255, 0.5);
+    background-color: rgb(255, 255, 255, 0.6);
 }
 
 textarea{
-  background-color: rgb(255, 255, 255, 0.35);
+  background-color: rgb(255, 255, 255, 0.4);
 }
 
 .letsconnect{
@@ -910,7 +892,7 @@ input::placeholder, textarea::placeholder {
     }
 }
 
-/*-------------------------------------------------------------music------------------------------------------------------------------------*/
+/*================================================================ Music ================================================================*/
 
 #myAudio {
   display: none;
@@ -924,8 +906,27 @@ color: greenyellow;
 color: red;
 }
 
-/*----------------------------------------------------------Sun moon-----------------------------------------------------------------------*/
+/*========================================================= All transition =============================================================*/
 
+@keyframes BodyslideInFromTop {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(-30px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+}
+  
+.slide-in {
+    animation: BodyslideInFromTop 0.8s ease-in-out;
+}
+
+/*============================================================= Sun Moon ================================================================*/
+/*
 .theme-switch {
   cursor: pointer;
 }
@@ -946,7 +947,6 @@ color: red;
 
 .dark-mode .sun-icon {
   display: none;
-  
 }
 
 .sun-icon:hover {
@@ -956,23 +956,4 @@ color: red;
 .moon-icon:hover {
   color: black;
 }
-
-
-/*-----------------------------------------------------------all transition ----------------------------------------*/
-
-@keyframes BodyslideInFromTop {
-  from {
-    opacity: 0;
-    visibility: hidden;
-    transform: translateY(-30px);
-  }
-  to {
-    opacity: 1;
-    visibility: visible;
-    transform: translateY(0);
-  }
-}
-
-.slide-in {
-  animation: BodyslideInFromTop 0.8s ease-in-out;
-}
+*/

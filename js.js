@@ -1,5 +1,5 @@
 
-//============================================================================ nav bar ======================================================================
+//================================================================ Nav Bar ================================================================
 
 
 function togglecheck() {
@@ -51,28 +51,11 @@ function Menuoff() {
   }
 
 
-//============================================================================ Front ======================================================================
-
-/*document.addEventListener('DOMContentLoaded', () => {
-
-  // typing 1
-      const typed1 = new Typed(".typing-1", {
-          strings: [
-              "<span style='color:white'>NEHAL KHAN</strong></span>",
-            ],
-          typeSpeed: 50,
-          showCursor: false
-      });
-
-
-
-});*/
-
-//============================================================================ skill ======================================================================
+//======================================================== skill ======================================================================
 
 function toggleSkill(listId) {
 
-  var allLists = document.getElementsByClassName("skillscontainer2")[0].getElementsByTagName("ul");
+  var allLists = document.getElementsByClassName("Skills_Container_1")[0].getElementsByTagName("ul");
   for (var i = 0; i < allLists.length; i++) {
     if (allLists[i].id === listId) {
       if (allLists[i].style.display === "none" || allLists[i].style.display === "") {
@@ -86,10 +69,7 @@ function toggleSkill(listId) {
   }
 }
 
-
-
-
-//============================================================================ work ======================================================================
+//========================================================== work ======================================================================
 
 const wrapper = document.querySelector(".wrapper");
 const carousel = document.querySelector(".carousel");
@@ -162,8 +142,7 @@ carousel.addEventListener("scroll", infiniteScroll);
 wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
 wrapper.addEventListener("mouseleave", autoPlay);
 
-
-//============================================================================ Achivement ======================================================================
+//======================================================== Achivement =============================================================
 
 let currentIndex = 0;
 const slides = document.querySelectorAll('.card2');
@@ -237,108 +216,7 @@ function showSlide(index) {
 }
 updateCircles();
 
-
-//============================================================================ SUN MOON ======================================================================
-
-function toggleTheme() {
-  const body = document.body;
-  const abtmesec = document.querySelector('.abtme');
-  const nknamesec = document.querySelector('.nkname');
-  const copyrightSection = document.querySelector('.copyright');
-  const cardSections = document.querySelectorAll('.card');
-  const skulhover = document.querySelectorAll('.skul');
-  const headerSections = document.querySelectorAll('.header');
-  const container3Sections = document.querySelector('.contactcontainer3');
-  const container3Sectionscopyright= document.querySelector('.copyright');
-  const menubar = document.querySelector('.menubar');
-  const tabletitles = document.querySelectorAll('.form-group-title');
-
-
-  
-  if (body.classList.contains('dark-mode')) {
-    body.classList.remove('dark-mode');
-    
-    document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design.png")');
-    body.style.backgroundImage = 'linear-gradient(135deg, rgb(1, 8, 66), rgb(0, 120, 171))';
-    body.style.backgroundRepeat = 'no-repeat';
-    body.style.backgroundAttachment = 'fixed';
-    nknamesec.src = "assets/img/Nk_front_white.png";
-    copyrightSection.style.color= 'white';
-    cardSections.forEach(cardSection => {
-      cardSection.style.background= 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
-    });
-    headerSections.forEach(headerSection => {
-      headerSection.style.color= 'white';
-      headerSection.style.border= '3px solid white';
-    });
-    container3Sections.style.background = 'black';
-    container3Sectionscopyright.style.color = 'white';
-    menubar.style.background= 'black';
-    tabletitles.forEach(tabletitle => {
-      tabletitle.style.border='3px solid white';
-      tabletitle.style.color='white';
-    });
-    document.querySelectorAll('input').forEach(inputElement => {
-      inputElement.style.border = '3px solid white';
-      inputElement.style.background = 'white';
-      inputElement.style.color = 'black';
-    });
-    document.querySelectorAll('textarea').forEach(textareaElement => {
-      textareaElement.style.border = '3px solid white';
-      textareaElement.style.background = 'white';
-      textareaElement.style.color = 'black';
-    });
-
-    skulhover.forEach(skulhoverr => {
-      skulhoverr.style.backgroundImage = 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
-    });
-
-    abtmesec.style.backgroundImage= 'linear-gradient(135deg, rgb(152, 87, 251,0.7),rgb(120, 33, 250,0.7))';
-    
-
-      
-  } else {
-    document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design_2.png")');
-    body.classList.add('dark-mode');
-    body.style.backgroundImage = 'linear-gradient(135deg, white, rgb(0, 179, 255))';
-    body.style.backgroundRepeat = 'no-repeat';
-    body.style.backgroundAttachment = 'fixed';
-    nknamesec.src = "assets/img/Nk_front_white.png";
-    copyrightSection.style.color= 'black';
-    cardSections.forEach(cardSection => {
-      cardSection.style.background='linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250)';
-    });
-    headerSections.forEach(headerSection => {
-      headerSection.style.color= 'black';
-      headerSection.style.border= '3px solid black';
-    });
-    container3Sections.style.background = 'rgb(38, 16, 70)';
-    container3Sectionscopyright.style.color = 'white';
-    menubar.style.background= 'rgb(38, 16, 70)';
-    tabletitles.forEach(tabletitle => {
-      tabletitle.style.border='3px solid rgb(30, 13, 56)';
-      tabletitle.style.color='rgb(30, 13, 56)';
-    });
-    document.querySelectorAll('input').forEach(inputElement => {
-      inputElement.style.border = '3px solid rgb(30, 13, 56)';
-      inputElement.style.background = 'rgb(30, 13, 56)';
-      inputElement.style.color = 'white';
-    });
-    document.querySelectorAll('textarea').forEach(textareaElement => {
-      textareaElement.style.border = '3px solid rgb(30, 13, 56)';
-      textareaElement.style.background = 'rgb(30, 13, 56)';
-      textareaElement.style.color = 'white';
-    });
-    
-    skulhover.forEach(skulhoverr => {
-      skulhoverr.style.background= '#420084';
-    });
-
-    abtmesec.style.background=("rgba(38, 16, 70,0.7)");
-  }
-}
-
-//============================================================================ Music ======================================================================
+//================================================================= Music ==============================================================
 
 function toggleMute() {
   var audio = document.getElementById('myAudio');
@@ -356,10 +234,9 @@ function toggleMute() {
     icon.classList.add('fa-volume-xmark');
   }
 }
-
 toggleMute();
 
-//============================================================================ All transitions ======================================================================
+//=========================================================== All transitions =========================================================
 
 
 function isInViewport(element) {
@@ -373,7 +250,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.aboutcontainer2,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.contact-form tr,.wrapper2,.skillscontainer2');
+  const elements = document.querySelectorAll('.About_Container_1,.card,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.contact-form tr,.wrapper2,.Skills_Container_1');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
@@ -391,9 +268,103 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
 
-//===========================cursor================================================= ==== ======================================================================
-
-//var cursor = document.getElementById('curs');
-//window.onmousemove = function(e){
-//cursor.style.left = e.clientX + 'px';
-//cursor.style.top = e.clientY + 'px';}
+//=================================================================== SUN MOON =============================================================
+/*
+function toggleTheme() {
+    const body = document.body;
+    const abtmesec = document.querySelector('.abtme');
+    const nknamesec = document.querySelector('.nkname');
+    const copyrightSection = document.querySelector('.copyright');
+    const cardSections = document.querySelectorAll('.card');
+    const skulhover = document.querySelectorAll('.skul');
+    const headerSections = document.querySelectorAll('.header');
+    const container3Sections = document.querySelector('.contactcontainer3');
+    const container3Sectionscopyright= document.querySelector('.copyright');
+    const menubar = document.querySelector('.menubar');
+    const tabletitles = document.querySelectorAll('.form-group-title');
+  
+  
+    
+    if (body.classList.contains('dark-mode')) {
+      body.classList.remove('dark-mode');
+      
+      document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design.png")');
+      body.style.backgroundImage = 'linear-gradient(135deg, rgb(1, 8, 66), rgb(0, 120, 171))';
+      body.style.backgroundRepeat = 'no-repeat';
+      body.style.backgroundAttachment = 'fixed';
+      nknamesec.src = "assets/img/Nk_front_white.png";
+      copyrightSection.style.color= 'white';
+      cardSections.forEach(cardSection => {
+        cardSection.style.background= 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
+      });
+      headerSections.forEach(headerSection => {
+        headerSection.style.color= 'white';
+        headerSection.style.border= '3px solid white';
+      });
+      container3Sections.style.background = 'black';
+      container3Sectionscopyright.style.color = 'white';
+      menubar.style.background= 'black';
+      tabletitles.forEach(tabletitle => {
+        tabletitle.style.border='3px solid white';
+        tabletitle.style.color='white';
+      });
+      document.querySelectorAll('input').forEach(inputElement => {
+        inputElement.style.border = '3px solid white';
+        inputElement.style.background = 'white';
+        inputElement.style.color = 'black';
+      });
+      document.querySelectorAll('textarea').forEach(textareaElement => {
+        textareaElement.style.border = '3px solid white';
+        textareaElement.style.background = 'white';
+        textareaElement.style.color = 'black';
+      });
+  
+      skulhover.forEach(skulhoverr => {
+        skulhoverr.style.backgroundImage = 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
+      });
+  
+      abtmesec.style.backgroundImage= 'linear-gradient(135deg, rgb(152, 87, 251,0.7),rgb(120, 33, 250,0.7))';
+      
+  
+        
+    } else {
+      document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design_2.png")');
+      body.classList.add('dark-mode');
+      body.style.backgroundImage = 'linear-gradient(135deg, white, rgb(0, 179, 255))';
+      body.style.backgroundRepeat = 'no-repeat';
+      body.style.backgroundAttachment = 'fixed';
+      nknamesec.src = "assets/img/Nk_front_white.png";
+      copyrightSection.style.color= 'black';
+      cardSections.forEach(cardSection => {
+        cardSection.style.background='linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250)';
+      });
+      headerSections.forEach(headerSection => {
+        headerSection.style.color= 'black';
+        headerSection.style.border= '3px solid black';
+      });
+      container3Sections.style.background = 'rgb(38, 16, 70)';
+      container3Sectionscopyright.style.color = 'white';
+      menubar.style.background= 'rgb(38, 16, 70)';
+      tabletitles.forEach(tabletitle => {
+        tabletitle.style.border='3px solid rgb(30, 13, 56)';
+        tabletitle.style.color='rgb(30, 13, 56)';
+      });
+      document.querySelectorAll('input').forEach(inputElement => {
+        inputElement.style.border = '3px solid rgb(30, 13, 56)';
+        inputElement.style.background = 'rgb(30, 13, 56)';
+        inputElement.style.color = 'white';
+      });
+      document.querySelectorAll('textarea').forEach(textareaElement => {
+        textareaElement.style.border = '3px solid rgb(30, 13, 56)';
+        textareaElement.style.background = 'rgb(30, 13, 56)';
+        textareaElement.style.color = 'white';
+      });
+      
+      skulhover.forEach(skulhoverr => {
+        skulhoverr.style.background= '#420084';
+      });
+  
+      abtmesec.style.background=("rgba(38, 16, 70,0.7)");
+    }
+  }
+*/
