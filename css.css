@@ -13,32 +13,62 @@ html{
     scroll-behavior: smooth;
 }
 
+/*================================================================ Body ================================================================*/
+
 body{
     height: auto;
     overflow-x: hidden;
+    background-image:linear-gradient(135deg, rgb(1, 11, 105), rgb(2, 146, 208));
 }
 
 body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url("assets\\img\\body_design.png");
-  background-size: cover;
-  opacity: 0.7;
-  z-index: -1;}
-
-
-hr {
-  border: 0; 
-  height: 1px;
-  width: 10%;
-  background: linear-gradient(to right, transparent, #ffffff, transparent);
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: url("assets\\img\\body_design.png");
+    background-size: cover;
+    opacity: 0.7;
+    z-index: -1;
 }
 
+.frontcontainer, .aboutcontainer, .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    min-height: 100vh;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    z-index: 10;
+    max-width: 85%;
+    margin:  0 auto;
+}
 
+.contactcontainer{
+    background-color: rgba(0, 0, 0, 0.1);
+    padding: 50px;
+    min-height: 70vh;
+    justify-content:center;
+    align-items: center;
+    text-align: center;
+    display: block;
+    z-index: 10;
+    max-width: 85%;
+    margin:  0 auto;
+}
+  
+hr{
+    border: 0; 
+    height: 1px;
+    width: 10%;
+    background: linear-gradient(to right, transparent, #ffffff, transparent);
+}
+  
+
+/*=============================================================== Nav Bar ===============================================================*/
 
 .menubar{
     position: fixed;
@@ -55,64 +85,34 @@ hr {
     z-index: 999;
 }
 
-.nklogo{
-  position: absolute;
-  height:27px;
-  left: 20px;
-  padding-bottom: 5px;
-
-}
-
 .menubar li, .menubar a{
     display:inline;
     color: white;
-    padding: 15px;
+    padding: 10px;
 }
 
 .menubar li a:hover{
-  background-color: white;
-  color: black;
-  transition:0.3s ease;
-  width:100px;
-  border-radius: 20px;
-  font-weight: bolder;
-  padding-bottom: 10px;
+    background-color: white;
+    color: black;
+    transition:0.3s ease;
+    width:100px;
+    border-radius: 20px;
+    font-weight: bolder;
+    padding-bottom: 10px;
 }
 
-.frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
-  background-color: rgba(0, 0, 0, 0.1);
-  padding: 50px;
-  min-height: 100vh;
-  justify-content:center;
-  align-items: center;
-  text-align: center;
-  display: block;
-  z-index: 10;
-  max-width: 70%;
-  margin:  0 auto;
+.nklogo{
+    position: absolute;
+    height:27px;
+    left: 20px;
+    padding-bottom: 5px;
 }
 
-.header{
-  position: absolute;
-  margin-top: 60px;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  color: white;
-  font-size: larger;
-  font-weight:900;
-  text-align: center;
-  width: 160px;
-  border-radius: 30px;
-  border:3px solid white;
-
-}
-
-
-/*-----------------------------------------------------------------------front----------------------------------------------------------*/
-
+/*=============================================================== Front ===============================================================*/
 
 .text1{
-  margin-top: 10%;
+    margin-top: 10%;
+    animation: fadeIn 1s;
 }
 
 @keyframes fadeIn {
@@ -134,161 +134,105 @@ hr {
 }
 
 .upp{
-  position: fixed;
-  background-color:rgba(55, 55, 55, 0.3);
-  border-radius: 10px;
-  bottom: 50px;
-  right: 50px;
-  height: 50px;
-  width: 50px;
-  z-index: 11;
+    position: fixed;
+    background-color:rgba(55, 55, 55, 0.3);
+    border-radius: 10px;
+    bottom: 50px;
+    right: 50px;
+    height: 50px;
+    width: 50px;
+    z-index: 11;
 }
 
 .upp:hover{
-  height: 52px;
-  width: 52px;
+    height: 52px;
+    width: 52px;
 }
 
 .cv{
-  position: absolute;
-  border: 0px;
-  bottom: 50px;
-  left: 20%;
-  background-color: rgb(133, 53, 252);
-  color: white;
-  font-weight: bold;
-  padding: 10px;
-  border-radius: 30px;
-  transition: 0.5s ease-in-out;
+    position: absolute;
+    border: 0px;
+    bottom: 50px;
+    left: 20%;
+    background-color: rgb(0, 120, 171);
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 30px;
+    transition: 0.5s ease-in-out;
 }
 
 .cv:hover{
-  border: 2px solid white;
-  transition: 0.5s ease-in-out;
-  background-color: white;
-  color: black;
+    color:rgb(0, 120, 171);
+    transition: 0.2s ease-in-out;
+    background-color: white;
+    transform: translateY(-5px);
 }
 
+/*=============================================================== About ===============================================================*/
 
-/*-----------------------------------------------------------------------about----------------------------------------------------------*/
+.aboutcontainer2{
+    display: flex;
+    position: relative;
+    justify-content: space-evenly;
+    align-items: center;
+    min-height: 80vh;
+}
 
 .abouttext{
-  font-size: x-large;
-  margin-top: 50px;
-  color:greenyellow;
-  border-radius: 30px;
+    font-size: x-large;
+    margin-top: 10px;
+    color:greenyellow;
+    border-radius: 30px;
 }
 
 .abtme{
-
-  position: relative;
-  border-radius: 10px;
-  background-image: linear-gradient(135deg, rgb(152, 87, 251,0.7),rgb(120, 33, 250,0.7));
-  color: white;
-  font-size: large;
-  text-align: left;
-  /*margin-top:50px ;*/
-  margin-top: 150px;
-  padding: 10px;
-  /*max-width: 700px;*/
-  height:fit-content;
-  /*height:550px;*/
-  max-width: 600px;
+    color: white;
+    font-size: large;
+    text-align: justify;
+    padding: 10px;
+    height:fit-content;
+    max-width: 600px;
 }
 
-
-.nkphoto{
-  position: relative;
-  margin-top: 50px;
-  border-radius: 10px;
-  height: 550px;
-  width:auto;
+.profile_content{
+    rotate: -10deg;
 }
 
-.aboutcontainer2{
-  display: flex;
-  position: relative;
-  justify-content: space-between;
+.profile_photo{
+    margin-top: 30px;
+    background-color: rgb(17, 17, 17);
+    height: 400px;
+    width: 400px;
+    padding: 20px;
+    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4);
 }
 
-.logos2{
-  margin-top: 20px;
-  padding-bottom: 10px;
-  
+.profile_photo_inside{
+    background-color: black;
+    height: 360px;
+    width: 360px;
 }
 
-.logos2 ul li{
-  display: inline;
-  padding-right: 20px;
+.profile_photo_inside img{
+    height: 360px;
+    width: 360px;
 }
 
-.logos2 .git i,.logos2 .lin i,.logos2 .ins i{
-  width:15px;
-  transition: ease;
-  color: black;
-}
-
-.logos2 .git i:hover,.logos2 .lin i:hover,.logos2 .ins i:hover{
-  width:15px;
-  transition: ease;
-  color: white;
-}
-
-.logos2 a::before {
-  position: absolute;
-  background-color: white;
-  color: black;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transform: translateY(100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
-}
-
-.logos2 li:hover .git::before {
-  content: "Github";
-  border: 3px solid white;
-  background-color: black;
-  color: white;
-  opacity: 1;
-  visibility: visible;
-}
-
-.logos2 li:hover .ins::before {
-  content: "Instagram"; 
-  border: 3px solid white;
-  background-color: rgb(179, 0, 255);
-  color: white;
-  opacity: 1;
-  visibility: visible;
-}
-
-.logos2 li:hover .lin::before {
-  content: "Linkedin"; 
-  border: 3px solid white;
-  background-color:rgb(0, 114, 177) ;
-  color: white;
-  opacity: 1;
-  visibility: visible;
-}
-
-
-
-/*-----------------------------------------------------------------------education----------------------------------------------------------*/
+/*=============================================================== Education ===============================================================*/
 
 
 .educationtext{
   font-size: x-large;
   color: greenyellow;
-  margin-top: 50px;
+  margin-top: 10px;
   border-radius: 30px;
 }
 
 .main {
 	width: 100%;
 	height: auto;
-  margin-top: 30px;
+    margin-top: 50px;
 	display: grid;
 	place-items: center;
 	padding: 50px 0;
@@ -318,7 +262,7 @@ hr {
 	width: 50%;
 	height: auto;
 	padding: 15px 20px;
-	background-image: linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250));
+	background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
 	border-radius: 8px;
 	box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
 	position: relative;
@@ -376,7 +320,7 @@ hr {
 	position: absolute;
 	width: 130px;
 	height: 33px;
-	background-image: linear-gradient(to right,#7f00ff,#e100ff);
+	background-image: linear-gradient(to right,#0088ff,#9500ff);
 	border-radius: 15px;
 	top: -45px;
 	display: grid;
@@ -419,78 +363,20 @@ hr {
 	transition: all 0.3s ease;
 }
 
-/*-----------------------------------------------------------------------skill----------------------------------------------------------*/
-
-.skilltext1{
-  font-size: x-large;
-  color: greenyellow;
-  margin-top: 50px;
-  border-radius: 30px;
-  margin-bottom: 100px;
-}
+/*=============================================================== skill ===============================================================*/
   
-/*
-.logobox {
-  position: relative;
-  margin-top: 50px;
-  border: 2px solid white;
-  background-image: linear-gradient(135deg, rgb(173, 118, 255), rgb(133, 53, 252));
-  padding: 10px;
-  border-radius: 10px;
-  width: 150px;
-  height: 150px;
-  object-fit: contain;
-}
- 
-
-.logoskill {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-  align-items: flex-start;
-}
-
-.skilltext {
-  font-size: x-large;
-  color: rgb(173, 118, 255);
-  margin-top: 50px;
-  font-weight: bold;
-  border-radius: 10px;
-  display: none; 
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background: rgba(0, 0, 0, 0.8);
-  text-align: center;
-  padding: 10px;
-  padding-left: 100%;
-  padding-right: 100%;
-  box-sizing: border-box;
-  
-}
-
-.logoskill .skill {
-  position: relative;
-  overflow: hidden;
-}
-
-.logoskill .skill:hover .skilltext {
-  display: block; 
-  
-}
-
- */
-
-
+.skilltexttitle{
+    font-size: x-large;
+    margin-top: 10px;
+    color: greenyellow;
+    border-radius: 30px;
+  }
 
 .sklist{
-  margin-top: 20px;
   list-style: none;
   padding: 10px;
   border-radius: 5px;
-  background-color: rgb(211, 188, 246);
+  background-color: rgb(164, 214, 246);
 }
 
 .skill img{
@@ -515,44 +401,48 @@ hr {
   width: 300px;
   color: white;
   font-weight: bold;
-  background-image: linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250));
+  background-image: linear-gradient(135deg, rgb(58, 60, 207),rgb(33, 109, 250));
   align-items: center;
   justify-content: center;
   margin-bottom: 30px;
   border-radius: 5px;
   padding: 10px;
   font-size: large;
+  box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
 }
 
 .skul:hover {
-  background-image: linear-gradient(135deg, rgb(100, 50, 150), rgb(80, 20, 130));
+  background-image: linear-gradient(-135deg, rgb(108, 157, 249), rgb(58, 60, 207));
+  transform: translateY(-1px);
 }
-
 
 .skul ul{
   display: none;
 }
 
 .skillscontainer2{
+  margin-top: 100px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
 }
 
-/*-----------------------------------------------------------------------work----------------------------------------------------------*/
+/*=============================================================== work ===============================================================*/
 
 .worktext{
-  font-size: x-large;
-  margin-top: 50px;
-  color: greenyellow;
-  border-radius: 30px;
-}
+    font-size: x-large;
+    margin-top: 10px;
+    color: greenyellow;
+    border-radius: 30px;
+  }
 
 .wrapper {
   width: 100%;
   position: relative;
   margin-top: 100px;  
 }
+
 .wrapper i {
   top: 50%;
   height: 50px;
@@ -568,15 +458,19 @@ hr {
   transform: translateY(-50%);
   transition: transform 0.1s linear;
 }
+
 .wrapper i:active{
   transform: translateY(-50%) scale(0.85);
 }
+
 .wrapper i:first-child{
   left: -22px;
 }
+
 .wrapper i:last-child{
   right: -22px;
 }
+
 .wrapper .carousel{
   display: grid;
   grid-auto-flow: column;
@@ -588,25 +482,31 @@ hr {
   scroll-behavior: smooth;
   scrollbar-width: none;
 }
+
 .carousel::-webkit-scrollbar {
   display: none;
 }
+
 .carousel.no-transition {
   scroll-behavior: auto;
 }
+
 .carousel.dragging {
   scroll-snap-type: none;
   scroll-behavior: auto;
 }
+
 .carousel.dragging .card {
   cursor: grab;
   user-select: none;
 }
+
 .carousel :where(.card, .img) {
   display: flex;
   justify-content: center;
   align-items: center;
 }
+
 .carousel .card {
   scroll-snap-align: start;
   height: 342px;
@@ -618,7 +518,7 @@ hr {
 }
 
 .card{
-  background:linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250));
+    background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
 }
 
 .card .img img {
@@ -628,12 +528,14 @@ hr {
   object-fit: cover;
   border: 4px solid #ffffff;
 }
+
 .carousel .card h2 {
   font-weight: 900;
   color: #ffffff;
   font-size: 1.56rem;
   margin: 30px 0 5px;
 }
+
 .carousel .card span {
   color: black;
   font-weight: bold;
@@ -644,22 +546,26 @@ hr {
     grid-auto-columns: calc((100% / 2) - 9px);
   }
 }
+
 @media screen and (max-width: 900px) {
   .wrapper .carousel {
     grid-auto-columns: 100%;
   }
 }
 
-
-
-/*-----------------------------------------------card inside-------------------*/
+/*=================================== card inside ==========================================*/
 
 .card .video-container {
   display: none;
 }
 
+.card .video-container img, .card .video-container iframe{
+    border-radius: 10px;
+}
+
 .card .img,.card h2,.card span{
   animation: slideInFromTop 1s ease;
+  border-radius: 10px;
 }
 
 .card:hover .video-container {
@@ -694,15 +600,16 @@ hr {
 
 }
 
-
 .card:hover .img, .card:hover h2, .card:hover span {
   display: none;
 }
 
 .card .video-container .about_the_work{
-  text-align: justify;
-  max-height: 150px;
+  margin-top: 10px;
+  text-align: left;
   font-weight: bold;
+  overflow-y: auto;
+  height: 95px;
   max-width: 300px;
 }
 
@@ -714,12 +621,14 @@ hr {
   width: fit-content;
   padding: 5px;
   border-radius: 10px;
+  font-size: small;
 }
 
 .card .video-container .try_button:hover{
   color:white;
+  font-size: small;
   background-color: black;
-  transition: 0.5s ease-in-out;
+  transition: 0.2s ease-in-out;
 }
 
 .card .video-container .try_button:hover .button{
@@ -727,11 +636,11 @@ hr {
   border: 1px white;
 }
 
-/*-----------------------------------------------------------------------achivement----------------------------------------------------------*/
+/*=============================================================== achivement ============================================================*/
 
 .achivementtext{
   font-size: x-large;
-  margin-top: 50px;
+  margin-top: 10px;
   color: greenyellow;
   border-radius: 30px;
 }
@@ -739,7 +648,7 @@ hr {
 .img2 img{
   width: 600px;
   height: 400px;
-  border: 5px solid rgb(173, 118, 255);
+  border: 5px solid rgb(33, 109, 250);
   border-radius: 10px;
 }
 
@@ -781,7 +690,7 @@ hr {
   left: 50%;
   transform: translateX(-50%);
   text-align: center;
-  background-image: linear-gradient(135deg, rgb(173, 118, 255), rgb(133, 53, 252));
+  background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
   border-radius: 10px;
   padding: 10px;
   width: 600px;
@@ -800,8 +709,9 @@ hr {
   background-color: white;
   color: black;
   width: fit-content;
+  font-size: small;
   transition: 0.5s ease;
-  padding: 2px;
+  padding: 5px;
   border-radius: 5px;
 }
 
@@ -830,10 +740,9 @@ hr {
 }
 
 
-/*-----------------------------------------------------------------------contact----------------------------------------------------------*/
+/*=============================================================== contact ==========================================================*/
 
 .letsconnect{
-  margin-top:50px;
   color: white;
   font-weight: bold;
   font-size: x-large;
@@ -841,6 +750,7 @@ hr {
 
 .emaill{
   border-radius: 30px;
+  font-size: medium;
   color: greenyellow;
 }
 
@@ -851,33 +761,11 @@ hr {
   justify-content: space-around;
 }
 
-.nk2{
-  margin-top: 10px;
-  height: 600px;
-  width: auto;
-  border-radius: 10px;
-}
-
 .contact-form {
-  margin-top: 100px;
+  margin-top: 30px;
   border-collapse: separate;
   border-spacing: 50px 20px; 
 }
-
-.form-group-title{ 
-  display: flex;
-  border-radius: 30px;
-  border:3px solid white;
-  flex-direction: column;
-  width: 150px;
-  padding-top: 5px;
-  padding-bottom: 5px;
-  color: white;
-  font-size: larger;
-  font-weight: 900;
-  margin-top: 3px;
-}
-
 
 input,textarea{
   border-radius: 30px;
@@ -886,16 +774,31 @@ input,textarea{
   height: 40px;
   font-size: larger;
   font-weight: 900;
-  width: 500px;
-  background-color: rgb(153, 87, 252);
+  width: 400px;
+}
+
+#name{
+    background-color: rgba(255, 255, 255, 0.8);
+}
+
+#email{
+    background-color: rgb(255, 255, 255, 0.65);
+}
+
+#subject{
+    background-color: rgb(255, 255, 255, 0.5);
 }
 
 textarea{
   height:150px;
   padding-top: 10px;
-  background-color: rgb(153, 87, 252);
+  background-color: rgb(255, 255, 255, 0.35);
 }
 
+input::placeholder,textarea::placeholder{
+    color: rgb(77, 75, 75);
+    font-style: italic;
+}
 
 .btn-md{
   width: 150px;
@@ -903,10 +806,9 @@ textarea{
   border-radius: 30px;
   font-size: larger;
   font-weight: 900;
-  margin-left: 300px;
   border: none;
   color: white;
-  background-color: rgb(133, 53, 252);
+  background-color: rgb(34, 105, 212);
 }
 
 .btn-md:hover{
@@ -916,50 +818,27 @@ textarea{
   transition: 0.5s ease;
 }
 
-/*
-.walkgif{
-  z-index: 990;
-  margin-top: 50px;
-}
-
-.walkgif img{
-  position: absolute;
-  height: 100px;
-  width:auto;
-  animation: move 15s linear infinite; 
-}
-
-@keyframes move {
-  0% { left: -100px; } 
-  100% { left: calc(90%); }
-}
-*/
-
 /*----------------------------------------------------------------*/
 
 .contactcontainer3{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   background-color: black; /*rgb(133, 53, 252,0.2)*/
   margin-bottom: 0;
   width: 100%;
-  height: 200px;
+  height: 100px;
   font-weight: bolder;
-}
-
-.copyright{
-  text-align: center;
-  color: white;
 }
 
 /*----------------------------------------------------------------*/
 
 .logos{
+  padding-top: 20px;
   display: flex;
   justify-content: center;
   list-style: none;
-  padding-top: 30px;
 }
 
 .logos li{
@@ -976,47 +855,52 @@ textarea{
 .logos .git i:hover,.logos .lin i:hover,.logos .ins i:hover{
   width:15px;
   transition: ease;
-  color: rgb(133, 53, 252);
+  color: rgb(0, 177, 253);
 }
 
-.logos a::before {
-  position: absolute;
-  background-color: white;
-  color: black;
-  padding: 5px 10px;
-  border-radius: 5px;
-  transform: translateY(100%);
-  opacity: 0;
-  visibility: hidden;
-  transition: opacity 0.3s ease, visibility 0.3s ease;
+.copyright{
+    text-align: center;
+    color: white;
 }
 
-.logos li:hover .git::before {
-  content: "Github"; 
-  border: 3px solid white;
-  background-color: black;
-  color: white;
-  opacity: 1;
-  visibility: visible;
+.copyright span{
+    color: white;
+    animation: nametransition 3s ease-in-out infinite;
 }
 
-.logos li:hover .ins::before {
-  content: "Instagram"; 
-  border: 3px solid white;
-  background-color: rgb(179, 0, 255);
-  color: white;
-  opacity: 1;
-  visibility: visible;
+@keyframes nametransition {
+    0% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
+    20% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    50% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
+    50% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(10px);
+    }
+    80% {
+        opacity: 1;
+        visibility: visible;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        visibility: hidden;
+        transform: translateY(-10px);
+    }
 }
 
-.logos li:hover .lin::before {
-  content: "Linkedin"; 
-  border: 3px solid white;
-  background-color:rgb(0, 114, 177) ;
-  color: white;
-  opacity: 1;
-  visibility: visible;
-}
 
 /*-------------------------------------------------------------music------------------------------------------------------------------------*/
 

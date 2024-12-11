@@ -39,6 +39,16 @@ function toggleMenu() {
   }
 }
 
+function Menuoff() {
+    var menuList = document.getElementById("menulist");
+    var menuListItems = menuList.getElementsByTagName("li");
+    if (menuList.style.display === "block") {
+      menuList.style.display = "none";
+      for (var i = 0; i < menuListItems.length; i++) {
+        menuListItems[i].style.display = "none";
+      }
+    }
+  }
 
 
 //============================================================================ Front ======================================================================
@@ -249,7 +259,7 @@ function toggleTheme() {
     body.classList.remove('dark-mode');
     
     document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design.png")');
-    body.style.backgroundColor = 'rgb(38, 16, 70)';
+    body.style.backgroundImage = 'linear-gradient(135deg, rgb(1, 8, 66), rgb(0, 120, 171))';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
     nknamesec.src = "assets/img/Nk_front_white.png";
@@ -290,7 +300,7 @@ function toggleTheme() {
   } else {
     document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design_2.png")');
     body.classList.add('dark-mode');
-    body.style.backgroundColor = 'rgb(133, 53, 252)'; 
+    body.style.backgroundImage = 'linear-gradient(135deg, white, rgb(0, 179, 255))';
     body.style.backgroundRepeat = 'no-repeat';
     body.style.backgroundAttachment = 'fixed';
     nknamesec.src = "assets/img/Nk_front_white.png";
@@ -363,7 +373,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.nkphoto,.abtme,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos,.wrapper2,.skillscontainer2');
+  const elements = document.querySelectorAll('.aboutcontainer2,.card,.nk2,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.copyright,.contact-form tr,.logos,.wrapper2,.skillscontainer2');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
