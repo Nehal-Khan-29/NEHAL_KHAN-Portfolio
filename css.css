@@ -36,7 +36,8 @@ html{
 body{
     height: auto;
     overflow-x: hidden;
-    background:linear-gradient(135deg, rgb(1, 11, 105), rgb(2, 146, 208));
+    background-color: rgb(2, 146, 208);
+    background-image:linear-gradient(135deg, rgb(1, 11, 105), rgb(2, 146, 208));
 }
 
 body::before {
