@@ -209,9 +209,11 @@ hr{
     color: white;
     font-size: large;
     text-align: justify;
-    padding: 10px;
+    padding: 20px;
     height:fit-content;
     max-width: 600px;
+    background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
+    border-radius: 10px;
 }
 
 .profile_content{
