@@ -51,20 +51,14 @@
 
 /*-----------------------------------------------------------------------body----------------------------------------------------------*/
 
-    @media only screen and (max-width: 1430px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
-            max-width: 80%;
-        }
-    }
-
     @media only screen and (max-width: 1420px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contact_container{
             max-width: 90%;
         }
     }
 
     @media only screen and (max-width: 410px){
-        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contactcontainer{
+        .frontcontainer, .aboutcontainer , .educationcontainer,.skillscontainer, .workcontainer,.achivementcontainer, .contact_container{
             max-width: 95%;
         }
     }
@@ -255,9 +249,9 @@
         right: -50px;
     }
 
-    .video-container iframe{
-        width:130;
-        height:80;
+    .video-container iframe, .video-container img{
+        width:250px;
+        height:auto;
     }
 
     .about_the_work{
