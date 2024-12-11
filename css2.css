@@ -47,13 +47,13 @@
 /*================================================================ Body ================================================================*/
 
 @media only screen and (max-width: 1420px){
-    .Home_Container, .About_Container , .Education_Container,.skillscontainer, .Work_Container,.Achievement_Container, .contact_container{
+    .Home_Container, .About_Container , .Education_Container,.Skills_Container, .Work_Container,.Achievement_Container, .contact_container{
         max-width: 90%;
     }
 }
 
 @media only screen and (max-width: 410px){
-    .Home_Container, .About_Container , .Education_Container,.skillscontainer, .Work_Container,.Achievement_Container, .contact_container{
+    .Home_Container, .About_Container , .Education_Container,.Skills_Container, .Work_Container,.Achievement_Container, .contact_container{
         max-width: 95%;
     }
 }

@@ -259,7 +259,7 @@ hr{
     margin-top: 50px;
 	display: grid;
 	place-items: center;
-	padding: 50px 0;
+	padding: 50px;
 }
 
 .timecontainer {
@@ -296,9 +296,10 @@ hr{
 	z-index: 99;
 }
 
+/*
 .timecontainer ul li:nth-child(4) {
 	margin-bottom: 0;
-}
+}*/
 
 .timecontainer ul li .circle {
 	position: absolute;
