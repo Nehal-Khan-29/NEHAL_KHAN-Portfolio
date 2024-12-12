@@ -220,18 +220,22 @@ updateCircles();
 
 function toggleMute() {
   var audio = document.getElementById('myAudio');
-  var icon = document.querySelector('#playButton span i');
+  var icon1 = document.querySelector('.playButton_1 span i');
+  var icon2 = document.querySelector('.playButton_2 span i');
   
   if (audio.muted) {
     audio.play();
     audio.muted = false;
-    icon.classList.remove('fa-volume-xmark');
-    icon.classList.add('fa-volume-high');
+    icon1.classList.remove('fa-volume-xmark');
+    icon1.classList.add('fa-volume-high');
+    icon2.classList.remove('fa-volume-xmark');
+    icon2.classList.add('fa-volume-high');
   } else {
-    
     audio.muted = true;
-    icon.classList.remove('fa-volume-high');
-    icon.classList.add('fa-volume-xmark');
+    icon1.classList.remove('fa-volume-high');
+    icon1.classList.add('fa-volume-xmark');
+    icon2.classList.remove('fa-volume-high');
+    icon2.classList.add('fa-volume-xmark');
   }
 }
 toggleMute();
