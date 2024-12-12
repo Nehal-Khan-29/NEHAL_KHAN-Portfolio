@@ -173,6 +173,26 @@
     .timecontainer ul li .circle{
         display: none;
     }
+    .b1{
+        height: 700px;
+        width: 700px;
+    }
+    .b2{
+        height: 550px;
+        width: 550px;
+    }
+    .b3{
+        height: 400px;
+        width: 400px;
+    }
+    .b4{
+        height: 250px;
+        width: 250px;
+    }
+    .b5{
+        height: 100px;
+        width: 100px;
+    }
 }
 
 /*================================================================ Skill ================================================================*/
