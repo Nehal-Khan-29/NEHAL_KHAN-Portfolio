@@ -16,10 +16,22 @@
 
 <!-- ================================================== Navigation Bar ================================================== -->
 
-        <div class="navbar">
-            <nav class="menubar">
-                <ul>
-                    <li id="nklogo"><img class="nklogo" src="assets\img\nksymbol2.png" alt="NK"></li>
+    <div class="navbar">
+        <nav class="menubar">
+            <ul>
+                <li id="nklogo"><img class="nklogo" src="assets\img\nksymbol2.png" alt="NK"></li>
+                <li><a href="#home"><b>Home</b></a></li>
+                <li><a href="#about"><b>About</b></a></li>
+                <li><a href="#education"><b>Education</b></a></li>
+                <li><a href="#skills"><b>Skills</b></a></li>
+                <li><a href="#work"><b>Work</b></a></li>
+                <li><a href="#achivement"><b>Achivement</b></a></li>
+                <li><a href="#contact"><b>Contact</b></a></li>
+                <audio id="myAudio" controls><source src="assets\audio\audio.mp3" type="audio/mpeg"></audio>
+                <li class="playButton_1" onclick="toggleMute()"><span><i class="fas fa-volume-high"></i></span></li> 
+                <!--<li class="theme-switch" onclick="toggleTheme()"><span class="theme-icon sun-icon"><i class="fas fa-sun"></i></span><span class="theme-icon moon-icon"><i class="fas fa-moon"></i></span></li>-->
+                <li id="menuToggle"><span class="dots-btn" onclick="toggleMenu()"><i class="fas fa-ellipsis-v"></i></span></li>
+                <li id="menulist" class="menu-open"><ul>
                     <li><a href="#home"><b>Home</b></a></li>
                     <li><a href="#about"><b>About</b></a></li>
                     <li><a href="#education"><b>Education</b></a></li>
@@ -27,248 +39,218 @@
                     <li><a href="#work"><b>Work</b></a></li>
                     <li><a href="#achivement"><b>Achivement</b></a></li>
                     <li><a href="#contact"><b>Contact</b></a></li>
-                    <audio id="myAudio" controls><source src="assets\audio\audio.mp3" type="audio/mpeg"></audio>
-                    <li class="playButton_1" onclick="toggleMute()"><span><i class="fas fa-volume-high"></i></span></li> 
-                    <!--<li class="theme-switch" onclick="toggleTheme()"><span class="theme-icon sun-icon"><i class="fas fa-sun"></i></span><span class="theme-icon moon-icon"><i class="fas fa-moon"></i></span></li>-->
-                    <li id="menuToggle"><span class="dots-btn" onclick="toggleMenu()"><i class="fas fa-ellipsis-v"></i></span></li>
-                    <li id="menulist" class="menu-open"><ul>
-                        <li><a href="#home"><b>Home</b></a></li>
-                        <li><a href="#about"><b>About</b></a></li>
-                        <li><a href="#education"><b>Education</b></a></li>
-                        <li><a href="#skills"><b>Skills</b></a></li>
-                        <li><a href="#work"><b>Work</b></a></li>
-                        <li><a href="#achivement"><b>Achivement</b></a></li>
-                        <li><a href="#contact"><b>Contact</b></a></li>
-                        <li class="playButton_2" onclick="toggleMute()"><span><i class="fas fa-volume-high"></i></span></li>
-                    </li>
-                </ul>
-                
-            </nav>
-        </div>
-
+                    <li class="playButton_2" onclick="toggleMute()"><span><i class="fas fa-volume-high"></i></span></li>
+                </li>
+            </ul>
+            
+        </nav>
+    </div>
 
 <!-- ================================================== Home ================================================== -->
-        
-        
-        <div id="home" class="home" onclick="Menuoff()">
 
-            <div class="Home_Container">
+    <div id="home" class="home" onclick="Menuoff()">
 
-                <div class="Home_Text">
-                    <img class="Nehal_Name" src="assets\img\Nk_front_white.png" alt="Nehal Khan">
-                </div>
+        <div class="Home_Container">
 
-                <a href="assets\Profile.pdf" class="cv"><b>Download CV</b></a>
-                <a href="#home" class="Home_Up"><img src="assets\img\up.png" alt="UP"></a>
+            <div class="Home_Text">
+                <img class="Nehal_Name" src="assets\img\Nk_front_white.png" alt="Nehal Khan">
+            </div>
 
-            </div>   
+            <a href="assets\Profile.pdf" class="cv"><b>Download CV</b></a>
+            <a href="#home" class="Home_Up"><img src="assets\img\up.png" alt="UP"></a>
 
-        </div>
-        
+        </div>   
+
+    </div>
+    
 
 <!-- ================================================== About ================================================== -->
 
-        <div id="about" class="about" onclick="Menuoff()">
+    <div id="about" class="about" onclick="Menuoff()">
 
-            <div class="About_Container">
+        <div class="About_Container">
 
-                <div class="Title_text"><hr><strong>About me</strong><hr></div>
+            <div class="Title_text"><hr><strong>About me</strong><hr></div>
 
-                <div class="About_Container_1">
+            <div class="About_Container_1">
 
-                    <div class="profile_content">
-                        <div class="profile_photo">
-                            <div class="profile_photo_inside"><img src="assets\img\nk.jpg" alt="Nehal"></div>
-                        </div>
+                <div class="profile_content">
+                    <div class="profile_photo">
+                        <div class="profile_photo_inside"><img src="assets\img\nk.jpg" alt="Nehal"></div>
                     </div>
-
-                    <div class="About_Me_Inside">Hello! I'm Nehal, a passionate code enthusiast committed to <strong style="color: black;">Open-source</strong> and <strong style="color: black;">full-stack development</strong>.<br><br>
-                    Currently serving as the club lead and a mentor at Amrita Cognizance Club, I'm always excited to explore new technologies and collaborate on projects that make a positive impact.<br><br>
-                    I'm also passionate about logo design and web development, offering freelancing services in both fields.<br>
-                    </div>
-                    
                 </div>
 
+                <div class="About_Me_Inside">Hello! I'm Nehal, a passionate code enthusiast committed to <strong style="color: black;">Open-source</strong> and <strong style="color: black;">full-stack development</strong>.<br><br>
+                Currently serving as the club lead and a mentor at Amrita Cognizance Club, I'm always excited to explore new technologies and collaborate on projects that make a positive impact.<br><br>
+                I'm also passionate about logo design and web development, offering freelancing services in both fields.<br>
+                </div>
+                
             </div>
-               
+
         </div>
-        
+            
+    </div>
+    
 <!-- ================================================== Education ================================================== -->
 
-        <div id="education" class="education" onclick="Menuoff()">
+    <div id="education" class="education" onclick="Menuoff()">
 
-            <div class="Education_Container">
+        <div class="Education_Container">
 
-                <div class="Title_text"><hr><strong>My Journey</strong><hr></div>
+            <div class="Title_text"><hr><strong>My Journey</strong><hr></div>
 
-                <div class="main">
-                    <div class="timecontainer">
-                        <ul>
-                            <li>
-                                <h3 class="heading">12th</h3>
-                                <a href="https://www.notredamehcs.org/" target="_blank">Notre Dame Of Holy Cross School</a>
-                                <p>Salem, Tamil Nadu</p>
-                                <span class="date">June 2022</span>
-                                <span class="circle"></span>
-                            </li>
+            <div class="main">
+                <div class="timecontainer">
+                    <ul>
+                        <li>
+                            <h3 class="heading">12th</h3>
+                            <a href="https://www.notredamehcs.org/" target="_blank">Notre Dame Of Holy Cross School</a>
+                            <p>Salem, Tamil Nadu</p>
+                            <span class="date">June 2022</span>
+                            <span class="circle"></span>
+                        </li>
 
-                            <li>
-                                <h3 class="heading">BTech CSE</h3>
-                                <a href="https://www.amrita.edu/" target="_blank">Amrita Vishwa Vidyapeetham</a>
-                                <p>Thiruvallur, Tamil Nadu</p>
-                                <span class="date">2022 - 2026</span>
-                                <span class="circle"></span>
-                            </li>
+                        <li>
+                            <h3 class="heading">BTech CSE</h3>
+                            <a href="https://www.amrita.edu/" target="_blank">Amrita Vishwa Vidyapeetham</a>
+                            <p>Thiruvallur, Tamil Nadu</p>
+                            <span class="date">2022 - 2026</span>
+                            <span class="circle"></span>
+                        </li>
 
-                            <li>
-                                <h3 class="heading">Cognizance Club Mentor</h3>
-                                <a href="https://cognizance-amrita.in/team" target="_blank">Cognizance</a>
-                                <p>Amrita Vishwa Vidyapeetham</p>
-                                <span class="date">2023 - 2025</span>
-                                <span class="circle"></span>
-                            </li>
+                        <li>
+                            <h3 class="heading">Cognizance Club Mentor</h3>
+                            <a href="https://cognizance-amrita.in/team" target="_blank">Cognizance</a>
+                            <p>Amrita Vishwa Vidyapeetham</p>
+                            <span class="date">2023 - 2025</span>
+                            <span class="circle"></span>
+                        </li>
 
-                            <li>
-                                <h3 class="heading">Cognizance Club Lead</h3>
-                                <a href="https://cognizance-amrita.in/team" target="_blank">Cognizance</a>
-                                <p>Amrita Vishwa Vidyapeetham</p>
-                                <span class="date">2024 - 2026</span>
-                                <span class="circle"></span>
-                            </li>
+                        <li>
+                            <h3 class="heading">Cognizance Club Lead</h3>
+                            <a href="https://cognizance-amrita.in/team" target="_blank">Cognizance</a>
+                            <p>Amrita Vishwa Vidyapeetham</p>
+                            <span class="date">2024 - 2026</span>
+                            <span class="circle"></span>
+                        </li>
 
-                            <li>
-                                <h3 class="heading">Logo and Web Designing</h3>
-                                <a href="https://www.linkedin.com/in/nehal-khan-29--/" target="_blank">Freelance</a>
-                                <p>Amrita Vishwa Vidyapeetham</p>
-                                <span class="date">2024 - Now</span>
-                                <span class="circle"></span>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="lastcircle"></div>
+                        <li>
+                            <h3 class="heading">Logo and Web Designing</h3>
+                            <a href="https://www.linkedin.com/in/nehal-khan-29--/" target="_blank">Freelance</a>
+                            <p>Amrita Vishwa Vidyapeetham</p>
+                            <button class="blast" onclick="blastrocket()">Blast</button>
+                            <span class="date">2024 - Now</span>
+                            <span class="circle"></span>
+                        </li>
+                    </ul>
                 </div>
-
+                <div class="lastcircle"></div>
             </div>
 
         </div>
 
+    </div>
+
+<!-- ================================================== Blast ================================================== -->
+
+    <div class="blast_area">
+        <div class="b1">
+            <div class="b2">
+                <div class="b3">
+                    <div class="b4">
+                        <div class="b5">
+                            <div class="b6">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 
 <!-- ================================================== Skills ================================================== -->
 
-        <div id="skills" class="skills" onclick="Menuoff()">
+    <div id="skills" class="skills" onclick="Menuoff()">
 
-            <div class="Skills_Container">
+        <div class="Skills_Container">
 
-                <div class="Title_text"><hr><strong>My Skill Set</strong><hr></div>
+            <div class="Title_text"><hr><strong>My Skill Set</strong><hr></div>
 
-                <div class="Skills_Container_1">
+            <div class="Skills_Container_1">
 
-                    <div class="skul sk1" onclick="toggleSkill('sklist1')">Programming Language
-                      <ul id="sklist1" class="PRlang sklist">
-                        <li class="py skill"><img class="logobox" src="assets\img\logo-python.png" alt="Python"><span class="skilltext">Python</span></li>
-                        <li class="c++ skill"><img class="logobox" src="assets\img\logo-c++.png" alt="C++"><span class="skilltext">C++</span></li>
-                        <li class="c skill"><img class="logobox" src="assets\img\logo-c.png" alt="C"><span class="skilltext">C</span></li>
-                        <li class="j skill"><img class="logobox" src="assets\img\logo-java.png" alt="Java"><span class="skilltext">Java</span></li>
-                      </ul>
-                    </div>
-                  
-                    <div class="skul sk2" onclick="toggleSkill('sklist2')">Front End
-                      <ul id="sklist2" class="FE sklist">
-                        <li class="ht skill"><img class="logobox" src="assets\img\logo-html.png" alt="HTML"><span class="skilltext">HTML</span></li>
-                        <li class="cs skill"><img class="logobox" src="assets\img\logo-css.png" alt="CSS"><span class="skilltext">CSS</span></li>
-                        <li class="js skill"><img class="logobox" src="assets\img\logo-js.png" alt="JS"><span class="skilltext">JavaScript</span></li>
-                      </ul>
-                    </div>
-                  
-                    <div class="skul sk3" onclick="toggleSkill('sklist3')">Data Science
-                      <ul id="sklist3" class="ds sklist">
-                        <li class="np skill"><img class="logobox" src="assets\img\logo-np.png" alt="Numpy"><span class="skilltext">Numpy</span></li>
-                        <li class="pd skill"><img class="logobox" src="assets\img\logo-pd.png" alt="Pandas"><span class="skilltext">Pandas</span></li>
-                        <li class="ten skill"><img class="logobox" src="assets\img\logo-ten.png" alt=" TensorFlow"><span class="skilltext">TensorFlow</span></li>
+                <div class="skul sk1" onclick="toggleSkill('sklist1')">Programming Language
+                    <ul id="sklist1" class="PRlang sklist">
+                    <li class="py skill"><img class="logobox" src="assets\img\logo-python.png" alt="Python"><span class="skilltext">Python</span></li>
+                    <li class="c++ skill"><img class="logobox" src="assets\img\logo-c++.png" alt="C++"><span class="skilltext">C++</span></li>
+                    <li class="c skill"><img class="logobox" src="assets\img\logo-c.png" alt="C"><span class="skilltext">C</span></li>
+                    <li class="j skill"><img class="logobox" src="assets\img\logo-java.png" alt="Java"><span class="skilltext">Java</span></li>
                     </ul>
-                    </div>
-                  
-                    <div class="skul sk4" onclick="toggleSkill('sklist4')">Databases
-                      <ul id="sklist4" class="db sklist">
-                        <li class="s skill"><img class="logobox" src="assets\img\logo-sql.png" alt="SQL"><span class="skilltext">SQL Workbench</span></li>
-                        <li class="mdb skill"><img class="logobox" src="assets\img\logo-mongodb.png" alt="MongoDB"><span class="skilltext">MongoDB</span></li>
-                      </ul>
-                    </div>
-                  
-                    <div class="skul sk5" onclick="toggleSkill('sklist5')">UI/UX Design
-                      <ul id="sklist5" class="UIUX sklist">
-                        <li class="fig skill"><img class="logobox" src="assets\img\logo-fig.png" alt="Figma"><span class="skilltext">Figma</span></li>
-                        <li class="flu skill"><img class="logobox" src="assets\img\logo-flutter.png" alt="Flutter"><span class="skilltext">Flutter</span></li>
-                        <li class="and skill"><img class="logobox" src="assets\img\logo-android.png" alt="Android"><span class="skilltext">Android</span></li>
-                      </ul>
-                    </div>
-
-                    <div class="skul sk6" onclick="toggleSkill('sklist6')">Cloud Platform
-                        <ul id="sklist6" class="clp sklist">
-                          <li class="azu skill"><img class="logobox" src="assets\img\logo-azure.png" alt="Azure"><span class="skilltext">Microsoft Azure</span></li>
-                        </ul>
-                      </div>
-                  
-                    <div class="skul sk7" onclick="toggleSkill('sklist7')">Coding Platform
-                      <ul id="sklist7" class="cp sklist">
-                        <li class="leet skill"><img class="logobox" src="assets\img\logo-leetcode.png" alt="Leetcode"><a href="https://leetcode.com/Nehal-Khan-29/" target="_blank"><span class="skilltext">Leetcode</span></a></li>
-                        <li class="hack skill"><img class="logobox" src="assets\img\logo-hackerrank.png" alt="Hackerrank"><a href="https://www.hackerrank.com/profile/nehalmicro29" target="_blank"><span class="skilltext">Hackerrank</span></a></li>
-                        <li class="cc skill"><img class="logobox" src="assets\img\logo-codechef.png" alt="CodeChef"><a href="https://www.codechef.com/users/nehalkhan29" target="_blank"><span class="skilltext">CodeChef</span></a></li>
-                      </ul>
-                    </div>
-                
                 </div>
                 
-            </div>
+                <div class="skul sk2" onclick="toggleSkill('sklist2')">Front End
+                    <ul id="sklist2" class="FE sklist">
+                    <li class="ht skill"><img class="logobox" src="assets\img\logo-html.png" alt="HTML"><span class="skilltext">HTML</span></li>
+                    <li class="cs skill"><img class="logobox" src="assets\img\logo-css.png" alt="CSS"><span class="skilltext">CSS</span></li>
+                    <li class="js skill"><img class="logobox" src="assets\img\logo-js.png" alt="JS"><span class="skilltext">JavaScript</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skul sk3" onclick="toggleSkill('sklist3')">Data Science
+                    <ul id="sklist3" class="ds sklist">
+                    <li class="np skill"><img class="logobox" src="assets\img\logo-np.png" alt="Numpy"><span class="skilltext">Numpy</span></li>
+                    <li class="pd skill"><img class="logobox" src="assets\img\logo-pd.png" alt="Pandas"><span class="skilltext">Pandas</span></li>
+                    <li class="ten skill"><img class="logobox" src="assets\img\logo-ten.png" alt=" TensorFlow"><span class="skilltext">TensorFlow</span></li>
+                </ul>
+                </div>
+                
+                <div class="skul sk4" onclick="toggleSkill('sklist4')">Databases
+                    <ul id="sklist4" class="db sklist">
+                    <li class="s skill"><img class="logobox" src="assets\img\logo-sql.png" alt="SQL"><span class="skilltext">SQL Workbench</span></li>
+                    <li class="mdb skill"><img class="logobox" src="assets\img\logo-mongodb.png" alt="MongoDB"><span class="skilltext">MongoDB</span></li>
+                    </ul>
+                </div>
+                
+                <div class="skul sk5" onclick="toggleSkill('sklist5')">UI/UX Design
+                    <ul id="sklist5" class="UIUX sklist">
+                    <li class="fig skill"><img class="logobox" src="assets\img\logo-fig.png" alt="Figma"><span class="skilltext">Figma</span></li>
+                    <li class="flu skill"><img class="logobox" src="assets\img\logo-flutter.png" alt="Flutter"><span class="skilltext">Flutter</span></li>
+                    <li class="and skill"><img class="logobox" src="assets\img\logo-android.png" alt="Android"><span class="skilltext">Android</span></li>
+                    </ul>
+                </div>
 
+                <div class="skul sk6" onclick="toggleSkill('sklist6')">Cloud Platform
+                    <ul id="sklist6" class="clp sklist">
+                        <li class="azu skill"><img class="logobox" src="assets\img\logo-azure.png" alt="Azure"><span class="skilltext">Microsoft Azure</span></li>
+                    </ul>
+                    </div>
+                
+                <div class="skul sk7" onclick="toggleSkill('sklist7')">Coding Platform
+                    <ul id="sklist7" class="cp sklist">
+                    <li class="leet skill"><img class="logobox" src="assets\img\logo-leetcode.png" alt="Leetcode"><a href="https://leetcode.com/Nehal-Khan-29/" target="_blank"><span class="skilltext">Leetcode</span></a></li>
+                    <li class="hack skill"><img class="logobox" src="assets\img\logo-hackerrank.png" alt="Hackerrank"><a href="https://www.hackerrank.com/profile/nehalmicro29" target="_blank"><span class="skilltext">Hackerrank</span></a></li>
+                    <li class="cc skill"><img class="logobox" src="assets\img\logo-codechef.png" alt="CodeChef"><a href="https://www.codechef.com/users/nehalkhan29" target="_blank"><span class="skilltext">CodeChef</span></a></li>
+                    </ul>
+                </div>
+            
+            </div>
+            
         </div>
 
+    </div>
+
 <!-- ================================================== Work ================================================== -->
-        
-        <div id="work" class="work" onclick="Menuoff()">
+    
+    <div id="work" class="work" onclick="Menuoff()">
 
-            <div class="Work_Container">   
+        <div class="Work_Container">   
 
-                <div class="Title_text"><hr><strong>My Projects</strong><hr></div>
+            <div class="Title_text"><hr><strong>My Projects</strong><hr></div>
 
-                <div class="wrapper">
-                    <i id="left" class="fa-solid fa-angle-left"></i>
-                    <ul class="carousel">
+            <div class="wrapper">
+                <i id="left" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel">
 
-                      <li class="card">
-                        <div class="img"><img src="assets\img\work-ad.png" alt="img" draggable="false"></div>
-                        <h2>AfterDot</h2>
-                        <span>A File Converter</span>
-                        <div class="video-container">
-                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/Sjh69Y4JF5M" frameborder="0" allowfullscreen></iframe>
-                            <div class="about_the_work">Convert, extract, merge: DOCX to PDF, PDF to DOCX, PDF to text, PDF to JPG, JPG to PDF or PNG, interchange JPG and PNG, merge PDFs and DOCX files.</div>
-                            <div class="try_button"><a href="https://nehal-khan-29.github.io/.AfterDot/" class="button" target="_blank"> Try It </a></div>
-                        </div>
-                      </li>
-
-                      <li class="card">
-                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="assets\img\work-vc.jpeg" alt="img" draggable="false"></a></div>
-                        <h2>Voice Cam</h2>
-                        <span>Laptop Camera Operator</span>
-                        <div class="video-container">
-                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/XtyHE3AvkPo" frameborder="0" allowfullscreen></iframe>
-                            <div class="about_the_work">VoiceCam is a laptop camera program that can take commands through voice and do functions like "take photo", "flip camera" and "close" program</div>
-                            <div class="try_button"><a href="https://github.com/Nehal-Khan-29/VoicCam" class="button" target="_blank"> Try It </a></div>
-                        </div>
-                      </li>
-
-                      <li class="card">
-                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="assets\img\work-cz.png" alt="img" draggable="false"></a></div>
-                        <h2>Codez</h2>
-                        <span>Team Project Collaborator</span>
-                        <div class="video-container">
-                            <img  width="300" height="150" src="assets\img\work-cz2.png">
-                            <div class="about_the_work">Real time team project collaborator without switching between various softwares. This eliminates distractions and fosters productivity</div>
-                            <div class="try_button"><a href="https://nehal-khan-29.github.io/Codez/" class="button" target="_blank"> Try It </a></div>
-                        </div>
-                      </li>
-
-                      <li class="card">
+                    <li class="card">
                         <div class="img"><img src="assets\img\work-eyed.png" alt="img" draggable="false"></div>
                         <h2>AEyeD</h2>
                         <span>Facial & Object recognizer</span>
@@ -277,9 +259,9 @@
                             <div class="about_the_work">Face and Gesture Recognition, Vehicles and Stairs Detection, and Text recognition for Visually impaired Individuals using the ML algorithm</div>
                             <div class="try_button"><a href="https://www.linkedin.com/in/nehal-khan-29--/details/projects/" class="button" target="_blank"> View </a></div>
                         </div>
-                      </li>
+                    </li>
 
-                      <li class="card">
+                    <li class="card">
                         <div class="img"><img src="assets\img\work-upgrade.png" alt="img" draggable="false"></div>
                         <h2>Upgrade</h2>
                         <span>Recommender System</span>
@@ -288,131 +270,164 @@
                             <div class="about_the_work">This project is a Recommender System aimed at improving students' learning experiences by using the ML-KNN algorithm. It provides personalized recommendations to students based on their learning patterns and performance.</div>
                             <div class="try_button"><a href="https://github.com/Nehal-Khan-29/Upgrade-2" class="button" target="_blank"> Try It </a></div>
                         </div>
-                      </li>
-                      
-                    </ul>
-                    <i id="right" class="fa-solid fa-angle-right"></i>
-                </div>
+                    </li>
 
-            </div> 
+                    <li class="card">
+                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="assets\img\work-cz.png" alt="img" draggable="false"></a></div>
+                        <h2>Codez</h2>
+                        <span>Team Project Collaborator</span>
+                        <div class="video-container">
+                            <img  width="300" height="150" src="assets\img\work-cz2.png">
+                            <div class="about_the_work">Real time team project collaborator without switching between various softwares. This eliminates distractions and fosters productivity</div>
+                            <div class="try_button"><a href="https://nehal-khan-29.github.io/Codez/" class="button" target="_blank"> Try It </a></div>
+                        </div>
+                    </li>
 
-        </div>
+                    <li class="card">
+                        <div class="img"><img src="assets\img\work-ad.png" alt="img" draggable="false"></div>
+                        <h2>AfterDot</h2>
+                        <span>A File Converter</span>
+                        <div class="video-container">
+                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/Sjh69Y4JF5M" frameborder="0" allowfullscreen></iframe>
+                            <div class="about_the_work">Convert, extract, merge: DOCX to PDF, PDF to DOCX, PDF to text, PDF to JPG, JPG to PDF or PNG, interchange JPG and PNG, merge PDFs and DOCX files.</div>
+                            <div class="try_button"><a href="https://nehal-khan-29.github.io/.AfterDot/" class="button" target="_blank"> Try It </a></div>
+                        </div>
+                    </li>
+
+                    <li class="card">
+                        <div class="img"><a href="https://nehal-khan-29.github.io/Codez/"><img src="assets\img\work-vc.jpeg" alt="img" draggable="false"></a></div>
+                        <h2>Voice Cam</h2>
+                        <span>Laptop Camera Operator</span>
+                        <div class="video-container">
+                            <iframe  width="300" height="150" src="https://www.youtube.com/embed/XtyHE3AvkPo" frameborder="0" allowfullscreen></iframe>
+                            <div class="about_the_work">VoiceCam is a laptop camera program that can take commands through voice and do functions like "take photo", "flip camera" and "close" program</div>
+                            <div class="try_button"><a href="https://github.com/Nehal-Khan-29/VoicCam" class="button" target="_blank"> Try It </a></div>
+                        </div>
+                    </li>
+                    
+                </ul>
+                <i id="right" class="fa-solid fa-angle-right"></i>
+            </div>
+
+        </div> 
+
+    </div>
 
 <!-- ================================================== Achievment ================================================== -->
-        
-        <div id="achivement" class="achivement" onclick="Menuoff()">
+    
+    <div id="achivement" class="achivement" onclick="Menuoff()">
 
-            <div class="Achievement_Container">   
+        <div class="Achievement_Container">   
 
-                <div class="Title_text"><hr><strong>My Achievements</strong><hr></div>
+            <div class="Title_text"><hr><strong>My Achievements</strong><hr></div>
+            
+            <div class="wrapper2">
+                <i id="left2" class="fa-solid fa-angle-left"></i>
+                <ul class="carousel2">
+                    <li class="card2">
+                    <div class="img2"><img src="assets\certificates\Microsoft certiport certificate.jpg" alt="img" draggable="false"></div>
+                    <div class="abtcerti"><h2>Microsoft Certiport Certification</h2>
+                    <span>Organised By: Coincent</span>
+                    <div class="try_button2"><a href="https://www.credly.com/badges/368067a0-cbd8-4714-98fb-13981ac6bfce/linked_in_profile" target="_blank" class="button"> View It </a></div>
+                    </div>
+                </li>
+                    
+                    <li class="card2">
+                    <div class="img2"><img src="assets\certificates\NPTEL Introduction to programming in C.jpg" alt="img" draggable="false"></div>
+                    <div class="abtcerti"><h2>Introduction to programming in C</h2>
+                    <span>Organised By: Swayam</span>
+                    <div class="try_button2"><a href="https://www.linkedin.com/in/nehal-khan-29--/details/certifications/" target="_blank" class="button"> View It </a></div>
+                    </div>
+                </li>
+
+                <li class="card2">
+                    <div class="img2"><img src="assets\certificates\NPTEL Python for data science.jpg" alt="img" draggable="false"></div>
+                    <div class="abtcerti"><h2>Python for data science</h2>
+                    <span>Organised By: Swayam</span>
+                    <div class="try_button2"><a href="https://www.credly.com/badges/368067a0-cbd8-4714-98fb-13981ac6bfce/linked_in_profile" target="_blank" class="button"> View It </a></div>
+                    </div>
+                </li>
+                    
+                    <li class="card2">
+                    <div class="img2"><img src="assets\certificates\icicacm.jpg" alt="img" draggable="false"></div>
+                    <div class="abtcerti"><h2>ICICACM</h2>
+                    <span>Organised By: RMK College of Engineering</span>
+                    <div class="try_button2"><a href="https://www.linkedin.com/posts/nehal-khan-29--_hey-connections-i-am-thrilled-to-announce-activity-7145072465017266176-kRoz?utm_source=share&utm_medium=member_desktop" target="_blank" class="button"> View It </a></div>
+                    </div>
+                </li>
+
+                <li class="card2">
+                    <div class="img2"><img src="assets\certificates\Pyrahacks.png" alt="img" draggable="false"></div>
+                    <div class="abtcerti"><h2>PyraHacks 2023</h2>
+                    <span>Organised By: Memphis Hack Club @ Devpost</span>
+                    <div class="try_button2"><a href="https://devpost.com/software/voicecam" target="_blank" class="button"> View It </a></div>
+                    </div>
+                </li>
+
+                <li class="card2">
+                    <div class="img2"><img src="assets\certificates\Hacktivate.jpg" alt="img" draggable="false"></div>
+                    <div class="abtcerti"><h2>Hacktivate 2023</h2>
+                    <span>Organised By: Cognizance @ Amrita V V Chennai</span>
+                    <div class="try_button2"><a href="https://devpost.com/software/afterdot" target="_blank" class="button"> View It </a></div>
+                    </div>
+                </li>
                 
-                <div class="wrapper2">
-                    <i id="left2" class="fa-solid fa-angle-left"></i>
-                    <ul class="carousel2">
-                      <li class="card2">
-                        <div class="img2"><img src="assets\certificates\Microsoft certiport certificate.jpg" alt="img" draggable="false"></div>
-                        <div class="abtcerti"><h2>Microsoft Certiport Certification</h2>
-                        <span>Organised By: Coincent</span>
-                        <div class="try_button2"><a href="https://www.credly.com/badges/368067a0-cbd8-4714-98fb-13981ac6bfce/linked_in_profile" target="_blank" class="button"> View It </a></div>
-                        </div>
-                    </li>
-                      
-                      <li class="card2">
-                        <div class="img2"><img src="assets\certificates\NPTEL Introduction to programming in C.jpg" alt="img" draggable="false"></div>
-                        <div class="abtcerti"><h2>Introduction to programming in C</h2>
-                        <span>Organised By: Swayam</span>
-                        <div class="try_button2"><a href="https://www.linkedin.com/in/nehal-khan-29--/details/certifications/" target="_blank" class="button"> View It </a></div>
-                        </div>
-                    </li>
+                </ul>
+                
+                <i id="right2" class="fa-solid fa-angle-right"></i>
+                
+                
+            </div>
+            <div class="circles-indexx"></div>
 
-                    <li class="card2">
-                        <div class="img2"><img src="assets\certificates\NPTEL Python for data science.jpg" alt="img" draggable="false"></div>
-                        <div class="abtcerti"><h2>Python for data science</h2>
-                        <span>Organised By: Swayam</span>
-                        <div class="try_button2"><a href="https://www.credly.com/badges/368067a0-cbd8-4714-98fb-13981ac6bfce/linked_in_profile" target="_blank" class="button"> View It </a></div>
-                        </div>
-                    </li>
-                      
-                      <li class="card2">
-                        <div class="img2"><img src="assets\certificates\icicacm.jpg" alt="img" draggable="false"></div>
-                        <div class="abtcerti"><h2>ICICACM</h2>
-                        <span>Organised By: RMK College of Engineering</span>
-                        <div class="try_button2"><a href="https://www.linkedin.com/posts/nehal-khan-29--_hey-connections-i-am-thrilled-to-announce-activity-7145072465017266176-kRoz?utm_source=share&utm_medium=member_desktop" target="_blank" class="button"> View It </a></div>
-                        </div>
-                    </li>
+        </div> 
 
-                    <li class="card2">
-                        <div class="img2"><img src="assets\certificates\Pyrahacks.png" alt="img" draggable="false"></div>
-                        <div class="abtcerti"><h2>PyraHacks 2023</h2>
-                        <span>Organised By: Memphis Hack Club @ Devpost</span>
-                        <div class="try_button2"><a href="https://devpost.com/software/voicecam" target="_blank" class="button"> View It </a></div>
-                        </div>
-                    </li>
-
-                    <li class="card2">
-                        <div class="img2"><img src="assets\certificates\Hacktivate.jpg" alt="img" draggable="false"></div>
-                        <div class="abtcerti"><h2>Hacktivate 2023</h2>
-                        <span>Organised By: Cognizance @ Amrita V V Chennai</span>
-                        <div class="try_button2"><a href="https://devpost.com/software/afterdot" target="_blank" class="button"> View It </a></div>
-                        </div>
-                    </li>
-                    
-                    </ul>
-                    
-                    <i id="right2" class="fa-solid fa-angle-right"></i>
-                    
-                    
-                </div>
-                <div class="circles-indexx"></div>
-
-            </div> 
-
-        </div>
+    </div>
 
 
 <!-- ================================================== Contact ================================================== -->
 
-        <div id="contact" class="contact" onclick="Menuoff()">
-            <div class="contact_container">
-    
-                <div class="letsconnect"><b>Lets connect!</b></div>
-                <div class="my_email"><b>nehalmicro29@gmail.com</b></div>
-    
-                <div class="contact-form-div">
-                    <table class="contact-form">
-                        <form action="https://api.web3forms.com/submit" method="POST">
-                            <input type="hidden" name="access_key" value="ca6bc9bc-72fd-42de-bcd1-abe6c2bbed3d">
-                            <tr>
-                                <td><input type="text" name="name" id="name" placeholder="Name" required></td>
-                            </tr>
-                            <tr>
-                                <td><input type="email" name="email" id="email" placeholder="Email" required></td>
-                            </tr>
-                            <tr>
-                                <td><input type="text" name="subject" id="subject" placeholder="Subject" required></td>
-                            </tr>
-                            <tr>
-                                <td><textarea name="message" id="message" placeholder="Your Message" required></textarea></td>
-                            </tr>
-                            <tr>
-                                <td><button type="submit" class="btn-md">Send</button></td>
-                            </tr>
-                        </form>
-                    </table>
-                </div>
-    
+    <div id="contact" class="contact" onclick="Menuoff()">
+        <div class="contact_container">
+
+            <div class="letsconnect"><b>Lets connect!</b></div>
+            <div class="my_email"><b>nehalmicro29@gmail.com</b></div>
+
+            <div class="contact-form-div">
+                <table class="contact-form">
+                    <form action="https://api.web3forms.com/submit" method="POST">
+                        <input type="hidden" name="access_key" value="ca6bc9bc-72fd-42de-bcd1-abe6c2bbed3d">
+                        <tr>
+                            <td><input type="text" name="name" id="name" placeholder="Name" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="email" name="email" id="email" placeholder="Email" required></td>
+                        </tr>
+                        <tr>
+                            <td><input type="text" name="subject" id="subject" placeholder="Subject" required></td>
+                        </tr>
+                        <tr>
+                            <td><textarea name="message" id="message" placeholder="Your Message" required></textarea></td>
+                        </tr>
+                        <tr>
+                            <td><button type="submit" class="btn-md">Send</button></td>
+                        </tr>
+                    </form>
+                </table>
             </div>
-    
-            <div class="contact_container2" onclick="Menuoff()">
-                <ul class="logos">
-                    <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><i class="fa-brands fa-github"></i></a></li>
-                    <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
-                    <li class="Nehal_Name_2"><b>Nehal Khan</b></li>
-                </ul>
-            </div>
-    
+
         </div>
+
+        <div class="contact_container2" onclick="Menuoff()">
+            <ul class="logos">
+                <li><a class="git" href="https://github.com/Nehal-Khan-29" target="_blank"><i class="fa-brands fa-github"></i></a></li>
+                <li><a class="lin" href="https://linkedin.com/in/nehal-khan-29--" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                <li><a class="ins" href="https://www.instagram.com/nk29_nehal/?igshid=ODhmNDk1YzU=" target="_blank"><i class="fa-brands fa-instagram"></i></a></li> 
+                <li class="Nehal_Name_2"><b>Nehal Khan</b></li>
+            </ul>
+        </div>
+
+    </div>
         
 <!-- ======================================================================================================================== -->
 

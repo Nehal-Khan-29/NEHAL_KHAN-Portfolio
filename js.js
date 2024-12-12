@@ -51,6 +51,18 @@ function Menuoff() {
   }
 
 
+//======================================================== education ======================================================================
+
+function blastrocket() {
+    const circles = document.querySelectorAll('.b1, .b2, .b3, .b4, .b5');
+
+    circles.forEach(circle => {
+        circle.style.animation = 'none';
+        void circle.offsetWidth;
+        circle.style.animation = 'blastoff 3s';
+    });
+}
+
 //======================================================== skill ======================================================================
 
 function toggleSkill(listId) {
