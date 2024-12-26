@@ -59,10 +59,11 @@ function blastrocket() {
     circles.forEach(circle => {
         circle.style.animation = 'none';
         void circle.offsetWidth;
-        circle.style.animation = 'blastoff 3s';
+        circle.style.animation = 'blastoff 2s';
     });
 }
 
+blastrocket()
 //======================================================== skill ======================================================================
 
 function toggleSkill(listId) {
