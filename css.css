@@ -507,6 +507,32 @@ hr{
   padding: 10px;
   font-size: large;
   box-shadow: 1px 1px 15px rgba(0, 0, 0, 0.218);
+  cursor: pointer;
+}
+
+.skul div {
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    width: 100%; 
+  }
+  
+.skul div p {
+    margin: 0; 
+    text-align: center;
+    flex-grow: 1;
+  }
+  
+.skul div i {
+    margin-left: auto; 
+  }
+  
+.skul div .fa-caret-down{
+    display: none;
+}
+
+.skul div .fa-caret-right{
+    display: inline;
 }
 
 .skul:hover {
@@ -515,6 +541,7 @@ hr{
 }
 
 .skul ul{
+  margin-top: 10px;
   display: none;
 }
 

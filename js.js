@@ -68,19 +68,31 @@ blastrocket()
 
 function toggleSkill(listId) {
 
-  var allLists = document.getElementsByClassName("Skills_Container_1")[0].getElementsByTagName("ul");
-  for (var i = 0; i < allLists.length; i++) {
-    if (allLists[i].id === listId) {
-      if (allLists[i].style.display === "none" || allLists[i].style.display === "") {
-        allLists[i].style.display = "block";
+    var allLists = document.getElementsByClassName("Skills_Container_1")[0].getElementsByTagName("ul");
+    var downarr = document.getElementsByClassName("fa-caret-down");
+    var rightarr = document.getElementsByClassName("fa-caret-right"); 
+  
+    for (var i = 0; i < allLists.length; i++) {
+      if (allLists[i].id === listId) {
+        if (allLists[i].style.display === "none" || allLists[i].style.display === "") {
+          allLists[i].style.display = "block";
+          rightarr[i].style.display = "none";
+          downarr[i].style.display = "inline-block";
+        } else {
+          allLists[i].style.display = "none";
+          rightarr[i].style.display = "inline-block";
+          downarr[i].style.display = "none";
+        }
       } else {
         allLists[i].style.display = "none";
+        rightarr[i].style.display = "inline-block";
+        downarr[i].style.display = "none";
       }
-    } else {
-      allLists[i].style.display = "none";
     }
+  
   }
-}
+  
+
 
 //========================================================== work ======================================================================
 
