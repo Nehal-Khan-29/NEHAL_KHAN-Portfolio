@@ -1050,7 +1050,7 @@ color: red;
 }
   
 .slide-in-2 {
-    animation: BodyslideInFromLeft 0.5s ease-in-out;
+    animation: BodyslideInFromLeft 0.8s ease-in-out;
 }
 
 @keyframes BodyslideInFromLeft2 {
@@ -1067,7 +1067,7 @@ color: red;
 }
   
 .slide-in-3 {
-    animation: BodyslideInFromLeft2 0.5s ease-in-out;
+    animation: BodyslideInFromLeft2 0.8s ease-in-out;
 }
 
 /*============================================================= Sun Moon ================================================================*/
