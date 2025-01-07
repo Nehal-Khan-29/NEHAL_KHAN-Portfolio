@@ -152,6 +152,14 @@
         box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
     }
 
+    .slide-in-2 {
+        animation: BodyslideInFromTop 0.8s ease-in-out;
+    }
+
+    .slide-in-3 {
+        animation: BodyslideInFromTop 0.8s ease-in-out;
+    }
+
 }
 
 /*============================================================== Education ==============================================================*/

@@ -215,7 +215,7 @@ hr{
     text-align: left;
     padding: 20px;
     height:100vh;
-    background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
+    background-image: linear-gradient(rgb(0, 2, 70),rgb(3, 88, 246));
     box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
 }
 
@@ -225,10 +225,6 @@ hr{
 
 .About_Me_Inside p{
     margin-top: 25px;
-}
-
-.About_Container_1 p b{
-    color: black;
 }
 
 .profile_photo_inside img{
