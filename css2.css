@@ -98,27 +98,60 @@
 /*================================================================ About ================================================================*/
 
 @media only screen and (max-width: 1420px){
-    .profile_content{
-        transform: scale(0.8);
-    }
+
     .About_Container_1 {
         display: flex;
         flex-direction: column;
         align-items: center; 
     }
+
+    .profile_photo_inside{
+        height: 500px;
+        width: 500px;
+        border-radius: 100%;
+        overflow: hidden;
+        box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
+    }
+
+    .profile_photo_inside img{ 
+        height: 130%;
+        width: 100%;
+        object-fit: cover;
+    }
+
     .About_Me_Inside{
-        margin-top: 50px;
+        margin-top: 25px;
+        height: fit-content;
+        border-radius: 10px;
+    }
+
+    .about .Title_text{
+        margin-top: 0px;
     }
 }
 
-@media only screen and (max-width: 500px){
-    .profile_content{
-        transform: scale(0.7);
+@media only screen and (max-width: 600px){
+
+    .profile_photo_inside{
+        height: 400px;
+        width: 400px;
+        border-radius: 100%;
+        overflow: hidden;
+        box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
     }
-    .About_Me_Insidet{
-        height: auto;
-        width: 307px;
+
+}
+
+@media only screen and (max-width: 450px){
+
+    .profile_photo_inside{
+        height: 300px;
+        width: 300px;
+        border-radius: 100%;
+        overflow: hidden;
+        box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
     }
+
 }
 
 /*============================================================== Education ==============================================================*/

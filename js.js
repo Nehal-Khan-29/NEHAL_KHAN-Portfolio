@@ -279,7 +279,7 @@ function isInViewport(element) {
 }
 
 function handleScroll() {
-  const elements = document.querySelectorAll('.About_Container_1,.card,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.contact-form tr,.wrapper2,.Skills_Container_1');
+  const elements = document.querySelectorAll('.About_Me_Inside p,.card,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.contact-form tr,.wrapper2,.Skills_Container_1');
 
   elements.forEach(element => {
     if (isInViewport(element)) {
@@ -297,6 +297,43 @@ function handleScroll() {
 window.addEventListener('scroll', handleScroll);
 window.addEventListener('load', handleScroll);
 
+function handleScroll2() {
+    const elements = document.querySelectorAll('.profile_photo_inside, .About_Me_Inside');
+  
+    elements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('slide-in-2');
+        element.classList.remove('slide-in-2');
+        element.style.visibility = 'visible';
+      } else {
+        element.classList.remove('slide-in-2');
+        element.classList.add('slide-in-2');
+        
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', handleScroll2);
+  window.addEventListener('load', handleScroll2);
+
+  function handleScroll3() {
+    const elements = document.querySelectorAll('.About_Me_Inside');
+  
+    elements.forEach(element => {
+      if (isInViewport(element)) {
+        element.classList.add('slide-in-3');
+        element.classList.remove('slide-in-3');
+        element.style.visibility = 'visible';
+      } else {
+        element.classList.remove('slide-in-3');
+        element.classList.add('slide-in-3');
+        
+      }
+    });
+  }
+  
+  window.addEventListener('scroll', handleScroll3);
+  window.addEventListener('load', handleScroll3);
 //=================================================================== SUN MOON =============================================================
 /*
 function toggleTheme() {

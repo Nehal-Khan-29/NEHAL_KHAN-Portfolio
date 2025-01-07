@@ -199,12 +199,14 @@ hr{
 
 /*=============================================================== About ===============================================================*/
 
+.About_Container{
+    padding: 0px;
+}
+
 .About_Container_1{
     display: flex;
     position: relative;
-    justify-content: space-evenly;
-    align-items: center;
-    min-height: 80vh;
+    flex-direction: row;
 }
 
 .About_Me_Inside{
@@ -212,36 +214,25 @@ hr{
     font-size: large;
     text-align: left;
     padding: 20px;
-    height:fit-content;
-    max-width: 600px;
+    height:100vh;
     background-image: linear-gradient(rgb(58, 60, 207),rgb(33, 109, 250));
-    border-radius: 10px;
-    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4);
+    box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
 }
 
-.profile_content{
-    rotate: -10deg;
+.about .Title_text{
+    margin-top: 50px;
 }
 
-.profile_photo{
-    margin-top: 30px;
-    background-color: rgb(17, 17, 17);
-    height: 400px;
-    width: 400px;
-    padding: 20px;
-    box-shadow: 8px 8px 8px rgb(0, 0, 0, 0.4);
-}
-
-.profile_photo_inside{
-    background-color: black;
-    height: 360px;
-    width: 360px;
+.About_Me_Inside p{
+    margin-top: 25px;
 }
 
 .profile_photo_inside img{
-    height: 360px;
-    width: 360px;
+    height: 100vh;
+    width: auto;
+    box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
 }
+
 
 /*=============================================================== Blast ===============================================================*/
 
@@ -1019,6 +1010,40 @@ color: red;
   
 .slide-in {
     animation: BodyslideInFromTop 0.8s ease-in-out;
+}
+
+@keyframes BodyslideInFromLeft {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-50px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+}
+  
+.slide-in-2 {
+    animation: BodyslideInFromLeft 0.5s ease-in-out;
+}
+
+@keyframes BodyslideInFromLeft2 {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(50px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+}
+  
+.slide-in-3 {
+    animation: BodyslideInFromLeft2 0.5s ease-in-out;
 }
 
 /*============================================================= Sun Moon ================================================================*/
