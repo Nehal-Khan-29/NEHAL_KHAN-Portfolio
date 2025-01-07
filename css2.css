@@ -166,7 +166,7 @@
     }
 
     .slide-in-2 {
-        animation: BodyslideInFromTop 0.8s ease-in-out;
+        animation: BodyslideInFromTop 0s ease-in-out;
     }
 
     .slide-in-3 {
