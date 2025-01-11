@@ -144,6 +144,53 @@ hr{
     padding-bottom: 5px;
 }
 
+/*============================================================= Opening ==============================================================*/
+
+.opening{
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.o1, .o2{
+    position: relative;
+    background-color: black;
+    height: 100vh;
+    width: 50%;
+    z-index: 999;
+}
+
+.o1 {
+    animation: openleft 0.5s ease-in-out forwards;
+}
+
+.o2 {
+    animation: openright 0.5s ease-in-out forwards;
+}
+
+@keyframes openleft{
+    from {
+        visibility: visible;
+        transform: translateX(0);
+      }
+      to {
+        visibility: hidden;
+        transform: translateX(-100%);
+      }
+}
+
+@keyframes openright{
+    from {
+        visibility: visible;
+        transform: translateX(0);
+      }
+      to {
+        visibility: hidden;
+        transform: translateX(100%);
+      }
+}
+
 /*=============================================================== Home ===============================================================*/
 
 .Home_Text{
