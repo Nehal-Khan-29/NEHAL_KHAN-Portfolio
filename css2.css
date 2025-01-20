@@ -55,6 +55,7 @@
 @media only screen and (max-width: 410px){
     .Home_Container, .About_Container , .Education_Container,.Skills_Container, .Work_Container,.Achievement_Container, .contact_container{
         max-width: 95%;
+        background-color: rgba(0, 0, 0, 0);
     }
 }
 
@@ -138,6 +139,10 @@
         border-radius: 100%;
         overflow: hidden;
         box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
+    }
+
+    .About_Me_Inside b{
+        font-weight: normal;
     }
 
 }

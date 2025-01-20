@@ -177,6 +177,7 @@ hr{
       to {
         visibility: hidden;
         transform: translateX(-100%);
+        display: none;
       }
 }
 
@@ -188,6 +189,7 @@ hr{
       to {
         visibility: hidden;
         transform: translateX(100%);
+        display: none;
       }
 }
 
