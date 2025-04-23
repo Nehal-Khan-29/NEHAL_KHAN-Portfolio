@@ -365,7 +365,7 @@ window.addEventListener('scroll', homeanimation4);
 window.addEventListener('load', homeanimation4);
 
 function homeanimation5() {
-    const elements = document.querySelectorAll('.faicon, .logos');
+    const elements = document.querySelectorAll('.faicon');
     elements.forEach(element => {
     if (isInViewport(element)) {
         element.classList.add('btot2');
