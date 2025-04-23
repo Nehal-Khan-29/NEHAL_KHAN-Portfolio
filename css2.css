@@ -89,7 +89,7 @@
 
     .typing{
         min-width: 300px;
-        min-height: 200px;
+        min-height: 220px;
         transform: translateY(-100px);
     }
 
@@ -135,7 +135,7 @@
     }
 
     .t2{
-        font-size: medium;
+        font-size: small;
     }
 }
 
