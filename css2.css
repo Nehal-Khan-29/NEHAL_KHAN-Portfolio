@@ -285,7 +285,11 @@
     }
 
     .Nehal_Name_2{
-        font-size: small;
+        font-size: x-small;
+    }
+
+    .copyr{
+        font-size: x-small;
     }
 }
 

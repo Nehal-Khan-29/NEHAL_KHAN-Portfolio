@@ -741,6 +741,11 @@ input::placeholder, textarea::placeholder {
     animation: nametransition 3s ease-in-out infinite;
 }
 
+.copyr{
+    color: white;
+    font-weight: bold;
+}
+
 @keyframes nametransition {
     0% {
         opacity: 0;
