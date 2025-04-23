@@ -156,10 +156,12 @@ function toggleonproject() {
     const abt = document.getElementById("about");
     const cnt = document.getElementById("contact");
     const prj = document.getElementById("project");
+    const ac = document.getElementById("achievement");
 
     hme.style.display = 'none';
     abt.style.display = 'none';
     cnt.style.display = 'none';
+    ac.style.display = 'none';
     prj.style.display = 'flex';
     
 }
@@ -169,10 +171,12 @@ function toggleoffproject() {
     const abt = document.getElementById("about");
     const cnt = document.getElementById("contact");
     const prj = document.getElementById("project");
+    const ac = document.getElementById("achievement");
 
     hme.style.display = 'flex';
     abt.style.display = 'flex';
     cnt.style.display = 'flex';
+    ac.style.display = 'flex';
     prj.style.display = 'none';
 
 }
