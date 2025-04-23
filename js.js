@@ -1,435 +1,361 @@
+// ====================================================== Home ====================================================================
 
-//================================================================ Nav Bar ================================================================
+var option1 = {
+    strings: [
+        "<span style='color:blue';>def</span> <span style='color:gold';>me():</span><br><p>life <span style='color:white';>=</span> <span style='color:gold';>code()</span> <span style='color:white';>+</span> <span style='color:gold';>soul(</span><span style='color:white';>'Nehal'</span><span style='color:yellow';>)</span></p><p><span style='color:#C11C84';>return</span> life</p><br>life <span style='color:white';>=</span> <span style='color:gold';>me()</span><br><span style='color:gold';>print(</span>life<span style='color:gold';>)</span>"
+    ],
+    typeSpeed: 30,  
+    backSpeed: 30,   
+    startDelay: 100,        
+    backDelay: 500,       
+    showCursor: false, 
+    loop: false     
+};
 
+var typed1 = new Typed(".t1", option1);
 
-function togglecheck() {
-  var screenWidth = window.innerWidth;
-  var menuList = document.getElementById("menulist");
-  var menuListItems = menuList.getElementsByTagName("li");
+// ======================================================= Project ================================================================
 
-  if (screenWidth > 1150) {
-    menuList.style.display = "none";
-    for (var i = 0; i < menuListItems.length; i++) {
-      menuListItems[i].style.display = "none";
-    }
-  }
-}
-document.addEventListener("DOMContentLoaded", function() {
-  togglecheck(); 
-});
+function toggleonproject() {
+    const hme = document.getElementById("home");
+    const abt = document.getElementById("about");
+    const cnt = document.getElementById("contact");
+    const prj = document.getElementById("project");
 
-window.addEventListener("resize", function() {
-  togglecheck(); 
-});
-
-
-function toggleMenu() {
-  var menuList = document.getElementById("menulist");
-  var menuListItems = menuList.getElementsByTagName("li");
-  if (menuList.style.display === "none") {
-    menuList.style.display = "block";
-    for (var i = 0; i < menuListItems.length; i++) {
-      menuListItems[i].style.display = "block";
-    }
-  } else {
-    menuList.style.display = "none";
-    for (var i = 0; i < menuListItems.length; i++) {
-      menuListItems[i].style.display = "none";
-    }
-  }
-}
-
-function Menuoff() {
-    var menuList = document.getElementById("menulist");
-    var menuListItems = menuList.getElementsByTagName("li");
-    if (menuList.style.display === "block") {
-      menuList.style.display = "none";
-      for (var i = 0; i < menuListItems.length; i++) {
-        menuListItems[i].style.display = "none";
-      }
-    }
-  }
-
-
-//======================================================== education ======================================================================
-
-function blastrocket() {
-    const circles = document.querySelectorAll('.b1, .b2, .b3, .b4, .b5');
-
-    circles.forEach(circle => {
-        circle.style.animation = 'none';
-        void circle.offsetWidth;
-        circle.style.animation = 'blastoff 2s';
-    });
-}
-
-//======================================================== skill ======================================================================
-
-function toggleSkill(listId) {
-
-    var allLists = document.getElementsByClassName("Skills_Container_1")[0].getElementsByTagName("ul");
-    var downarr = document.getElementsByClassName("fa-caret-down");
-    var rightarr = document.getElementsByClassName("fa-caret-right"); 
-  
-    for (var i = 0; i < allLists.length; i++) {
-      if (allLists[i].id === listId) {
-        if (allLists[i].style.display === "none" || allLists[i].style.display === "") {
-          allLists[i].style.display = "block";
-          rightarr[i].style.display = "none";
-          downarr[i].style.display = "inline-block";
-        } else {
-          allLists[i].style.display = "none";
-          rightarr[i].style.display = "inline-block";
-          downarr[i].style.display = "none";
-        }
-      } else {
-        allLists[i].style.display = "none";
-        rightarr[i].style.display = "inline-block";
-        downarr[i].style.display = "none";
-      }
-    }
-  
-  }
-  
-
-
-//========================================================== work ======================================================================
-
-const wrapper = document.querySelector(".wrapper");
-const carousel = document.querySelector(".carousel");
-const firstCardWidth = carousel.querySelector(".card").offsetWidth;
-const arrowBtns = document.querySelectorAll(".wrapper i");
-const carouselChildrens = [...carousel.children];
-let isDragging = false, isAutoPlay = true, startX, startScrollLeft, timeoutId;
-
-let cardPerView = Math.round(carousel.offsetWidth / firstCardWidth);
-
-carouselChildrens.slice(-cardPerView).reverse().forEach(card => {
-    carousel.insertAdjacentHTML("afterbegin", card.outerHTML);
-});
-
-carouselChildrens.slice(0, cardPerView).forEach(card => {
-    carousel.insertAdjacentHTML("beforeend", card.outerHTML);
-});
-
-carousel.classList.add("no-transition");
-carousel.scrollLeft = carousel.offsetWidth;
-carousel.classList.remove("no-transition");
-
-arrowBtns.forEach(btn => {
-    btn.addEventListener("click", () => {
-        carousel.scrollLeft += btn.id == "left" ? -firstCardWidth : firstCardWidth;
-    });
-});
-const dragStart = (e) => {
-    isDragging = true;
-    carousel.classList.add("dragging");
+    hme.style.display = 'none';
+    abt.style.display = 'none';
+    cnt.style.display = 'none';
+    prj.style.display = 'flex';
     
-    startX = e.pageX;
-    startScrollLeft = carousel.scrollLeft;
 }
-const dragging = (e) => {
-    if(!isDragging) return; 
 
-    carousel.scrollLeft = startScrollLeft - (e.pageX - startX);
+function toggleoffproject() {
+    const hme = document.getElementById("home");
+    const abt = document.getElementById("about");
+    const cnt = document.getElementById("contact");
+    const prj = document.getElementById("project");
+
+    hme.style.display = 'flex';
+    abt.style.display = 'flex';
+    cnt.style.display = 'flex';
+    prj.style.display = 'none';
+
 }
-const dragStop = () => {
-    isDragging = false;
-    carousel.classList.remove("dragging");
-}
-const infiniteScroll = () => {
+
+// ======================================================= Image Open ================================================================
+
+const gallery = document.querySelectorAll('.work-photos');
+
+gallery.forEach(i => {
+  i.addEventListener('click', () => {
+    window.open(i.querySelector('img').src, '_blank');
+  });
+});
+
+
+// ====================================================== SUN MOON ================================================================
+
+function toggleTheme() {
+    const body = document.body;
+    const icon = document.getElementById("theme-icon");
+    const block1 = document.querySelector(".block1");
+    const block2 = document.querySelector(".block2");
+    const nehal_name = document.querySelector(".nehal-name");
+    const khan_name = document.querySelector(".khan-name");
+    const tagline = document.querySelector(".tagline");
+    const faicon_a = document.querySelectorAll(".faicon a");
+
+    const about_title = document.querySelector(".about-title");
+    const about_intro = document.querySelector(".about-intro p");
+    const nehal_photo_2 = document.querySelector(".nehal-photo-2")
+
+    const grids = document.querySelectorAll(".grids");
+    const grids_title = document.querySelectorAll(".grids p:nth-child(1)");
+    const grids_a = document.querySelectorAll(".grids a");
+
+    const skill_title = document.querySelector(".skill-title");
+    const skul = document.querySelectorAll(".skul");
+    const sklist = document.querySelectorAll(".sklist");
+
+    const project_title = document.querySelector(".project-title");
+    const work = document.querySelectorAll(".work");
+    const work_desc = document.querySelectorAll(".work-desc");
+
+    const my_email = document.querySelector(".my_email")
     
-    if(carousel.scrollLeft === 0) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.scrollWidth - (2 * carousel.offsetWidth);
-        carousel.classList.remove("no-transition");
+    if (body.classList.contains('dark-mode')) {
+        body.classList.remove('dark-mode');
+        icon.classList.remove("fa-sun");
+        icon.classList.add("fa-moon");
+
+        //Home
+        body.style.backgroundColor = 'white'; 
+        block1.style.backgroundColor = 'rgb(246, 246, 246)';
+        block2.style.backgroundColor = 'rgb(246, 246, 246)';
+        nehal_name.style.color = 'rgb(151, 34, 252)';
+        khan_name.style.color = 'rgb(151, 34, 252)';
+        tagline.style.color = 'black';
+        faicon_a.forEach(inputElement => {
+            inputElement.style.color = "black";
+        });
+        faicon_a.forEach(inputElement => {
+            inputElement.addEventListener("mouseenter", () => {
+                inputElement.style.color = "rgb(151, 34, 252)";
+            });
+            inputElement.addEventListener("mouseleave", () => {
+                inputElement.style.color = "black";
+            });
+        });
+
+        //About
+        about_title.style.color = 'black';
+        about_intro.style.color = 'black';
+        nehal_photo_2.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
+
+        //Experience
+        grids.forEach(inputElement => {
+            inputElement.style.backgroundColor = "white";
+            inputElement.style.color = "black";
+            inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
+        });
+        grids_title.forEach(inputElement => {
+            inputElement.style.backgroundColor = "rgb(151, 34, 252)";
+            inputElement.style.color = "white";
+        });
+        grids_a.forEach(inputElement => {
+            inputElement.style.color = "rgb(151, 34, 252)";
+        });
+
+        //Skill
+        skill_title.style.color = 'black';
+        skul.forEach(inputElement => {
+            inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
+        });
+        sklist.forEach(inputElement => {
+            inputElement.style.backgroundColor = "white";
+        });
+
+        //project
+        project_title.style.color = "black";
+        work.forEach(inputElement => {
+            inputElement.style.color = 'black';
+            inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
+            inputElement.style.backgroundColor = "white";
+        });
+        work_desc.forEach(inputElement => {
+            inputElement.style.color = 'black';
+            inputElement.style.backgroundColor = "rgb(232, 210, 251)";
+        });
+
+        //Contact
+        my_email.style.color = "black";
+    } 
+    
+    else {
+        body.classList.add('dark-mode');
+        icon.classList.remove("fa-moon");
+        icon.classList.add("fa-sun");
+
+        //Home
+        body.style.backgroundColor = 'rgb(32, 8, 53)'; 
+        block1.style.backgroundColor = 'rgb(31, 8, 51)';
+        block2.style.backgroundColor = 'rgb(31, 8, 51)';
+        nehal_name.style.color = 'rgb(203, 149, 250)';
+        khan_name.style.color = 'rgb(218, 185, 247)';
+        tagline.style.color = 'white';
+        faicon_a.forEach(inputElement => {
+                inputElement.style.color = "rgb(203, 149, 250)";
+        });
+        faicon_a.forEach(inputElement => {
+            inputElement.addEventListener("mouseenter", () => {
+                inputElement.style.color = "white";
+            });
+            inputElement.addEventListener("mouseleave", () => {
+                inputElement.style.color = "rgb(203, 149, 250)";
+            });
+        });
+
+        //About
+        about_title.style.color = 'rgb(203, 149, 250)';
+        about_intro.style.color = 'rgb(233, 213, 251)';
+        nehal_photo_2.style.boxShadow = "4px 4px 8px rgb(0, 0, 0)";
+
+        //Experience
+        grids.forEach(inputElement => {
+            inputElement.style.backgroundColor = "rgb(46, 12, 76)";
+            inputElement.style.color = "white";
+            inputElement.style.boxShadow = "4px 4px 8px rgb(0, 0, 0)";
+        });
+        grids_title.forEach(inputElement => {
+            inputElement.style.backgroundColor = "rgb(169, 71, 255)";
+            inputElement.style.color = "black";
+        });
+        grids_a.forEach(inputElement => {
+            inputElement.style.color = "rgb(151, 34, 252)";
+        });
+
+        //Skill
+        skill_title.style.color = 'rgb(203, 149, 250)';
+        skul.forEach(inputElement => {
+            inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
+        });
+        sklist.forEach(inputElement => {
+            inputElement.style.backgroundColor = "rgb(220, 182, 253)";
+        });
+
+        //project
+        project_title.style.color = "white";
+        work.forEach(inputElement => {
+            inputElement.style.color = 'rgb(233, 213, 251)';
+            inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
+            inputElement.style.backgroundColor = "rgb(46, 12, 76)";
+        });
+        work_desc.forEach(inputElement => {
+            inputElement.style.color = 'rgb(233, 213, 251)';
+            inputElement.style.backgroundColor = "rgb(72, 38, 101)";
+        });
+
+        //Contact
+        my_email.style.color = "white";
     }
-
-    else if(Math.ceil(carousel.scrollLeft) === carousel.scrollWidth - carousel.offsetWidth) {
-        carousel.classList.add("no-transition");
-        carousel.scrollLeft = carousel.offsetWidth;
-        carousel.classList.remove("no-transition");
-    }
-    clearTimeout(timeoutId);
-    if(!wrapper.matches(":hover")) autoPlay();
-}
-const autoPlay = () => {
-    if(window.innerWidth < 800 || !isAutoPlay) return; 
-
-    timeoutId = setTimeout(() => carousel.scrollLeft += firstCardWidth, 2500);
-}
-autoPlay();
-carousel.addEventListener("mousedown", dragStart);
-carousel.addEventListener("mousemove", dragging);
-document.addEventListener("mouseup", dragStop);
-carousel.addEventListener("scroll", infiniteScroll);
-wrapper.addEventListener("mouseenter", () => clearTimeout(timeoutId));
-wrapper.addEventListener("mouseleave", autoPlay);
-
-//======================================================== Achivement =============================================================
-
-let currentIndex = 0;
-const slides = document.querySelectorAll('.card2');
-const totalSlides = slides.length;
-let autoplayInterval; 
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-    if (i === index) {
-      slide.style.display = 'block';
-    } else {
-      slide.style.display = 'none';
-    }
-  });
-}
-
-function nextSlide() {
-  currentIndex = (currentIndex + 1) % totalSlides;
-  showSlide(currentIndex);
-}
-
-function prevSlide() {
-  currentIndex = (currentIndex - 1 + totalSlides) % totalSlides;
-  showSlide(currentIndex);
-}
-
-function startAutoplay() {
-  autoplayInterval = setInterval(nextSlide, 4000); 
-}
-
-function stopAutoplay() {
-  clearInterval(autoplayInterval);
-}
-
-document.getElementById('left2').addEventListener('click', () => {
-  stopAutoplay(); 
-  prevSlide();
-});
-
-document.getElementById('right2').addEventListener('click', () => {
-  stopAutoplay(); 
-  nextSlide();
-});
-
-showSlide(currentIndex); 
-startAutoplay(); 
-
-function updateCircles() {
-  const circlesContainer = document.querySelector('.circles-indexx');
-  circlesContainer.innerHTML = ''; 
-
-  for (let i = 0; i < totalSlides; i++) {
-      const circle = document.createElement('div');
-      circle.classList.add('circle-indexx');
-      if (i === currentIndex) {
-          circle.classList.add('active');
-      }
-      circlesContainer.appendChild(circle);
   }
-}
-
-function showSlide(index) {
-  slides.forEach((slide, i) => {
-      if (i === index) {
-          slide.style.display = 'block';
-      } else {
-          slide.style.display = 'none';
-      }
-  });
-  updateCircles(); 
-}
-updateCircles();
-
-//================================================================= Music ==============================================================
-
-function toggleMute() {
-  var audio = document.getElementById('myAudio');
-  var icon1 = document.querySelector('.playButton_1 span i');
-  var icon2 = document.querySelector('.playButton_2 span i');
-  
-  if (audio.muted) {
-    audio.play();
-    audio.muted = false;
-    icon1.classList.remove('fa-volume-xmark');
-    icon1.classList.add('fa-volume-high');
-    icon2.classList.remove('fa-volume-xmark');
-    icon2.classList.add('fa-volume-high');
-  } else {
-    audio.muted = true;
-    icon1.classList.remove('fa-volume-high');
-    icon1.classList.add('fa-volume-xmark');
-    icon2.classList.remove('fa-volume-high');
-    icon2.classList.add('fa-volume-xmark');
-  }
-}
-toggleMute();
 
 //=========================================================== All transitions =========================================================
 
-
 function isInViewport(element) {
-  const rect = element.getBoundingClientRect();
-  return (
-    rect.bottom <= 0 || 
-    rect.top >= window.innerHeight || 
-    rect.right <= 0 || 
-    rect.left >= window.innerWidth
-  );
+    const rect = element.getBoundingClientRect();
+    return (
+        rect.bottom <= 0 || 
+        rect.top >= window.innerHeight || 
+        rect.right <= 0 || 
+        rect.left >= window.innerWidth
+    );
 }
 
-function handleScroll() {
-  const elements = document.querySelectorAll('.About_Me_Inside p,.card,.timecontainer ul li h3,.timecontainer ul li a,.timecontainer ul li p,.timecontainer ul li .date,.timecontainer,.lastcircle,.contact-form tr,.wrapper2,.Skills_Container_1');
-
-  elements.forEach(element => {
+function handleScrolltop() {
+    const elements = document.querySelectorAll('.grids, .skul, .work-desc, .about-work');
+    elements.forEach(element => {
     if (isInViewport(element)) {
-      element.classList.add('slide-in');
-      element.classList.remove('slide-in');
-      element.style.visibility = 'visible';
+        element.classList.add('slide-in-top');
+        element.classList.remove('slide-in-top');
+        element.style.visibility = 'visible';
     } else {
-      element.classList.remove('slide-in');
-      element.classList.add('slide-in');
-      
+        element.classList.remove('slide-in-top');
+        element.classList.add('slide-in-top');
     }
-  });
+    });
 }
+window.addEventListener('scroll', handleScrolltop);
+window.addEventListener('load', handleScrolltop);
 
-window.addEventListener('scroll', handleScroll);
-window.addEventListener('load', handleScroll);
-
-function handleScroll2() {
-    const elements = document.querySelectorAll('.profile_photo_inside, .About_Me_Inside');
-  
+function handleScrollleft() {
+    const elements = document.querySelectorAll('.about-intro, .work-title, .work img');
     elements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('slide-in-2');
-        element.classList.remove('slide-in-2');
+    if (isInViewport(element)) {
+        element.classList.add('slide-in-left');
+        element.classList.remove('slide-in-left');
         element.style.visibility = 'visible';
-      } else {
-        element.classList.remove('slide-in-2');
-        element.classList.add('slide-in-2');
-        
-      }
-    });
-  }
-  
-  window.addEventListener('scroll', handleScroll2);
-  window.addEventListener('load', handleScroll2);
-
-  function handleScroll3() {
-    const elements = document.querySelectorAll('.About_Me_Inside');
-  
-    elements.forEach(element => {
-      if (isInViewport(element)) {
-        element.classList.add('slide-in-3');
-        element.classList.remove('slide-in-3');
-        element.style.visibility = 'visible';
-      } else {
-        element.classList.remove('slide-in-3');
-        element.classList.add('slide-in-3');
-        
-      }
-    });
-  }
-  
-  window.addEventListener('scroll', handleScroll3);
-  window.addEventListener('load', handleScroll3);
-//=================================================================== SUN MOON =============================================================
-/*
-function toggleTheme() {
-    const body = document.body;
-    const abtmesec = document.querySelector('.abtme');
-    const nknamesec = document.querySelector('.nkname');
-    const copyrightSection = document.querySelector('.copyright');
-    const cardSections = document.querySelectorAll('.card');
-    const skulhover = document.querySelectorAll('.skul');
-    const headerSections = document.querySelectorAll('.header');
-    const container3Sections = document.querySelector('.contactcontainer3');
-    const container3Sectionscopyright= document.querySelector('.copyright');
-    const menubar = document.querySelector('.menubar');
-    const tabletitles = document.querySelectorAll('.form-group-title');
-  
-  
-    
-    if (body.classList.contains('dark-mode')) {
-      body.classList.remove('dark-mode');
-      
-      document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design.png")');
-      body.style.backgroundImage = 'linear-gradient(135deg, rgb(1, 8, 66), rgb(0, 120, 171))';
-      body.style.backgroundRepeat = 'no-repeat';
-      body.style.backgroundAttachment = 'fixed';
-      nknamesec.src = "assets/img/Nk_front_white.png";
-      copyrightSection.style.color= 'white';
-      cardSections.forEach(cardSection => {
-        cardSection.style.background= 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
-      });
-      headerSections.forEach(headerSection => {
-        headerSection.style.color= 'white';
-        headerSection.style.border= '3px solid white';
-      });
-      container3Sections.style.background = 'black';
-      container3Sectionscopyright.style.color = 'white';
-      menubar.style.background= 'black';
-      tabletitles.forEach(tabletitle => {
-        tabletitle.style.border='3px solid white';
-        tabletitle.style.color='white';
-      });
-      document.querySelectorAll('input').forEach(inputElement => {
-        inputElement.style.border = '3px solid white';
-        inputElement.style.background = 'white';
-        inputElement.style.color = 'black';
-      });
-      document.querySelectorAll('textarea').forEach(textareaElement => {
-        textareaElement.style.border = '3px solid white';
-        textareaElement.style.background = 'white';
-        textareaElement.style.color = 'black';
-      });
-  
-      skulhover.forEach(skulhoverr => {
-        skulhoverr.style.backgroundImage = 'linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250))';
-      });
-  
-      abtmesec.style.backgroundImage= 'linear-gradient(135deg, rgb(152, 87, 251,0.7),rgb(120, 33, 250,0.7))';
-      
-  
-        
     } else {
-      document.styleSheets[0].addRule('body::before', 'background-image: url("assets/img/body_design_2.png")');
-      body.classList.add('dark-mode');
-      body.style.backgroundImage = 'linear-gradient(135deg, white, rgb(0, 179, 255))';
-      body.style.backgroundRepeat = 'no-repeat';
-      body.style.backgroundAttachment = 'fixed';
-      nknamesec.src = "assets/img/Nk_front_white.png";
-      copyrightSection.style.color= 'black';
-      cardSections.forEach(cardSection => {
-        cardSection.style.background='linear-gradient(135deg, rgb(152, 87, 251),rgb(120, 33, 250)';
-      });
-      headerSections.forEach(headerSection => {
-        headerSection.style.color= 'black';
-        headerSection.style.border= '3px solid black';
-      });
-      container3Sections.style.background = 'rgb(38, 16, 70)';
-      container3Sectionscopyright.style.color = 'white';
-      menubar.style.background= 'rgb(38, 16, 70)';
-      tabletitles.forEach(tabletitle => {
-        tabletitle.style.border='3px solid rgb(30, 13, 56)';
-        tabletitle.style.color='rgb(30, 13, 56)';
-      });
-      document.querySelectorAll('input').forEach(inputElement => {
-        inputElement.style.border = '3px solid rgb(30, 13, 56)';
-        inputElement.style.background = 'rgb(30, 13, 56)';
-        inputElement.style.color = 'white';
-      });
-      document.querySelectorAll('textarea').forEach(textareaElement => {
-        textareaElement.style.border = '3px solid rgb(30, 13, 56)';
-        textareaElement.style.background = 'rgb(30, 13, 56)';
-        textareaElement.style.color = 'white';
-      });
-      
-      skulhover.forEach(skulhoverr => {
-        skulhoverr.style.background= '#420084';
-      });
-  
-      abtmesec.style.background=("rgba(38, 16, 70,0.7)");
+        element.classList.remove('slide-in-left');
+        element.classList.add('slide-in-left');
     }
-  }
-*/
+    });
+}
+window.addEventListener('scroll', handleScrollleft);
+window.addEventListener('load', handleScrollleft);
+
+function handleScrollright() {
+    const elements = document.querySelectorAll('.nehal-photo-2, input, textarea');
+    elements.forEach(element => {
+    if (isInViewport(element)) {
+        element.classList.add('slide-in-right');
+        element.classList.remove('slide-in-right');
+        element.style.visibility = 'visible';
+    } else {
+        element.classList.remove('slide-in-right');
+        element.classList.add('slide-in-right');
+    }
+    });
+}
+window.addEventListener('scroll', handleScrollright);
+window.addEventListener('load', handleScrollright);
+
+function homeanimation1() {
+    const elements = document.querySelectorAll('.typing');
+    elements.forEach(element => {
+    if (isInViewport(element)) {
+        element.classList.add('rtol');
+        element.classList.remove('rtol');
+        element.style.visibility = 'visible';
+    } else {
+        element.classList.remove('rtol');
+        element.classList.add('rtol');
+    }
+    });
+}
+window.addEventListener('scroll', homeanimation1);
+window.addEventListener('load', homeanimation1);
+
+function homeanimation2() {
+    const elements = document.querySelectorAll('.nehal-name');
+    elements.forEach(element => {
+    if (isInViewport(element)) {
+        element.classList.add('ttob');
+        element.classList.remove('ttob');
+        element.style.visibility = 'visible';
+    } else {
+        element.classList.remove('ttob');
+        element.classList.add('ttob');
+    }
+    });
+}
+window.addEventListener('scroll', homeanimation2);
+window.addEventListener('load', homeanimation2);
+
+function homeanimation3() {
+    const elements = document.querySelectorAll('.khan-name');
+    elements.forEach(element => {
+    if (isInViewport(element)) {
+        element.classList.add('btot');
+        element.classList.remove('btot');
+        element.style.visibility = 'visible';
+    } else {
+        element.classList.remove('btot');
+        element.classList.add('btot');
+    }
+    });
+}
+window.addEventListener('scroll', homeanimation3);
+window.addEventListener('load', homeanimation3);
+
+function homeanimation4() {
+    const elements = document.querySelectorAll('.tagline');
+    elements.forEach(element => {
+    if (isInViewport(element)) {
+        element.classList.add('ltor');
+        element.classList.remove('ltor');
+        element.style.visibility = 'visible';
+    } else {
+        element.classList.remove('ltor');
+        element.classList.add('ltor');
+    }
+    });
+}
+window.addEventListener('scroll', homeanimation4);
+window.addEventListener('load', homeanimation4);
+
+function homeanimation5() {
+    const elements = document.querySelectorAll('.faicon, .logos');
+    elements.forEach(element => {
+    if (isInViewport(element)) {
+        element.classList.add('btot2');
+        element.classList.remove('btot2');
+        element.style.visibility = 'visible';
+    } else {
+        element.classList.remove('btot2');
+        element.classList.add('btot2');
+    }
+    });
+}
+window.addEventListener('scroll', homeanimation5);
+window.addEventListener('load', homeanimation5);

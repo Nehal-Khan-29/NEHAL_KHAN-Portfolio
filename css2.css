@@ -1,416 +1,210 @@
 /*================================================================ Nav Bar ================================================================*/
 
-#menuToggle {
-    display: none;
-}
 
-#menuToggle:hover{
-    background-color: white;
-    color: black;
-    border-radius: 10px;
-    transition: 0.2s ease-in-out;
-}
-
-#menulist{
-    display: none;
-    position: absolute;
-    top: 35px;
-    right: 50px;
-    border-radius: 5px;
-    background-color: black;
-    color: white;
-    width: 200px; 
-    height:fit-content;
-    text-align: center;
-    list-style-type: none;
-}
-
-#menulist li {
-    padding-bottom: 5px; 
-}
-
-@media only screen and (max-width: 1150px) {
-    #menuToggle, #nklogo{
-        display: inline;
-    }
-    .menubar li {
-        display: none;
-    }
-}
-
-@media only screen and (min-width: 1151px) {
-    #menulist li , #menulist{
-        display: none;
-    }
-}
-
-/*================================================================ Body ================================================================*/
-
-@media only screen and (max-width: 1420px){
-    .Home_Container, .About_Container , .Education_Container,.Skills_Container, .Work_Container,.Achievement_Container, .contact_container{
-        max-width: 90%;
-    }
-}
-
-@media only screen and (max-width: 410px){
-    .Home_Container, .About_Container , .Education_Container,.Skills_Container, .Work_Container,.Achievement_Container, .contact_container{
-        max-width: 95%;
-        background-color: rgba(0, 0, 0, 0);
-    }
-}
 
 /*================================================================ Home ================================================================*/
 
-@media only screen and (max-width: 930px){
-    .Home_Text{
-        margin-top: 20%;
-    }
-    .Nehal_Name{
-        width: 400px;
-    }
-}
-
-
-@media only screen and (max-width: 600px){
-    .Home_Text{
-        margin-top: 30%;
-    }
-    .Nehal_Name{
-        width: 300px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .Home_Up{
-        bottom: 30px;
-        right: 30px;
-        height: 40px;
-        width: 40px;
-    }
-    .Home_Up img{
-        height: 40px;
-        width: 40px;
-    }
-    .Nehal_Name{
-        width: 200px;
-    }
-}
-
-/*================================================================ About ================================================================*/
-
-@media only screen and (max-width: 1420px){
-
-    .About_Container_1 {
+@media only screen and (max-width: 1150px){
+    .home{
         display: flex;
-        flex-direction: column;
-        align-items: center; 
+        flex-direction: column-reverse;
+        gap:0px;
     }
 
-    .profile_photo_inside{
-        height: 500px;
-        width: 500px;
-        border-radius: 100%;
-        overflow: hidden;
-        box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
+    .typing{
+        min-width: 300px;
+        min-height: 200px;
+        transform: translateY(-100px);
     }
 
-    .profile_photo_inside img{ 
-        height: 130%;
-        width: 100%;
-        object-fit: cover;
+    .rtol{
+        animation: 0.8s righttoleft;
     }
 
-    .About_Me_Inside{
-        margin-top: 25px;
-        height: fit-content;
-        border-radius: 10px;
+    @keyframes righttoleft {
+        0% {
+            transform: translate(80px, -100px);
+        }
+        100% {
+            transform: translate(0px, -100px);
+        }
     }
 
-    .about .Title_text{
-        margin-top: 0px;
+    .t1{
+        font-size: 16px;
+        color: lightblue;
+    }
+
+    .nehal-name, .khan-name{
+        text-align: left;
     }
 }
 
 @media only screen and (max-width: 600px){
 
-    .profile_photo_inside{
-        height: 400px;
-        width: 400px;
-        border-radius: 100%;
-        overflow: hidden;
-        box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
+    .body2{
+        width: 95%;
     }
 
-    .About_Me_Inside b{
-        font-weight: normal;
-    }
-
-}
-
-@media only screen and (max-width: 450px){
-
-    .profile_photo_inside{
-        height: 300px;
+    .block1, .block2{
         width: 300px;
-        border-radius: 100%;
-        overflow: hidden;
-        box-shadow: 0px 8px 8px rgb(0, 0, 0, 0.4);
     }
 
-    @keyframes BodyslideInFromTop {
-        from {
-          opacity: 0;
-          visibility: hidden;
-          transform: translateY(-30px);
-        }
-        to {
-          opacity: 1;
-          visibility: visible;
-          transform: translateY(0);
-        }
+    .nehal-name, .khan-name{
+        font-size: 70px;
     }
 
-    .slide-in-2 {
-        animation: BodyslideInFromTop 0s ease-in-out;
+    .fa-play{
+        z-index: 3;
     }
-
-    .slide-in-3 {
-        animation: BodyslideInFromTop 0.8s ease-in-out;
-    }
-
 }
 
-/*============================================================== Education ==============================================================*/
+@media only screen and (max-width: 350px){
 
-@media only screen and (max-width: 620px){
-    .main {
-        width: 100%;
-        margin-top: 30px;
+    .typing{
+        min-width: 250px;
+        min-height: 170px;
+        padding: 10px;
     }
-    .timecontainer {
-        width: 100%; 
+
+    .t1{
+        font-size: 14px;
+        margin-top: 10px;
     }
-    .timecontainer ul {
-        list-style: none;
-        padding: 0; 
-    }
-    .timecontainer ul li {
-        width: 100%;
-        margin-bottom: 80px;
-    }
-    .timecontainer ul li .heading {
-        font-size: large;
-        color: greenyellow;
-    }
-    .timecontainer ul li p, .timecontainer ul li a, .timecontainer ul li .date {
-        font-size: medium;
-        color: white;
-        line-height: 18px;
-        margin: 6px 0 4px 0;
-        font-weight: bold;
-        text-decoration: none;
-    }
-    .timecontainer ul li a {
-        color: black;
-        transition: all 0.3s ease;
-    }
-    .timecontainer ul li:nth-child(odd) {
-        float: right;
-        clear: left;
-        text-align: right;
-        transform: translateX(0px);
-    }
-    .timecontainer ul li:nth-child(even) {
-        float: right;
-        clear: left;
-        text-align: left;
-        transform: translateX(0px);
-    }
-    .circle::after{
-        display: none;
-    }
-    .timecontainer ul li .circle{
-        display: none;
-    }
-    .b1{
-        height: 550px;
-        width: 550px;
-    }
-    .b2{
-        height: 400px;
-        width: 400px;
-    }
-    .b3{
-        height: 250px;
+
+    .block1, .block2{
         width: 250px;
     }
-    .b4{
-        height: 100px;
-        width: 100px;
+
+    .nehal-name, .khan-name{
+        font-size: 60px;
     }
 }
 
-/*================================================================ Skill ================================================================*/
+/*================================================================ about ================================================================*/
 
-@media only screen and (max-width: 500px){
-    .skilltext{
-        margin-top: 5px;
-        font-size: medium;
+@media only screen and (max-width: 1150px){
+    .about-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nehal-photo-2{
+        height: auto;
+        width: 230px;
     }
 }
 
-/*================================================================ Work ================================================================*/
-
-@media only screen and (max-width: 500px){
-
-    .wrapper{
-        margin-top: 50px;
-    }
-
-    .wrapper i:first-child{
-        left: -50px;
-    }
-    .wrapper i:last-child{
-        right: -50px;
-    }
-
-    .video-container iframe, .video-container img{
-        width:250px;
-        height:auto;
-    }
-
-    .about_the_work{
-        margin-top: 10px;
-        padding:0 30px 0 30px;
-        font-size: small;
-    }
-
-    .try_button{
-        margin-left: 30px;
+@media only screen and (max-width: 600px){
+    .about-intro{
+        width: 300px;
     }
 }
 
-/*============================================================== Achivement ==============================================================*/
-
-@media only screen and (max-width: 880px){
-    .img2 img{
-        width: 525px;
-        height: 350px;
+@media only screen and (max-width: 350px){
+    .about-intro{
+        width: 250px;
     }
+}
 
-    .abtcerti{
-        width: 525px;
-    }
+/*================================================================ exp ================================================================*/
 
-    .abtcerti h2{
-        font-size: large;
+@media only screen and (max-width: 1150px){
+    .experience-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap:20px;
     }
-    .abtcerti span{
-        font-size: small;
+}
+
+@media only screen and (max-width: 700px){
+    .experience-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap:20px;
+    }
+}
+
+/*================================================================ skill ================================================================*/
+
+@media only screen and (max-width: 1150px){
+    .skills-container{
+        column-count: 2;
+        column-gap: 20px;
     }
 }
 
 @media only screen and (max-width: 800px){
-    .img2 img{
-        width: 450px;
-        height: 300px;
+    .skills-container{
+        column-count: 2;
+        column-gap: 20px;
     }
-    .abtcerti{
-        width: 450px;
+
+    .skul{
+        font-size: 14px;
+    }
+
+    .skul{
+        width: 180px;
     }
 }
 
-@media only screen and (max-width: 690px){
-    .img2 img{
-        width: 375px;
-        height: 250px;
-    }
-    .abtcerti{
-        width: 375px;
-    }
-}
-
-@media only screen and (max-width: 500px){
-    .img2 img{
-        width: 275px;
-        height: 183px;
-    }
-    .abtcerti{
-        width: 275px;
+@media only screen and (max-width: 450px){
+    .skills-container{
+        column-count: 1;
+        column-gap: 20px;
     }
 
-    .wrapper2 i:first-child{
-        left: -50px;
-      }
-    .wrapper2 i:last-child{
-        right: -50px;
-      }
-
-    .circles-indexx {
-        margin-top: 120px;
-
+    .skul{
+        width: 250px;
     }
 }
 
-/*================================================================ Contact ================================================================*/
+/*================================================================ project ================================================================*/
 
-@media only screen and (max-width: 1020px){
-    .form-group-title{
-        width: 100px;
-    }
-    .contact-form input, .contact-form textarea{
-        width: 400px;
-    }
-    .contact-form {
-        border-spacing: 30px 20px; 
-      }
-}
 
-@media only screen and (max-width: 900px){
-
-    .contact-form input, .contact-form textarea{
-        width: 350px;
-    }
-    .contact-form {
-        border-spacing: 20px 20px; 
-    }
-}
-
-@media only screen and (max-width: 770px){
-
-    .contact-form input, .contact-form textarea{
-        width: 300px;
-    }
-    .contact-form {
-        border-spacing: 0px 20px; 
-    }
-}
-
-@media only screen and (max-width: 690px){
-    .contact-form-div {
+@media only screen and (max-width: 950px){
+    .work{
         display: flex;
-        justify-content: center;
+        flex-direction: column;
         align-items: center;
     }
 
-    .contact-form {
-        border-spacing: 0px 20px; 
+    .work-title{
+        text-align: center;
     }
-
-    .logos li a i{
-        font-size: large;
-    }
-
-    .logos li{
-        padding-left: 2px;
-        padding-right: 2px;
-    }
-    
-    .Nehal_Name_2{
-        font-size: medium;
-        animation: nametransition 3s ease-in-out infinite;
-    }
-
 }
 
-/*================================================================  ================================================================*/
+@media only screen and (max-width: 600px){
+    .work{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work-title{
+        text-align: center;
+    }
+
+    .work-photos img{
+        width: 50px;
+        height: 50px;
+    }
+
+    .about-work{
+        font-size: 12px;
+    }
+}
+
+/*================================================================ contact ================================================================*/
+
+
+@media only screen and (max-width: 450px){
+    input, textarea{
+        width: 250px;
+    }
+
+    .Nehal_Name_2{
+        font-size: small;
+    }
+}
