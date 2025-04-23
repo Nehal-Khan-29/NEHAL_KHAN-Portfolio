@@ -1,3 +1,16 @@
+// ======================================================= nav ================================================================
+
+function togglenav() {
+    const nav2 = document.querySelector(".nav2");
+    if (nav2.style.display === 'flex'){
+        nav2.style.display = 'none';
+    }
+    else{
+        nav2.style.display = 'flex';
+    }
+    
+}
+
 // ====================================================== Home ====================================================================
 
 var option1 = {
@@ -57,7 +70,8 @@ gallery.forEach(i => {
 
 function toggleTheme() {
     const body = document.body;
-    const icon = document.getElementById("theme-icon");
+    const navbaricon = document.querySelector(".fa-bars");
+    const icon = document.querySelectorAll(".theme-icon");
     const block1 = document.querySelector(".block1");
     const block2 = document.querySelector(".block2");
     const nehal_name = document.querySelector(".nehal-name");
@@ -85,11 +99,14 @@ function toggleTheme() {
     
     if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
-        icon.classList.remove("fa-sun");
-        icon.classList.add("fa-moon");
+        icon.forEach(inputElement => {
+            inputElement.classList.remove("fa-sun");
+            inputElement.classList.add("fa-moon");
+        });
 
         //Home
         body.style.backgroundColor = 'white'; 
+        navbaricon.style.color = 'black'; 
         block1.style.backgroundColor = 'rgb(246, 246, 246)';
         block2.style.backgroundColor = 'rgb(246, 246, 246)';
         nehal_name.style.color = 'rgb(151, 34, 252)';
@@ -153,11 +170,14 @@ function toggleTheme() {
     
     else {
         body.classList.add('dark-mode');
-        icon.classList.remove("fa-moon");
-        icon.classList.add("fa-sun");
+        icon.forEach(inputElement => {
+            inputElement.classList.add("fa-sun");
+            inputElement.classList.remove("fa-moon");
+        });
 
         //Home
         body.style.backgroundColor = 'rgb(32, 8, 53)'; 
+        navbaricon.style.color = 'white'; 
         block1.style.backgroundColor = 'rgb(31, 8, 51)';
         block2.style.backgroundColor = 'rgb(31, 8, 51)';
         nehal_name.style.color = 'rgb(203, 149, 250)';

@@ -25,17 +25,31 @@
     <!-- ================================================== Navigation Bar ================================================== -->
 
     <div class="nav">
-        <div class="NKlogo-img"><img src="assets\img\NKlogo.jpg" alt="Nehal"></div>
+        <div class="NKlogo-img"><img src="assets\img\NKlogo.png" alt="Nehal"></div>
 
         <ul class="nav-list">
             <li><a href="#home" onclick="toggleoffproject()">Home</a></li>
             <li><a href="#about" onclick="toggleoffproject()">About</a></li>
             <li><a href="#project" id="projecttog" onclick="toggleonproject()">Projects</a></li>
             <li><a href="#contact" onclick="toggleoffproject()">Contact</a></li>
-            <li><a class="fa-solid fa-moon" id="theme-icon" onclick="toggleTheme()"></a></li>
+            <li><a class="fa-solid fa-moon theme-icon" onclick="toggleTheme()"></a></li>
         </ul>
     </div>
 
+    <div class="fa-solid fa-bars" onclick="togglenav()"></div>
+
+    <div class="nav2">
+        <div class="NKlogo-img2"><img src="assets\img\NKlogo.png" alt="Nehal"></div>
+
+        <ul class="nav-list2">
+            <li><a href="#home" onclick="toggleoffproject(), togglenav()">Home</a></li>
+            <li><a href="#about" onclick="toggleoffproject(), togglenav()">About</a></li>
+            <li><a href="#project" id="projecttog" onclick="toggleonproject(), togglenav()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleoffproject(), togglenav()">Contact</a></li>
+            <li><a class="fa-solid fa-moon theme-icon" onclick="toggleTheme(), togglenav()"></a></li>
+        </ul>
+    </div>
+    
     <!-- ======================================================== Home ====================================================== -->
 
     <div class="home" id="home">
