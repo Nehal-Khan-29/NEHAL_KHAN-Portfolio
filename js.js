@@ -179,7 +179,7 @@ function toggleoffproject() {
 
 // ======================================================= Image Open ================================================================
 
-const gallery = document.querySelectorAll('.work-photos');
+const gallery = document.querySelectorAll('.work-photos, .card');
 
 gallery.forEach(i => {
   i.addEventListener('click', () => {
