@@ -24,8 +24,44 @@ var option1 = {
     showCursor: false, 
     loop: true     
 };
+var typed = new Typed(".t1", option1);
 
-var typed = new Typed("#t1", option1);
+
+var option2 = {
+    strings: [
+        "<span style='color:white';>Name:</span> Nehal Khan<br><span style='color:white';>Nickname:</span> Code Blooded<br><span style='color:white';>Status:</span> A soul driven by code"
+    ],
+    typeSpeed: 20,  
+    backSpeed: 20,   
+    startDelay: 100,        
+    backDelay: 500,       
+    showCursor: false, 
+    loop: false     
+};
+
+function runcode() {
+    const nkpht = document.querySelector(".nehal-photo-1");
+    const typ1 = document.querySelector(".t1");
+    const typ2 = document.querySelector(".t2");
+    const faply = document.querySelector(".fa-play");
+
+    nkpht.style.display = 'block';
+    typ2.style.display = 'block';
+    typ1.style.display = 'none';
+    faply.style.display = 'none';
+
+    var typed2 = new Typed(".t2", option2);
+
+    setTimeout(() => {
+        nkpht.style.display = 'none';
+        typ2.style.display = 'none';
+        typ1.style.display = 'block';
+        faply.style.display = 'block';
+        typed2.destroy();
+        typed.destroy();
+        var typed = new Typed(".t1", option1);
+      }, 5000);
+}
 
 // ======================================================= Project ================================================================
 

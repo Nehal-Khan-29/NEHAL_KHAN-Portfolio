@@ -199,6 +199,22 @@ body{
     }
 }
 
+.nehal-photo-1{
+    height: 100px;
+    width: 100px;
+    border-radius: 100%;
+    border: 5px solid white;
+    display: none;
+}
+
+.t2{
+    display: none;
+    margin-top: 10px;
+    color: #C11C84;
+    font-size: large;
+    font-weight: bold;
+}
+
 .nehal-intro{
     display: flex;
     flex-direction: column;
