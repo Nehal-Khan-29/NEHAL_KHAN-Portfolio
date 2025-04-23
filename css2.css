@@ -133,6 +133,10 @@
     .fa-play{
         z-index: 3;
     }
+
+    .t2{
+        font-size: medium;
+    }
 }
 
 @media only screen and (max-width: 350px){
