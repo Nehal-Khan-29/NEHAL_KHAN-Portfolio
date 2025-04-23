@@ -17,15 +17,15 @@ var option1 = {
     strings: [
         "<span style='color:blue';>def</span> <span style='color:gold';>me():</span><br><p>life <span style='color:white';>=</span> <span style='color:gold';>code()</span> <span style='color:white';>+</span> <span style='color:gold';>soul(</span><span style='color:white';>'Nehal'</span><span style='color:yellow';>)</span></p><p><span style='color:#C11C84';>return</span> life</p><br>life <span style='color:white';>=</span> <span style='color:gold';>me()</span><br><span style='color:gold';>print(</span>life<span style='color:gold';>)</span>"
     ],
-    typeSpeed: 30,  
-    backSpeed: 30,   
+    typeSpeed: 20,  
+    backSpeed: 20,   
     startDelay: 100,        
     backDelay: 500,       
     showCursor: false, 
-    loop: false     
+    loop: true     
 };
 
-var typed1 = new Typed(".t1", option1);
+var typed = new Typed("#t1", option1);
 
 // ======================================================= Project ================================================================
 
