@@ -533,6 +533,112 @@ body{
     background-color: rgb(151, 34, 252);
 }
 
+/*============================================================ achievement =============================================================*/
+
+.achievement{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.achievement-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.ach-title{
+    font-size: xx-large;
+    font-weight: bold;
+    color: rgb(151, 34, 252);
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+.arrows{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 50px;
+    font-weight: bold;
+    border-radius: 100%;
+    background-color: white;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.arrows:hover{
+    transform: scale(1.2);
+}
+
+.phone-arrow{
+    display: none;
+    gap:20px;
+    width: 100%;
+    justify-content:right;
+    align-items: end;
+}
+
+.card{
+    background-color: rgb(151, 34, 252);
+    padding: 20px;
+    height: 500px;
+    width: 500px;
+    border-radius: 10px;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+.card1{
+    display: flex;
+}
+
+.card img{
+    width: 460px;
+    max-height: 350px;
+    border-radius: 10px;
+}
+
+.ach-abt{
+    width: 460px;
+    height: 100%;
+    border-radius: 10px;
+    background-color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.ach-head{
+    font-size: large;
+    font-weight: bold;
+}
+
+.ach-subhead{
+    font-style: italic;
+}
+
+.circle-indexx-container{
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 5px;
+}
+
+.circle-indexx {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: #bdbbbb;
+}
+
 /*============================================================== project ===============================================================*/
 
 .project{

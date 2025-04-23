@@ -63,6 +63,92 @@ function runcode() {
       }, 5000);
 }
 
+// ======================================================= Achivement =============================================================
+
+let currentIndex = 0;
+let totalCards = document.querySelectorAll('.card').length;
+let interval;
+
+const cards = document.querySelectorAll('.card');
+const circleContainer = document.querySelector('.circle-indexx-container');
+const leftArrows = document.querySelectorAll('.arr-left');
+const rightArrows = document.querySelectorAll('.arr-right');
+
+// Create circle indicators dynamically based on total cards
+for (let i = 0; i < totalCards; i++) {
+  const circle = document.createElement('div');
+  circle.classList.add('circle-indexx');
+  circleContainer.appendChild(circle);
+}
+
+const circleIndicators = document.querySelectorAll('.circle-indexx');
+
+// Function to show the current card
+function showCard(index) {
+  cards.forEach(card => card.style.display = 'none');
+  cards[index].style.display = 'flex';
+
+  circleIndicators.forEach((circle, i) => {
+    circle.style.backgroundColor = (i === index) ? 'rgb(133, 53, 252)' : '#bdbbbb';
+  });
+}
+
+// Automatic sliding function
+function autoSlide() {
+  interval = setInterval(() => {
+    currentIndex = (currentIndex + 1) % totalCards;
+    showCard(currentIndex);
+  }, 3000);
+}
+
+// Stop automatic sliding on hover
+function stopAutoSlide() {
+  clearInterval(interval);
+}
+
+// Resume automatic sliding
+function resumeAutoSlide() {
+  clearInterval(interval);
+  autoSlide();
+}
+
+// Manual navigation with left arrows
+leftArrows.forEach(arrow => {
+  arrow.addEventListener('click', () => {
+    stopAutoSlide();
+    currentIndex = (currentIndex - 1 + totalCards) % totalCards;
+    showCard(currentIndex);
+    resumeAutoSlide();
+  });
+
+  arrow.addEventListener('mouseenter', stopAutoSlide);
+  arrow.addEventListener('mouseleave', resumeAutoSlide);
+});
+
+// Manual navigation with right arrows
+rightArrows.forEach(arrow => {
+  arrow.addEventListener('click', () => {
+    stopAutoSlide();
+    currentIndex = (currentIndex + 1) % totalCards;
+    showCard(currentIndex);
+    resumeAutoSlide();
+  });
+
+  arrow.addEventListener('mouseenter', stopAutoSlide);
+  arrow.addEventListener('mouseleave', resumeAutoSlide);
+});
+
+// Pause on card hover
+cards.forEach(card => {
+  card.addEventListener('mouseenter', stopAutoSlide);
+  card.addEventListener('mouseleave', resumeAutoSlide);
+});
+
+// Initialize the carousel
+showCard(currentIndex);
+autoSlide();
+
+
 // ======================================================= Project ================================================================
 
 function toggleonproject() {
@@ -127,6 +213,9 @@ function toggleTheme() {
     const skul = document.querySelectorAll(".skul");
     const sklist = document.querySelectorAll(".sklist");
 
+    const ach_abt = document.querySelectorAll(".ach-abt")
+    const card = document.querySelectorAll(".card")
+
     const project_title = document.querySelector(".project-title");
     const work = document.querySelectorAll(".work");
     const work_desc = document.querySelectorAll(".work-desc");
@@ -185,6 +274,15 @@ function toggleTheme() {
             inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
         });
         sklist.forEach(inputElement => {
+            inputElement.style.backgroundColor = "white";
+        });
+
+        //achievement
+        card.forEach(inputElement => {
+            inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
+        });
+        ach_abt.forEach(inputElement => {
+            inputElement.style.color = 'black';
             inputElement.style.backgroundColor = "white";
         });
 
@@ -257,6 +355,15 @@ function toggleTheme() {
         });
         sklist.forEach(inputElement => {
             inputElement.style.backgroundColor = "rgb(220, 182, 253)";
+        });
+
+        //achievement
+        card.forEach(inputElement => {
+            inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
+        });
+        ach_abt.forEach(inputElement => {
+            inputElement.style.color = 'white';
+            inputElement.style.backgroundColor = "rgb(72, 38, 101)";
         });
 
         //project
