@@ -366,8 +366,8 @@ function toggleTheme() {
             inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
         });
         ach_abt.forEach(inputElement => {
-            inputElement.style.color = 'white';
-            inputElement.style.backgroundColor = "rgb(72, 38, 101)";
+            inputElement.style.color = 'black';
+            inputElement.style.backgroundColor = "rgb(220, 182, 253)";
         });
 
         //project
@@ -378,8 +378,8 @@ function toggleTheme() {
             inputElement.style.backgroundColor = "rgb(46, 12, 76)";
         });
         work_desc.forEach(inputElement => {
-            inputElement.style.color = 'rgb(233, 213, 251)';
-            inputElement.style.backgroundColor = "rgb(72, 38, 101)";
+            inputElement.style.color = 'black';
+            inputElement.style.backgroundColor = "rgb(220, 182, 253)";
         });
 
         //Contact
