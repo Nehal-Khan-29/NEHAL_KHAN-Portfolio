@@ -815,8 +815,9 @@ input::placeholder, textarea::placeholder {
     display: flex;
     background-color: black;
     justify-content: left;
+    align-items: center;
     list-style: none;
-    padding: 30px;
+    padding: 15px;
     margin-bottom: 0;
     width: 100%;
 }
@@ -840,11 +841,23 @@ input::placeholder, textarea::placeholder {
     transition: 0.2s ease-in-out;
 }
 
+.blck1, .blck2{
+    background-color: black;
+    height: 20px;
+    width: 100px;
+    z-index: 2;
+}
 
 .Nehal_Name_2{
+    display: flex;
+    flex-direction: column;
     font-size: large;
     color: white;
-    animation: nametransition 3s ease-in-out infinite;
+}
+
+.Nehal_Name_2 b{
+    z-index: 1;
+    animation: nametransition 5s ease-in-out infinite;
 }
 
 .copyr{
@@ -852,38 +865,37 @@ input::placeholder, textarea::placeholder {
     font-weight: bold;
 }
 
+
 @keyframes nametransition {
     0% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
-    20% {
-        opacity: 1;
-        visibility: visible;
+    12.5% {
+        transform: translateY(0);
+    }
+    25% {
+        transform: translateY(-20px);
+    }
+    37.5% {
         transform: translateY(0);
     }
     50% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateY(20px);
     }
-    50% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(10px);
-    }
-    80% {
-        opacity: 1;
-        visibility: visible;
+    62.5% {
         transform: translateY(0);
+    }
+    75% {
+        transform: translateY(20px);
+    }
+    87.5% {
+        transform: translateY(0px);
     }
     100% {
-        opacity: 0;
-        visibility: hidden;
-        transform: translateY(-10px);
+        transform: translateY(-20px);
     }
 }
+
 
 /* ====================================================== all transition =====================================================*/
 
