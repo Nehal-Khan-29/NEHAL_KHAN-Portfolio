@@ -949,3 +949,38 @@ input::placeholder, textarea::placeholder {
 .slide-in-right {
     animation: BodyslideInFromright 0.8s ease-in-out;
 }
+
+
+@keyframes cardslideInFromleft {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(-40px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+}
+  
+.cardslide-in-left {
+    animation: cardslideInFromleft 0.4s ease-in-out;
+}
+
+@keyframes cardslideInFromright {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateX(+40px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateX(0);
+    }
+}
+  
+.cardslide-in-right {
+    animation: cardslideInFromright 0.4s ease-in-out;
+}

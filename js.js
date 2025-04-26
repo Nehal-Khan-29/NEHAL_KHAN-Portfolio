@@ -84,20 +84,38 @@ for (let i = 0; i < totalCards; i++) {
 const circleIndicators = document.querySelectorAll('.circle-indexx');
 
 // Function to show the current card
-function showCard(index) {
+function showCard(index, lorr) {
   cards.forEach(card => card.style.display = 'none');
   cards[index].style.display = 'flex';
+
+  if (lorr === 'l'){lefttorightcardanimation(index);}
+  else{righttoleftcardanimation(index)}
 
   circleIndicators.forEach((circle, i) => {
     circle.style.backgroundColor = (i === index) ? 'rgb(133, 53, 252)' : '#bdbbbb';
   });
 }
 
+function lefttorightcardanimation(index) {
+    cards[index].classList.remove('cardslide-in-right'); // Remove opposite animation
+    cards[index].classList.remove('cardslide-in-left');  // Remove previous if exists
+    void cards[index].offsetWidth; // Trigger reflow (important to restart animation)
+    cards[index].classList.add('cardslide-in-left');
+}
+
+function righttoleftcardanimation(index) {
+    cards[index].classList.remove('cardslide-in-left'); // Remove opposite animation
+    cards[index].classList.remove('cardslide-in-right'); 
+    void cards[index].offsetWidth; // Trigger reflow
+    cards[index].classList.add('cardslide-in-right');
+}
+
 // Automatic sliding function
 function autoSlide() {
   interval = setInterval(() => {
     currentIndex = (currentIndex + 1) % totalCards;
-    showCard(currentIndex);
+    lorr = 'r'
+    showCard(currentIndex, lorr);
   }, 3000);
 }
 
@@ -117,7 +135,7 @@ leftArrows.forEach(arrow => {
   arrow.addEventListener('click', () => {
     stopAutoSlide();
     currentIndex = (currentIndex - 1 + totalCards) % totalCards;
-    showCard(currentIndex);
+    showCard(currentIndex, 'l');
     resumeAutoSlide();
   });
 
@@ -130,7 +148,7 @@ rightArrows.forEach(arrow => {
   arrow.addEventListener('click', () => {
     stopAutoSlide();
     currentIndex = (currentIndex + 1) % totalCards;
-    showCard(currentIndex);
+    showCard(currentIndex, 'r');
     resumeAutoSlide();
   });
 
@@ -145,7 +163,7 @@ cards.forEach(card => {
 });
 
 // Initialize the carousel
-showCard(currentIndex);
+showCard(currentIndex, 'r');
 autoSlide();
 
 
@@ -401,16 +419,16 @@ function isInViewport(element) {
 
 function handleScrolltop() {
     const elements = document.querySelectorAll('.grids, .skul, .work-desc, .about-work');
-    elements.forEach(element => {
-    if (isInViewport(element)) {
-        element.classList.add('slide-in-top');
-        element.classList.remove('slide-in-top');
-        element.style.visibility = 'visible';
-    } else {
-        element.classList.remove('slide-in-top');
-        element.classList.add('slide-in-top');
-    }
-    });
+    elements.forEach((element) => {
+        if (isInViewport(element)) {
+            element.classList.add('slide-in-top');
+            element.classList.remove('slide-in-top');
+            element.style.visibility = 'visible';
+        } else {
+            element.classList.remove('slide-in-top');
+            element.classList.add('slide-in-top');
+        }
+      });
 }
 window.addEventListener('scroll', handleScrolltop);
 window.addEventListener('load', handleScrolltop);
