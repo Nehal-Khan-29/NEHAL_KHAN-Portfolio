@@ -20,8 +20,7 @@ html{
   }
 
 ::-webkit-scrollbar-track {
-    background-color: white;
-    border-radius: 6px;
+    display: none;
 }
 
 ::-webkit-scrollbar-thumb {
@@ -66,7 +65,7 @@ body{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 700px;
+    width: fit-content;
     z-index: 999;
     margin-top: 10px;
     animation: 0.8s navanimation;
@@ -644,31 +643,39 @@ body{
 .project{
     width: 100%;
     display:none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .project-title{
     font-size: xx-large;
     font-weight: bold;
+    margin-bottom: 50px;
+    margin-top: 100px;
 }
 
 .project-container{
-    margin-top: 100px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap:50px;
+    margin-bottom: 50px;
     padding: 20px;
-    gap:20px;
 }
 
 .work{
-    width: 100%;
+    min-width: 1000px;
+    max-width: 1000px;
     padding:20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 10px;
     display: flex;
     flex-direction: row;
     gap: 20px;
+    background-color: rgb(151, 34, 252);
 }
 
 .work img{
@@ -685,13 +692,24 @@ body{
 .work-title{
     font-size: large;
     font-weight: bold;
+    text-align: center;
 }
 
 .work-desc{
     text-align: justify;
     padding: 20px;
     border-radius: 10px;
-    background-color: rgb(232, 210, 251);
+    /*background-color: rgb(232, 210, 251);*/
+    width: 450px;
+    height: 100%;
+}
+
+.moredetails{
+    padding: 20px;
+    border-radius: 10px;
+    background-color: white;
+    width: 100%;
+
 }
 
 .work-photos{
@@ -703,8 +721,8 @@ body{
 .work-photos img{
     margin-top: 10px;
     border-radius: 10px;
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
     cursor: pointer;
     transition: 0.2s ease-in-out;
 }

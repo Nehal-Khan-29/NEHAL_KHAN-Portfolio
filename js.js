@@ -313,11 +313,7 @@ function toggleTheme() {
         work.forEach(inputElement => {
             inputElement.style.color = 'black';
             inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
-            inputElement.style.backgroundColor = "white";
-        });
-        work_desc.forEach(inputElement => {
-            inputElement.style.color = 'black';
-            inputElement.style.backgroundColor = "rgb(232, 210, 251)";
+            inputElement.style.backgroundColor = "rgb(151, 34, 252)";
         });
 
         //Contact
@@ -391,13 +387,8 @@ function toggleTheme() {
         //project
         project_title.style.color = "white";
         work.forEach(inputElement => {
-            inputElement.style.color = 'rgb(233, 213, 251)';
             inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
-            inputElement.style.backgroundColor = "rgb(46, 12, 76)";
-        });
-        work_desc.forEach(inputElement => {
-            inputElement.style.color = 'black';
-            inputElement.style.backgroundColor = "rgb(220, 182, 253)";
+            inputElement.style.backgroundColor = "rgb(84, 20, 141)";
         });
 
         //Contact
@@ -418,7 +409,7 @@ function isInViewport(element) {
 }
 
 function handleScrolltop() {
-    const elements = document.querySelectorAll('.grids, .skul, .work-desc, .about-work');
+    const elements = document.querySelectorAll('.grids, .skul');
     elements.forEach((element) => {
         if (isInViewport(element)) {
             element.classList.add('slide-in-top');
@@ -434,7 +425,7 @@ window.addEventListener('scroll', handleScrolltop);
 window.addEventListener('load', handleScrolltop);
 
 function handleScrollleft() {
-    const elements = document.querySelectorAll('.about-intro, .work-title, .work img');
+    const elements = document.querySelectorAll('.about-intro');
     elements.forEach(element => {
     if (isInViewport(element)) {
         element.classList.add('slide-in-left');

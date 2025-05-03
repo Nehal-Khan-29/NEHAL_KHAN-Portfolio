@@ -1,6 +1,6 @@
 /*================================================================ Nav Bar ================================================================*/
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 1140px){
 
     .nav{
         display: none;
@@ -75,6 +75,10 @@
       
     .nav-list2 li a:hover::after {
         width: 100%;
+    }
+
+    .navtitle{
+        margin-top: 50px;
     }
 }
 
@@ -320,13 +324,22 @@
 
 /*================================================================ project ================================================================*/
 
-
-@media only screen and (max-width: 950px){
+@media only screen and (max-width: 1100px){
     .work{
         display: flex;
         flex-direction: column;
         align-items: center;
+        max-width: 500px;
+        min-width: 0px;
     }
+
+    .work-desc{
+        width: 100%;
+    }
+
+}
+
+@media only screen and (max-width: 950px){
 
     .work-title{
         text-align: center;
@@ -334,11 +347,6 @@
 }
 
 @media only screen and (max-width: 600px){
-    .work{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
 
     .work-title{
         text-align: center;
@@ -349,7 +357,7 @@
         height: 50px;
     }
 
-    .about-work{
+    .about-work, .moredetails{
         font-size: 12px;
     }
 }
