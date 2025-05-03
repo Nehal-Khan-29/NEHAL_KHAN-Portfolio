@@ -138,6 +138,17 @@ body{
     display: none;
 }
 
+.nav-list li a.active,
+.nav-list2 li a.active {
+    color: rgb(151, 34, 252);
+}
+
+.nav-list li a.active::after,
+.nav-list2 li a.active::after {
+    width: 100%;
+}
+
+
 /*================================================================ Home ================================================================*/
 
 .home{

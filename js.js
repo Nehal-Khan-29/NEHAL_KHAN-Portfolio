@@ -7,9 +7,35 @@ function togglenav() {
     }
     else{
         nav2.style.display = 'flex';
-    }
-    
+    }   
 }
+
+window.addEventListener('scroll', homeanimation5);
+window.addEventListener('load', homeanimation5);
+
+const sections = document.querySelectorAll('.home, .about, .skills, .achievement, .project, .contact');
+const navLinks = document.querySelectorAll('.nav-list li a, .nav-list2 li a');
+
+function updateActiveNav() {
+    let currentSectionId = '';
+
+    sections.forEach(section => {
+        const rect = section.getBoundingClientRect();
+        if (rect.top <= window.innerHeight * 0.3 && rect.bottom >= window.innerHeight * 0.3) {
+            currentSectionId = section.getAttribute('id');
+        }
+    });
+
+    navLinks.forEach(link => {
+        link.classList.remove('active');
+        if (link.getAttribute('href') === `#${currentSectionId}`) {
+            link.classList.add('active');
+        }
+    });
+}
+
+window.addEventListener('scroll', updateActiveNav);
+
 
 // ====================================================== Home ====================================================================
 
@@ -201,11 +227,11 @@ function toggleoffproject() {
 
 // ======================================================= Image Open ================================================================
 
-const gallery = document.querySelectorAll('.work-photos, .card');
+const images = document.querySelectorAll('.work-photos img, .card img');
 
-gallery.forEach(i => {
-  i.addEventListener('click', () => {
-    window.open(i.querySelector('img').src, '_blank');
+images.forEach(img => {
+  img.addEventListener('click', (e) => {
+    window.open(e.target.src, '_blank');
   });
 });
 
@@ -240,7 +266,6 @@ function toggleTheme() {
 
     const project_title = document.querySelector(".project-title");
     const work = document.querySelectorAll(".work");
-    const work_desc = document.querySelectorAll(".work-desc");
 
     const my_email = document.querySelector(".my_email")
     
@@ -535,5 +560,3 @@ function homeanimation5() {
     }
     });
 }
-window.addEventListener('scroll', homeanimation5);
-window.addEventListener('load', homeanimation5);
