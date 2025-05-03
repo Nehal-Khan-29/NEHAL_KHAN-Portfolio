@@ -520,15 +520,13 @@ body{
 }
 
 .sklist li a{
-    color: black;
+    color: white;
     padding: 10px;
     border-radius: 10px;
-    background-color: rgb(255, 255, 255);
     transition: background-color 0.8s ease;
 }
 
 .sklist li a:hover{
-    color: white;
     background-color: rgb(151, 34, 252);
 }
 
@@ -643,7 +641,6 @@ body{
 .project{
     width: 100%;
     display:none;
-    display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;

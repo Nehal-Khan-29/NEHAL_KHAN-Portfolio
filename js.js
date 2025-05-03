@@ -297,6 +297,7 @@ function toggleTheme() {
         });
         sklist.forEach(inputElement => {
             inputElement.style.backgroundColor = "white";
+            inputElement.style.color = "black";
         });
 
         //achievement
@@ -372,7 +373,8 @@ function toggleTheme() {
             inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
         });
         sklist.forEach(inputElement => {
-            inputElement.style.backgroundColor = "rgb(220, 182, 253)";
+            inputElement.style.backgroundColor = "rgb(46, 12, 76)";
+            inputElement.style.color = "rgb(233, 213, 251)";
         });
 
         //achievement
