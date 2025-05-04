@@ -260,6 +260,7 @@ function toggleTheme() {
     const skill_title = document.querySelector(".skill-title");
     const skul = document.querySelectorAll(".skul");
     const sklist = document.querySelectorAll(".sklist");
+    const sklista = document.querySelectorAll(".sklist a");
 
     const ach_abt = document.querySelectorAll(".ach-abt")
     const card = document.querySelectorAll(".card")
@@ -323,6 +324,19 @@ function toggleTheme() {
         sklist.forEach(inputElement => {
             inputElement.style.backgroundColor = "white";
             inputElement.style.color = "black";
+        });
+        sklista.forEach(inputElement => {
+            inputElement.style.border = "2px solid rgb(151, 34, 252)";
+            inputElement.style.color = "rgb(151, 34, 252)";
+            inputElement.style.backgroundColor = "white";
+            inputElement.addEventListener("mouseover", () => {
+                inputElement.style.backgroundColor = "rgb(151, 34, 252)";
+                inputElement.style.color = "white";
+            });
+            inputElement.addEventListener("mouseout", () => {
+                inputElement.style.backgroundColor = "white";
+                inputElement.style.color = "rgb(151, 34, 252)";
+            });
         });
 
         //achievement
@@ -399,7 +413,20 @@ function toggleTheme() {
         });
         sklist.forEach(inputElement => {
             inputElement.style.backgroundColor = "rgb(46, 12, 76)";
-            inputElement.style.color = "rgb(233, 213, 251)";
+            inputElement.style.color = "white";
+        });
+        sklista.forEach(inputElement => {
+            inputElement.style.border = "2px solid white";
+            inputElement.style.color = "white";
+            inputElement.style.backgroundColor = "rgb(46, 12, 76)";
+            inputElement.addEventListener("mouseover", () => {
+                inputElement.style.backgroundColor = "white";
+                inputElement.style.color = "rgb(151, 34, 252)";
+            });
+            inputElement.addEventListener("mouseout", () => {
+                inputElement.style.backgroundColor = "rgb(46, 12, 76)";
+                inputElement.style.color = "white";
+            });
         });
 
         //achievement
@@ -407,8 +434,8 @@ function toggleTheme() {
             inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
         });
         ach_abt.forEach(inputElement => {
-            inputElement.style.color = 'black';
-            inputElement.style.backgroundColor = "rgb(220, 182, 253)";
+            inputElement.style.color = 'white';
+            inputElement.style.backgroundColor = "rgb(46, 12, 76)";
         });
 
         //project

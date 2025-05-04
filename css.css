@@ -531,7 +531,8 @@ body{
 }
 
 .sklist li a{
-    color: white;
+    border: 2px solid rgb(151, 34, 252);
+    color : rgb(151, 34, 252);
     padding: 10px;
     border-radius: 10px;
     transition: background-color 0.8s ease;
@@ -539,6 +540,7 @@ body{
 
 .sklist li a:hover{
     background-color: rgb(151, 34, 252);
+    color: white;
 }
 
 /*============================================================ achievement =============================================================*/
