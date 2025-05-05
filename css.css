@@ -729,6 +729,7 @@ body{
     gap:50px;
     margin-bottom: 50px;
     padding: 20px;
+    
 }
 
 .work{
@@ -741,6 +742,7 @@ body{
     flex-direction: row;
     gap: 20px;
     background-color: rgb(151, 34, 252);
+    opacity: 0;
 }
 
 .work img{
@@ -969,40 +971,6 @@ input::placeholder, textarea::placeholder {
 
 
 /* ====================================================== all transition =====================================================*/
-
-@keyframes BodyslideInFromTop {
-    from {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(-30px);
-    }
-    to {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-}
-  
-.slide-in-top {
-    animation: BodyslideInFromTop 0.8s ease-in-out;
-}
-
-@keyframes BodyslideInFromBottom {
-    from {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateY(30px);
-    }
-    to {
-      opacity: 1;
-      visibility: visible;
-      transform: translateY(0);
-    }
-}
-
-.slide-in-bottom {
-    animation: BodyslideInFromBottom 0.8s ease-in-out;
-}
 
 @keyframes BodyslideInFromleft {
     from {

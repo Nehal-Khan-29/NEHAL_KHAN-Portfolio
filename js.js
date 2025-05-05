@@ -207,6 +207,16 @@ function toggleonproject() {
     cnt.style.display = 'none';
     ac.style.display = 'none';
     prj.style.display = 'flex';
+
+    window.scrollTo({
+        top: 1,
+    });
+    setTimeout(() => {
+        window.scrollTo({
+            top: 0,
+            behavior: 'smooth'
+        });
+    }, 10); 
     
 }
 
