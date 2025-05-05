@@ -477,6 +477,7 @@ body{
     transition: 0.2s ease-in-out;
     background-color: white;
     width: 279px;
+    visibility: hidden;
 }
 
 .grids a{
@@ -546,6 +547,7 @@ body{
     break-inside: avoid;
     margin-bottom: 20px;
     width: 280px;
+    visibility: visible;
 }
 
 .skul p{
@@ -981,6 +983,23 @@ input::placeholder, textarea::placeholder {
   
 .slide-in-top {
     animation: BodyslideInFromTop 0.8s ease-in-out;
+}
+
+@keyframes BodyslideInFromBottom {
+    from {
+      opacity: 0;
+      visibility: hidden;
+      transform: translateY(30px);
+    }
+    to {
+      opacity: 1;
+      visibility: visible;
+      transform: translateY(0);
+    }
+}
+
+.slide-in-bottom {
+    animation: BodyslideInFromBottom 0.8s ease-in-out;
 }
 
 @keyframes BodyslideInFromleft {
