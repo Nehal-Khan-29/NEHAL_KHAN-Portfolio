@@ -442,7 +442,7 @@ body{
 
 .timestick{
     position: absolute;
-    height: calc(0% - 0px);
+    height: 0px;
     width: 5px;
     background-color: greenyellow;
 }

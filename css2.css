@@ -216,6 +216,15 @@
     .timestick{
         height: 100%;
     }
+
+    @keyframes timelength {
+        0%{
+            height: 0px;
+        }
+        100%{
+            height: 100%;
+        }
+    }
 }
 
 
