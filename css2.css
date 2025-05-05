@@ -381,17 +381,38 @@
     input, textarea{
         width: 250px;
     }
+}
 
-    .Nehal_Name_2{
-        font-size: x-small;
+/*================================================================ contact2 ================================================================*/
+
+@media only screen and (max-width: 750px){
+
+    .contact-container-2{
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        padding: 50px 20px 50px ;
+        gap: 10px;
     }
 
-    .copyr{
-        font-size: x-small;
+    .contact-container-3{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        gap: 20px;
     }
 
-    .blck1, .blck2{
-        height: 20px;
-        width: 55px;
+    .NKlogo-img-2{
+        display: flex;
+        justify-content: left;
+    }
+
+    .nav3{
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    .nav3 a{
+        text-align: left;
     }
 }

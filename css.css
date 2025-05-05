@@ -332,20 +332,16 @@ body{
     transition: 0.2s ease-in-out;
 }
 
-.fa-linkedin{
+.fal{
     animation: 0.4s bottomtotop2;
 }
 
-.fa-github{
+.fag{
     animation: 0.6s bottomtotop2;
 }
 
-.fa-envelope{
+.fae{
     animation: 0.8s bottomtotop2;
-}
-
-.fa-instagram{
-    animation: 1s bottomtotop2;
 }
 
 @keyframes bottomtotop2 {
@@ -876,7 +872,6 @@ input::placeholder, textarea::placeholder {
     font-weight: bold;
     padding: 10px;
     border-radius: 10px;
-    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     width: 150px;
     background-color: rgb(151, 34, 252);
     transition: background-color 0.2s;
@@ -894,33 +889,67 @@ input::placeholder, textarea::placeholder {
 
 .contact-container-2{
     width: 100%;
-}
-
-.logos{
-    display: flex;
     background-color: black;
-    justify-content: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     align-items: center;
-    list-style: none;
-    padding: 15px;
-    margin-bottom: 0;
-    width: 100%;
+    padding: 50px 0 50px 0;
 }
 
-.logos li{
-    padding-left: 5px;
-    padding-right: 5px;
+.contact-container-3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 50px;
 }
 
-.logos li a{
-    width:30px;
-    transition: ease;
-    color: white;
-    font-size: large;
+.NKlogo-img-2{
+    display: flex;
+    justify-content: right;
+}
+
+
+.NKlogo-img-2 img{
+    width: 50px;
+    height: auto;
+}
+
+.nav3{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.nav3 a{
+    color: rgb(176, 137, 255);
+    text-align: center;
+    font-weight: bold;
+}
+
+.nav3 a:hover{
+    color: greenyellow;
+    transform: translateY(-2px);
     transition: 0.2s ease-in-out;
 }
 
-.logos li a:hover{
+.logos{
+    margin-top: 5px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.logos a{
+    transition: ease;
+    color: white;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+}
+
+.logos a:hover{
     color: rgb(151, 34, 252);
     transform: translateY(-2px);
     transition: 0.2s ease-in-out;
@@ -929,25 +958,24 @@ input::placeholder, textarea::placeholder {
 .blck1, .blck2{
     background-color: black;
     height: 20px;
-    width: 100px;
+    width: 100%;
     z-index: 2;
 }
 
 .Nehal_Name_2{
+    position: relative;
+    text-align: center;
     display: flex;
     flex-direction: column;
     font-size: large;
     color: white;
 }
 
-.Nehal_Name_2 b{
+.Nehal_Name_2 p{
+    text-align: center;
+    width: fit-content;
     z-index: 1;
     animation: nametransition 3s ease-in-out infinite;
-}
-
-.copyr{
-    color: white;
-    font-weight: bold;
 }
 
 
@@ -967,6 +995,10 @@ input::placeholder, textarea::placeholder {
     100% {
         transform: translateY(-20px);
     }
+}
+
+.copyr{
+    color: white;
 }
 
 
