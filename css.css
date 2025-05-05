@@ -402,6 +402,7 @@ body{
     width: 400px;
     border-radius: 30px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    visibility: hidden;
 }
 
 .cv{
@@ -477,7 +478,7 @@ body{
     transition: 0.2s ease-in-out;
     background-color: white;
     width: 279px;
-    visibility: hidden;
+    opacity: 0%;
 }
 
 .grids a{
@@ -547,7 +548,8 @@ body{
     break-inside: avoid;
     margin-bottom: 20px;
     width: 280px;
-    visibility: visible;
+    opacity: 0%;
+
 }
 
 .skul p{
@@ -1069,4 +1071,18 @@ input::placeholder, textarea::placeholder {
   
 .cardslide-in-right {
     animation: cardslideInFromright 0.4s ease-in-out;
+}
+
+.visi-animation{
+    animation: 0.5s linear visibilenature;
+    animation-fill-mode: forwards;
+}
+
+@keyframes visibilenature{
+    0%{
+        opacity: 0%;
+    }
+    100%{
+        opacity: 100%;
+    }
 }

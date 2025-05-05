@@ -473,12 +473,12 @@ function handleScrolltop() {
     const elements = document.querySelectorAll('.grids, .skul');
     elements.forEach((element) => {
         if (isInViewport(element)) {
-            element.classList.add('slide-in-top');
-            element.classList.remove('slide-in-top');
+            element.classList.add('visi-animation');
+            element.classList.remove('visi-animation');
             element.style.visibility = 'visible';
         } else {
-            element.classList.remove('slide-in-top');
-            element.classList.add('slide-in-top');
+            element.classList.remove('visi-animation');
+            element.classList.add('visi-animation');
         }
       });
 }
