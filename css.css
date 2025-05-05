@@ -1074,7 +1074,7 @@ input::placeholder, textarea::placeholder {
 }
 
 .visi-animation{
-    animation: 0.5s linear visibilenature;
+    animation: 0.75s linear visibilenature;
     animation-fill-mode: forwards;
 }
 
