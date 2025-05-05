@@ -470,7 +470,7 @@ function isInViewport(element) {
 }
 
 function handleScrolltop() {
-    const elements = document.querySelectorAll('.skul');
+    const elements = document.querySelectorAll('.grids, .skul');
     elements.forEach((element) => {
         if (isInViewport(element)) {
             element.classList.add('slide-in-top');
@@ -582,15 +582,18 @@ window.addEventListener('scroll', homeanimation4);
 window.addEventListener('load', homeanimation4);
 
 function homeanimation5() {
-    const elements = document.querySelectorAll('.faicon');
+    const elements = document.querySelectorAll('.timestick');
     elements.forEach(element => {
     if (isInViewport(element)) {
-        element.classList.add('btot2');
-        element.classList.remove('btot2');
+        element.classList.add('timeanimation');
+        element.classList.remove('timeanimation');
         element.style.visibility = 'visible';
     } else {
-        element.classList.remove('btot2');
-        element.classList.add('btot2');
+        element.classList.remove('timeanimation');
+        element.classList.add('timeanimation');
+        element.style.visibility = 'visible';
     }
     });
 }
+window.addEventListener('scroll', homeanimation5);
+window.addEventListener('load', homeanimation5);

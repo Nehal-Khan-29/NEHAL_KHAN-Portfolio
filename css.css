@@ -348,10 +348,6 @@ body{
     animation: 1s bottomtotop2;
 }
 
-.btot2{
-    animation: 1s bottomtotop2;
-}
-
 @keyframes bottomtotop2 {
     0%{
         transform: translateY(+50px);
@@ -446,7 +442,7 @@ body{
 
 .timestick{
     position: absolute;
-    height: calc(100% - 130px);
+    height: calc(0% - 0px);
     width: 5px;
     background-color: greenyellow;
 }
@@ -502,6 +498,24 @@ body{
     font-weight: bold;
     border-radius: 10px;
     margin-bottom: 10px;
+}
+
+.grids:hover{
+    transform: translateY(-10px);
+}
+
+.timeanimation{
+    animation: 1.5s linear timelength;
+    animation-fill-mode: forwards;
+}
+
+@keyframes timelength {
+    0%{
+        height: calc(0% - 0px);
+    }
+    100%{
+        height: calc(100% - 130px);
+    }
 }
 
 /*================================================================ skills ================================================================*/
