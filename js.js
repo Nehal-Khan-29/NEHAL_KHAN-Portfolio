@@ -248,6 +248,7 @@ function toggleTheme() {
     const khan_name = document.querySelector(".khan-name");
     const tagline = document.querySelector(".tagline");
     const faicon_a = document.querySelectorAll(".faicon a");
+    const typing = document.querySelectorAll(".typing");
 
     const about_title = document.querySelector(".about-title");
     const about_intro = document.querySelector(".about-intro p");
@@ -295,6 +296,9 @@ function toggleTheme() {
             inputElement.addEventListener("mouseleave", () => {
                 inputElement.style.color = "black";
             });
+        });
+        typing.forEach(inputElement => {
+            inputElement.style.backgroundColor = "rgb(34,34,34)";
         });
 
         //About
@@ -386,6 +390,9 @@ function toggleTheme() {
                 inputElement.style.color = "rgb(203, 149, 250)";
             });
         });
+        typing.forEach(inputElement => {
+            inputElement.style.backgroundColor = "rgba(34, 34, 34, 0.64)";
+        });
 
         //About
         about_title.style.color = 'rgb(203, 149, 250)';
@@ -463,7 +470,7 @@ function isInViewport(element) {
 }
 
 function handleScrolltop() {
-    const elements = document.querySelectorAll('.grids, .skul');
+    const elements = document.querySelectorAll('.skul');
     elements.forEach((element) => {
         if (isInViewport(element)) {
             element.classList.add('slide-in-top');

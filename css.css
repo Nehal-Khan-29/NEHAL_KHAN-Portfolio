@@ -175,7 +175,7 @@ body{
 .typing{
     min-width: 400px;
     min-height: 250px;
-    background-color: rgb(44, 43, 43);
+    background-color: rgb(34, 34, 34);
     padding: 20px;
     border-radius: 10px;
     border: 10px solid black;
@@ -429,9 +429,31 @@ body{
 /*================================================================ Exp ================================================================*/
 
 .experience-container{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap:20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.timecircle{
+    background-color: white;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 5px solid greenyellow;
+}
+
+.timestick{
+    position: absolute;
+    height: calc(100% - 130px);
+    width: 5px;
+    background-color: greenyellow;
+}
+
+.exp-column{
+    display: flex;
+    flex-direction: column;
 }
 
 .exp-title{
@@ -443,15 +465,34 @@ body{
     margin-bottom: 50px;
 }
 
+.grids-main{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
 .grids{
     padding:20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     transition: 0.2s ease-in-out;
+    background-color: white;
+    width: 279px;
 }
 
 .grids a{
     color: rgb(151, 34, 252);
+}
+
+.grids-main:nth-child(odd){
+    transform: translateX(-154.5px);
+}
+
+.grids-main:nth-child(even){
+    flex-direction: row-reverse;
+    transform: translateX(154.5px);
 }
 
 .grids p:nth-child(1){
@@ -461,11 +502,6 @@ body{
     font-weight: bold;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.grids:hover{
-    transform: translateY(-10px);
-    transition: 0.2s ease-in-out;
 }
 
 /*================================================================ skills ================================================================*/
@@ -885,7 +921,7 @@ input::placeholder, textarea::placeholder {
 
 .Nehal_Name_2 b{
     z-index: 1;
-    animation: nametransition 5s ease-in-out infinite;
+    animation: nametransition 3s ease-in-out infinite;
 }
 
 .copyr{
@@ -898,26 +934,14 @@ input::placeholder, textarea::placeholder {
     0% {
         transform: translateY(-20px);
     }
-    12.5% {
-        transform: translateY(0);
-    }
     25% {
-        transform: translateY(-20px);
-    }
-    37.5% {
         transform: translateY(0);
     }
     50% {
         transform: translateY(20px);
     }
-    62.5% {
-        transform: translateY(0);
-    }
     75% {
-        transform: translateY(20px);
-    }
-    87.5% {
-        transform: translateY(0px);
+        transform: translateY(0);
     }
     100% {
         transform: translateY(-20px);
