@@ -215,16 +215,9 @@
 
     .timestick{
         height: 100%;
+        animation: none;
     }
 
-    @keyframes timelength {
-        0%{
-            height: 0px;
-        }
-        100%{
-            height: 100%;
-        }
-    }
 }
 
 
