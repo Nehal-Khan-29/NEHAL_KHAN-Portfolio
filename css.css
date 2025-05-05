@@ -445,6 +445,7 @@ body{
     height: 0px;
     width: 5px;
     background-color: greenyellow;
+    border-radius: 10px;
 }
 
 .exp-column{
