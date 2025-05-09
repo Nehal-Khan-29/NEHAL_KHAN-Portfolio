@@ -209,7 +209,7 @@ function toggleonproject() {
     prj.style.display = 'flex';
 
     window.scrollTo({
-        top: 1,
+        top: 10,
     });
     setTimeout(() => {
         window.scrollTo({

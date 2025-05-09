@@ -148,6 +148,27 @@ body{
     width: 100%;
 }
 
+.gotop{
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    bottom: 0;
+    right: 0;
+    margin-bottom: 30px;
+    margin-right: 30px;
+    position: fixed;
+    background-color: #bb6af5ae;
+    height: 30px;
+    width: 30px;
+    border-radius: 10px;
+    color: white;
+}
+
+.gotop:hover{
+    transform: scale(1.2);
+}
 
 /*================================================================ Home ================================================================*/
 
