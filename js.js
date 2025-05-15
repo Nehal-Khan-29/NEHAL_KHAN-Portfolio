@@ -207,16 +207,6 @@ function toggleonproject() {
     cnt.style.display = 'none';
     ac.style.display = 'none';
     prj.style.display = 'flex';
-
-    window.scrollTo({
-        top: 10,
-    });
-    setTimeout(() => {
-        window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
-        });
-    }, 10); 
     
 }
 
@@ -480,7 +470,7 @@ function isInViewport(element) {
 }
 
 function handleScrolltop() {
-    const elements = document.querySelectorAll('.grids, .skul, .work');
+    const elements = document.querySelectorAll('.grids, .skul');
     elements.forEach((element) => {
         if (isInViewport(element)) {
             element.classList.add('visi-animation');

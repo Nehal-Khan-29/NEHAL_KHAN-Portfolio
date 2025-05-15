@@ -758,7 +758,6 @@ body{
     flex-direction: row;
     gap: 20px;
     background-color: rgb(151, 34, 252);
-    opacity: 0;
 }
 
 .work img{
