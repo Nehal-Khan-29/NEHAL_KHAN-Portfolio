@@ -597,6 +597,78 @@ body{
     height: 40px;
 }
 
+.learn-green{
+    margin-left: auto;
+    background-color: green;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+
+.learn-orange{
+    margin-left: auto;
+    background-color: orange;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+
+.learn-red {
+    margin-left: auto;
+    background-color: red;
+    border-radius: 100%;
+    width: 12px;
+    height: 12px;
+    position: relative;
+}
+
+.learn-green:hover::after {
+    content: "Adv.";
+    position: absolute;
+    top: 50%;
+    left: 130%; 
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 2px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.learn-orange:hover::after {
+    content: "Inte.";
+    position: absolute;
+    top: 50%;
+    left: 130%; 
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 2px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+}
+
+.learn-red:hover::after {
+    content: "Begn.";
+    position: absolute;
+    top: 50%;
+    left: 130%; 
+    transform: translateY(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 4px;
+    border-radius: 2px;
+    white-space: nowrap;
+    font-size: 12px;
+    z-index: 10;
+}
+
 .skul:hover{
     transform: translateY(-10px);
 }
