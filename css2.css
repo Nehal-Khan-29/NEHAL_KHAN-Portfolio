@@ -250,11 +250,11 @@
     }
 
     .skul{
-        width: 180px;
+        width:250px;
     }
 }
 
-@media only screen and (max-width: 450px){
+@media only screen and (max-width: 550px){
     .skills-container{
         column-count: 1;
         column-gap: 20px;
