@@ -269,7 +269,9 @@ function toggleTheme() {
     const project_title = document.querySelector(".project-title");
     const work = document.querySelectorAll(".work");
 
-    const my_email = document.querySelector(".my_email")
+    const contact_info_box = document.querySelectorAll(".contact-info-box")
+    const contact_info_box_p = document.querySelectorAll(".contact-info-box p")
+    const contact_info_box_b = document.querySelectorAll(".contact-info-box b")
     
     if (body.classList.contains('dark-mode')) {
         body.classList.remove('dark-mode');
@@ -361,7 +363,15 @@ function toggleTheme() {
         });
 
         //Contact
-        my_email.style.color = "black";
+        contact_info_box.forEach(inputElement => {
+            inputElement.style.boxShadow = "4px 4px 10px rgba(0, 0, 0, 0.5)";
+        });
+        contact_info_box_p.forEach(inputElement => {
+            inputElement.style.color = 'black';
+        });
+        contact_info_box_b.forEach(inputElement => {
+            inputElement.style.color = 'black';
+        });
     } 
     
     else {
@@ -453,7 +463,15 @@ function toggleTheme() {
         });
 
         //Contact
-        my_email.style.color = "white";
+        contact_info_box.forEach(inputElement => {
+            inputElement.style.boxShadow = "4px 4px 10px rgb(0, 0, 0)";
+        });
+        contact_info_box_p.forEach(inputElement => {
+            inputElement.style.color = 'white';
+        });
+        contact_info_box_b.forEach(inputElement => {
+            inputElement.style.color = 'white';
+        });
     }
   }
 

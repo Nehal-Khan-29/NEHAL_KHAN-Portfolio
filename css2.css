@@ -385,6 +385,15 @@
 
 /*================================================================ contact ================================================================*/
 
+@media only screen and (max-width: 1050px){
+    .contact-container-inside{
+    display: flex;
+    flex-direction: column;
+    gap:20px;
+    align-items: center;
+
+}
+}
 
 @media only screen and (max-width: 450px){
     input, textarea{
