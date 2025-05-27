@@ -504,7 +504,7 @@ window.addEventListener('scroll', handleScrolltop);
 window.addEventListener('load', handleScrolltop);
 
 function handleScrollleft() {
-    const elements = document.querySelectorAll('.about-intro');
+    const elements = document.querySelectorAll('.about-intro, .contact-info-box');
     elements.forEach(element => {
     if (isInViewport(element)) {
         element.classList.add('slide-in-left');
