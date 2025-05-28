@@ -494,6 +494,9 @@ body{
     transition: 0.2s ease-in-out;
     background-color: white;
     width: 279px;
+}
+
+.grids p, .grids b, .grids a{
     opacity: 0%;
 }
 

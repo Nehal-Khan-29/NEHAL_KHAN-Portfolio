@@ -488,7 +488,7 @@ function isInViewport(element) {
 }
 
 function handleScrolltop() {
-    const elements = document.querySelectorAll('.grids, .skul');
+    const elements = document.querySelectorAll('.grids p, .grids b, .grids a, .skul');
     elements.forEach((element) => {
         if (isInViewport(element)) {
             element.classList.add('visi-animation');
