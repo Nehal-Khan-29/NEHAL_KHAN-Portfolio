@@ -387,12 +387,22 @@
 
 @media only screen and (max-width: 1050px){
     .contact-container-inside{
-    display: flex;
-    flex-direction: column;
-    gap:20px;
-    align-items: center;
+        display: flex;
+        flex-direction: column-reverse;
+        gap:20px;
+        align-items: center;
+    }
 
-}
+    .contact-info{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .contact-info-box{
+        gap: 10px;
+        padding: 10px;
+    }
+
 }
 
 @media only screen and (max-width: 450px){
