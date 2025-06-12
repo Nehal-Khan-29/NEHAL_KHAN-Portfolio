@@ -110,6 +110,10 @@ body{
     text-decoration: none;
 }
 
+.theme-icon{
+    cursor: pointer;
+}
+
 .nav-list li a:hover{
     color: rgb(151, 34, 252);
 
