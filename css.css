@@ -611,6 +611,7 @@ body{
     width: 12px;
     height: 12px;
     position: relative;
+    display: none;
 }
 
 .learn-orange{
@@ -620,6 +621,7 @@ body{
     width: 12px;
     height: 12px;
     position: relative;
+    display: none;
 }
 
 .learn-red {
@@ -629,6 +631,7 @@ body{
     width: 12px;
     height: 12px;
     position: relative;
+    display: none;
 }
 
 .learn-green:hover::after {
