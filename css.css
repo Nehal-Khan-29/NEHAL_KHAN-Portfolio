@@ -734,6 +734,7 @@ body{
     border-radius: 100%;
     background-color: white;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
+    cursor: pointer;
 }
 
 .arrows:hover{
@@ -770,6 +771,7 @@ body{
     width: 460px;
     max-height: 350px;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .ach-abt{
@@ -802,6 +804,7 @@ body{
     height: 10px;
     border-radius: 50%;
     background-color: #bdbbbb;
+    
 }
 
 /*============================================================== project ===============================================================*/
