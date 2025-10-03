@@ -41,7 +41,7 @@ window.addEventListener('scroll', updateActiveNav);
 
 var option1 = {
     strings: [
-        "<span style='color:blue';>def</span> <span style='color:gold';>me():</span><br><p>life <span style='color:white';>=</span> <span style='color:gold';>code()</span> <span style='color:white';>+</span> <span style='color:gold';>soul(</span><span style='color:white';>'Nehal'</span><span style='color:yellow';>)</span></p><p><span style='color:#C11C84';>return</span> life</p><br>life <span style='color:white';>=</span> <span style='color:gold';>me()</span><br><span style='color:gold';>print(</span>life<span style='color:gold';>)</span>"
+        '<span style="color:#4d9cd6";>def</span> <span style="color:#dcdcaa";>me</span><span style="color:#ffd70b";>()</span><span style="color:white";>:</span><br><p>life <span style="color:white";>=</span> <span style="color:#dcdcaa";>code</span><span style="color:#ffd70b";>()</span> <span style="color:white";>+</span> <span style="color:#dcdcaa";>soul</span><span style="color:#ffd70b";>(</span><span style="color:#ce9178";>"Nehal"</span><span style="color:#ffd70b";>)</span></p><p><span style="color:#c586c0";>return</span> life</p><br>life <span style="color:white";>=</span> <span style="color:#dcdcaa";>me</span><span style="color:#ffd70b";>()</span><br><span style="color:#dcdcaa";>print</span><span style="color:#ffd70b";>(</span>life<span style="color:#ffd70b";>)</span>'
     ],
     typeSpeed: 20,  
     backSpeed: 20,   
@@ -257,6 +257,7 @@ function toggleTheme() {
     const grids = document.querySelectorAll(".grids");
     const grids_title = document.querySelectorAll(".grids p:nth-child(1)");
     const grids_a = document.querySelectorAll(".grids a");
+    const exp_ibm = document.querySelectorAll(".exp-ibm");
 
     const skill_title = document.querySelector(".skill-title");
     const skul = document.querySelectorAll(".skul");
@@ -320,6 +321,9 @@ function toggleTheme() {
         });
         grids_a.forEach(inputElement => {
             inputElement.style.color = "rgb(151, 34, 252)";
+        });
+        exp_ibm.forEach(inputElement => {
+            inputElement.src = "assets/experience/ibm_white.svg";
         });
 
         //Skill
@@ -421,6 +425,9 @@ function toggleTheme() {
         });
         grids_a.forEach(inputElement => {
             inputElement.style.color = "rgb(151, 34, 252)";
+        });
+        exp_ibm.forEach(inputElement => {
+            inputElement.src = "assets/experience/ibm_black.svg";
         });
 
         //Skill

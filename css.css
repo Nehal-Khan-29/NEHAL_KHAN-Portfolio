@@ -212,7 +212,7 @@ body{
 
 .t1{
     font-size: 20px;
-    color: lightblue;
+    color: #9cdcfe;
     position: absolute;
 }
 
@@ -492,16 +492,38 @@ body{
 }
 
 .grids{
+    overflow: hidden; 
     padding:20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
     border-radius: 30px;
     transition: 0.2s ease-in-out;
     background-color: white;
+    height: 130px;
     width: 279px;
+    background-size: contain; 
+    background-position: center; 
+    background-repeat: no-repeat;
+    position: relative;
 }
 
-.grids p, .grids b, .grids a{
-    opacity: 0%;
+.grids img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+  z-index: 2;
+  transform: translate(-20px, -20px); 
+}
+
+.exp-text {
+  position: relative;
+  z-index: 1;
+  opacity: 1;
+}
+
+.grids:hover img {
+  transform: translate(-20px, calc(-100% - 21px)); 
 }
 
 .grids a{
@@ -524,10 +546,6 @@ body{
     font-weight: bold;
     border-radius: 10px;
     margin-bottom: 10px;
-}
-
-.grids:hover{
-    transform: translateY(-10px);
 }
 
 .timeanimation{
