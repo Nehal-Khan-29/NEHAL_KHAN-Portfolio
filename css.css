@@ -767,7 +767,15 @@ body{
     align-items: end;
 }
 
+.card-container{
+    height: 500px;
+    width: 500px;
+    position: relative;
+    overflow: hidden;
+}
+
 .card{
+    position: absolute;
     background-color: rgb(151, 34, 252);
     padding: 20px;
     height: 500px;
@@ -779,10 +787,6 @@ body{
     align-items: center;
     gap: 20px;
     box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.5);
-}
-
-.card1{
-    display: flex;
 }
 
 .card img{
@@ -824,6 +828,26 @@ body{
     background-color: #bdbbbb;
     
 }
+
+
+@keyframes cardslideInFromleft {
+    from { transform: translateX(-100%);}
+    to   { transform: translateX(0); }
+}
+
+@keyframes cardslideInFromright {
+    from { transform: translateX(100%); }
+    to   { transform: translateX(0); }
+}
+
+.cardslide-in-left {
+    animation: cardslideInFromleft 0.4s ease forwards;
+}
+  
+.cardslide-in-right {
+    animation: cardslideInFromright 0.4s ease forwards;
+}
+
 
 /*============================================================== project ===============================================================*/
 
@@ -1183,41 +1207,6 @@ textarea{
   
 .slide-in-right {
     animation: BodyslideInFromright 0.8s ease-in-out;
-}
-
-
-@keyframes cardslideInFromleft {
-    from {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(-40px);
-    }
-    to {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0);
-    }
-}
-  
-.cardslide-in-left {
-    animation: cardslideInFromleft 0.4s ease-in-out;
-}
-
-@keyframes cardslideInFromright {
-    from {
-      opacity: 0;
-      visibility: hidden;
-      transform: translateX(+40px);
-    }
-    to {
-      opacity: 1;
-      visibility: visible;
-      transform: translateX(0);
-    }
-}
-  
-.cardslide-in-right {
-    animation: cardslideInFromright 0.4s ease-in-out;
 }
 
 .visi-animation{

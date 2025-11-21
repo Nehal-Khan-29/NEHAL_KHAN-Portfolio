@@ -286,6 +286,12 @@
 }
 
 @media only screen and (max-width: 700px){
+    .card-container{
+        height: 400px;
+        width: 400px;
+        position: relative;
+        overflow: hidden;
+    }
     .card{
         padding: 10px;
         height: 400px;
@@ -308,6 +314,14 @@
 }
 
 @media only screen and (max-width: 700px){
+    
+    .card-container{
+        height: 350px;
+        width: 350px;
+        position: relative;
+        overflow: hidden;
+    }
+
     .card{
         height: 350px;
         width: 350px;
@@ -326,6 +340,14 @@
 }
 
 @media only screen and (max-width: 400px){
+
+    .card-container{
+        height: 350px;
+        width: 300px;
+        position: relative;
+        overflow: hidden;
+    }
+
     .card{
         height: 350px;
         width: 300px;

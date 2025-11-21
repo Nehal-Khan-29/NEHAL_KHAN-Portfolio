@@ -46,7 +46,7 @@ var option1 = {
     typeSpeed: 20,  
     backSpeed: 20,   
     startDelay: 100,        
-    backDelay: 500,       
+    backDelay: 2000,       
     showCursor: false, 
     loop: true     
 };
