@@ -791,7 +791,7 @@ body{
 
 .card img{
     width: 460px;
-    max-height: 350px;
+    max-height: 320px;
     border-radius: 10px;
     cursor: pointer;
 }
